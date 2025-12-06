@@ -84,6 +84,14 @@
         // Restore Verify Button if needed
         if (currentStepData && (currentStepData.type === 'instruction' || currentStepData.type === 'verification_failure')) {
           addVerifyButton();
+
+          // Auto-verify on load if we have an active instruction
+          // We check if the chat is visible to avoid annoying the user if they closed it
+          if (isChatVisible) {
+            console.log("Content: Auto-verifying on page load...");
+            handleVerify();
+          }
+
         } else if (currentStepData && currentStepData.type === 'verification_success' && currentStepData.step_number) {
           addVerifyButton();
         }
@@ -256,8 +264,11 @@
       data: { category: "chat", query: text }
     });
 
+    // Capture HTML content (truncated to avoid huge payloads)
+    const htmlContent = document.body.outerHTML.substring(0, 50000);
+
     // Send to background (which will capture screenshot)
-    sendToGemini(text, null, null);
+    sendToGemini(text, null, null, htmlContent);
   }
 
   function handleVerify() {
@@ -268,16 +279,20 @@
     // Context is the current step we are verifying
     const context = JSON.stringify(currentStepData);
 
+    // Capture HTML content
+    const htmlContent = document.body.outerHTML.substring(0, 50000);
+
     // Send to background (which will capture screenshot)
-    sendToGemini("Verify this step", null, context);
+    sendToGemini("Verify this step", null, context, htmlContent);
   }
 
-  function sendToGemini(prompt, image, context) {
+  function sendToGemini(prompt, image, context, html) {
     chrome.runtime.sendMessage({
       action: "chatWithGemini",
       prompt: prompt,
       image: image,
-      context: context
+      context: context,
+      html: html
     }, (apiResponse) => {
       console.log("api response", apiResponse);
       if (apiResponse && apiResponse.text) {
@@ -306,6 +321,12 @@
     if (data.type === 'instruction' || data.type === 'verification_failure') {
       addMessage(data.message, 'system');
       addVerifyButton();
+
+      // Trigger Driver.js if selector is present
+      if (data.element_selector) {
+        startDriverTour(data.element_selector, data.message);
+      }
+
     } else if (data.type === 'verification_success') {
       addMessage(data.message, 'system');
       if (data.step_number) {
@@ -378,44 +399,22 @@
     });
   }
 
-  function startDriverTour() {
+  function startDriverTour(selector, message) {
     // Ensure driver is available
     if (!window.driver || !window.driver.js || !window.driver.js.driver) {
       console.error("Driver.js not loaded");
-      addMessage("Error: Driver.js not loaded", 'system');
       return;
     }
 
     const driver = window.driver.js.driver;
     const driverObj = driver({
-      showProgress: true,
+      showProgress: false,
       steps: [
         {
-          element: 'h1',
+          element: selector,
           popover: {
-            title: 'Page Title',
-            description: 'This is the main title of the page. It tells you what this section is about.'
-          }
-        },
-        {
-          element: 'a',
-          popover: {
-            title: 'Navigation Links',
-            description: 'These links help you move to other pages. Click them to explore more.'
-          }
-        },
-        {
-          element: 'input',
-          popover: {
-            title: 'Input Fields',
-            description: 'You can type information here, like search terms or your details.'
-          }
-        },
-        {
-          element: 'button',
-          popover: {
-            title: 'Action Buttons',
-            description: 'Click these buttons to submit forms or perform actions.'
+            title: 'Step Guide',
+            description: message
           }
         }
       ]

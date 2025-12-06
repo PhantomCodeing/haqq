@@ -23,12 +23,12 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
       if (chrome.runtime.lastError) {
         console.error("Background: Screenshot capture failed:", chrome.runtime.lastError.message);
         // Proceed without image if capture fails
-        chatWithGemini(request.prompt, null, request.context)
+        chatWithGemini(request.prompt, null, request.context, request.html)
           .then(response => sendResponse({ text: JSON.stringify(response) }))
           .catch(error => sendResponse({ error: error.message }));
       } else {
         console.log("Background: Screenshot captured for chat.");
-        chatWithGemini(request.prompt, dataUrl, request.context)
+        chatWithGemini(request.prompt, dataUrl, request.context, request.html)
           .then(response => sendResponse({ text: JSON.stringify(response) }))
           .catch(error => sendResponse({ error: error.message }));
       }
@@ -37,7 +37,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   }
 });
 
-async function chatWithGemini(prompt, image, context) {
+async function chatWithGemini(prompt, image, context, html) {
   try {
     const response = await fetch('http://localhost:8000/chat', {
       method: 'POST',
@@ -47,7 +47,8 @@ async function chatWithGemini(prompt, image, context) {
       body: JSON.stringify({
         prompt: prompt,
         image: image,
-        context: context
+        context: context,
+        html_content: html
       })
     });
 
