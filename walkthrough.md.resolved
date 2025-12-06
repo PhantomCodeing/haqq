@@ -1,0 +1,31 @@
+# NeuralPath: Launch Instructions
+
+## 1. Start the Electron Hub (The Brain)
+The dependencies are installed. You just need to start it.
+1.  Open your terminal in VS Code using `` Ctrl+` ``.
+2.  Navigate to the Hub:
+    ```powershell
+    cd "c:\Users\mahdi\Documents\manchester hackathon\electron-hub"
+    ```
+3.  Start the app:
+    ```powershell
+    npm start
+    ```
+    *   **Success:** You will see a window appear and the log `NeuralPath Hub Server running on port 3000`.
+    *   *Keep this terminal running.*
+
+## 2. Load the Chrome Extension (The Eyes)
+1.  Open **Google Chrome**.
+2.  Go to `chrome://extensions`.
+3.  Ensure **Developer mode** is **ON** (top right).
+4.  Click **Load unpacked**.
+5.  Select this folder:
+    `c:\Users\mahdi\Documents\manchester hackathon\chrome-extension`
+6.  *If already loaded:* Click the **Refresh** (circular arrow) icon on the extension card.
+
+## 3. Play!
+1.  Click the **NeuralPath icon** in your toolbar.
+2.  Click **"✨ Helper Mode"**.
+3.  Type: `go to youtube` and hit **Enter**.
+4.  **Watch the magic:** Your browser should automatically redirect to YouTube!
+
