@@ -89,7 +89,10 @@
           // We check if the chat is visible to avoid annoying the user if they closed it
           if (isChatVisible) {
             console.log("Content: Auto-verifying on page load...");
-            handleVerify();
+            // Add a small delay to ensure page is settled
+            setTimeout(() => {
+              handleVerify();
+            }, 300);
           }
 
         } else if (currentStepData && currentStepData.type === 'verification_success' && currentStepData.step_number) {
@@ -276,6 +279,13 @@
 
     addMessage("Verifying...", 'system');
 
+    // Disable verify button if it exists
+    const verifyBtn = shadowRoot.querySelector('.dle-verify-btn');
+    if (verifyBtn) {
+      verifyBtn.disabled = true;
+      verifyBtn.textContent = "Checking...";
+    }
+
     // Context is the current step we are verifying
     const context = JSON.stringify(currentStepData);
 
@@ -319,6 +329,10 @@
     saveState();
 
     if (data.type === 'instruction' || data.type === 'verification_failure') {
+      // Remove existing verify button if present to avoid duplicates/confusion
+      const existingBtn = shadowRoot.querySelector('.dle-verify-btn');
+      if (existingBtn) existingBtn.remove();
+
       addMessage(data.message, 'system');
       addVerifyButton();
 
@@ -328,6 +342,10 @@
       }
 
     } else if (data.type === 'verification_success') {
+      // Remove existing verify button
+      const existingBtn = shadowRoot.querySelector('.dle-verify-btn');
+      if (existingBtn) existingBtn.remove();
+
       addMessage(data.message, 'system');
       if (data.step_number) {
         addVerifyButton();
@@ -399,6 +417,31 @@
     });
   }
 
+  function waitForElement(selector, timeout = 5000) {
+    return new Promise((resolve) => {
+      if (document.querySelector(selector)) {
+        return resolve(document.querySelector(selector));
+      }
+
+      const observer = new MutationObserver((mutations) => {
+        if (document.querySelector(selector)) {
+          resolve(document.querySelector(selector));
+          observer.disconnect();
+        }
+      });
+
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true
+      });
+
+      setTimeout(() => {
+        observer.disconnect();
+        resolve(null);
+      }, timeout);
+    });
+  }
+
   function startDriverTour(selector, message) {
     // Ensure driver is available
     if (!window.driver || !window.driver.js || !window.driver.js.driver) {
@@ -406,21 +449,29 @@
       return;
     }
 
-    const driver = window.driver.js.driver;
-    const driverObj = driver({
-      showProgress: false,
-      steps: [
-        {
-          element: selector,
-          popover: {
-            title: 'Step Guide',
-            description: message
-          }
-        }
-      ]
-    });
+    // Wait for element to exist before driving
+    waitForElement(selector).then((element) => {
+      if (!element) {
+        console.warn("Driver.js: Element not found:", selector);
+        return;
+      }
 
-    driverObj.drive();
+      const driver = window.driver.js.driver;
+      const driverObj = driver({
+        showProgress: false,
+        steps: [
+          {
+            element: selector,
+            popover: {
+              title: 'Step Guide',
+              description: message
+            }
+          }
+        ]
+      });
+
+      driverObj.drive();
+    });
   }
 
   // Initialize
