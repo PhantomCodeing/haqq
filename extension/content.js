@@ -12,6 +12,11 @@
   let shadowRoot = null;
   let isChatVisible = false;
 
+  let currentStepData = null; // Store current step info
+  let messages = []; // Store chat history
+
+
+
   /**
    * 3. DOM Manipulation: Helper to create the UI safely.
    */
@@ -32,6 +37,58 @@
 
     // Build UI
     createOverlay();
+
+    // Restore State
+    restoreState();
+  }
+
+  function saveState() {
+    const state = {
+      isChatVisible: isChatVisible,
+      currentStepData: currentStepData,
+      messages: messages
+    };
+    chrome.storage.local.set({ 'dle_state': state });
+  }
+
+  function restoreState() {
+    chrome.storage.local.get('dle_state', (result) => {
+      if (result.dle_state) {
+        const state = result.dle_state;
+        isChatVisible = state.isChatVisible || false;
+        currentStepData = state.currentStepData || null;
+        messages = state.messages || [];
+
+        // Restore visibility
+        const chatWindow = shadowRoot.getElementById('dle-chat-window');
+        if (isChatVisible) {
+          chatWindow.classList.remove('hidden');
+        } else {
+          chatWindow.classList.add('hidden');
+        }
+
+        // Restore messages
+        const messagesDiv = shadowRoot.getElementById('dle-messages');
+        // Clear default welcome message if we have history
+        if (messages.length > 0) {
+          messagesDiv.innerHTML = '';
+          messages.forEach(msg => {
+            const msgDiv = document.createElement('div');
+            msgDiv.className = `dle-message ${msg.sender}`;
+            msgDiv.textContent = msg.text;
+            messagesDiv.appendChild(msgDiv);
+          });
+          messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        }
+
+        // Restore Verify Button if needed
+        if (currentStepData && (currentStepData.type === 'instruction' || currentStepData.type === 'verification_failure')) {
+          addVerifyButton();
+        } else if (currentStepData && currentStepData.type === 'verification_success' && currentStepData.step_number) {
+          addVerifyButton();
+        }
+      }
+    });
   }
 
   function injectStyles() {
@@ -165,6 +222,7 @@
     } else {
       chatWindow.classList.add('hidden');
     }
+    saveState();
   }
 
   function switchTab(e, root) {
@@ -198,48 +256,99 @@
       data: { category: "chat", query: text }
     });
 
-    // Capture screenshot and send to Gemini
-    chrome.runtime.sendMessage({ action: "captureScreen" }, (response) => {
-      if (response && response.dataUrl) {
-        const screenshot = response.dataUrl;
+    // Send to background (which will capture screenshot)
+    sendToGemini(text, null, null);
+  }
 
-        // Send to background for processing
-        chrome.runtime.sendMessage({
-          action: "chatWithGemini",
-          prompt: text,
-          image: screenshot
-        }, (apiResponse) => {
-          if (apiResponse && apiResponse.text) {
-            addMessage(apiResponse.text, 'system');
-            // Check if response suggests a tour (simple heuristic for now)
-            if (apiResponse.text.toLowerCase().includes("guide") || apiResponse.text.toLowerCase().includes("step")) {
-              // Optional: Trigger driver if needed, or maybe the server returns structured actions later
-              // startDriverTour(); 
-            }
-          } else if (apiResponse && apiResponse.error) {
-            addMessage("Error: " + apiResponse.error, 'system');
-          } else {
-            addMessage("Sorry, something went wrong.", 'system');
-          }
-        });
+  function handleVerify() {
+    if (!currentStepData) return;
+
+    addMessage("Verifying...", 'system');
+
+    // Context is the current step we are verifying
+    const context = JSON.stringify(currentStepData);
+
+    // Send to background (which will capture screenshot)
+    sendToGemini("Verify this step", null, context);
+  }
+
+  function sendToGemini(prompt, image, context) {
+    chrome.runtime.sendMessage({
+      action: "chatWithGemini",
+      prompt: prompt,
+      image: image,
+      context: context
+    }, (apiResponse) => {
+      console.log("api response", apiResponse);
+      if (apiResponse && apiResponse.text) {
+        // parse apiresponse
+        let data = JSON.parse(apiResponse.text);
+        handleAgentResponse(data);
+      } else if (apiResponse && apiResponse.error) {
+        addMessage("Error: " + apiResponse.error, 'system');
       } else {
-        // Fallback without screenshot if capture fails
-        chrome.runtime.sendMessage({
-          action: "chatWithGemini",
-          prompt: text,
-          image: null
-        }, (apiResponse) => {
-          if (apiResponse && apiResponse.text) {
-            addMessage(apiResponse.text, 'system');
-          } else {
-            addMessage("Sorry, something went wrong.", 'system');
-          }
-        });
+        addMessage("Sorry, something went wrong.", 'system');
       }
     });
   }
 
+  function handleAgentResponse(data) {
+    console.log("Content: Handling agent response:", data);
+
+    // Handle array response from Gemini
+    if (Array.isArray(data)) {
+      data = data[0];
+    }
+
+    currentStepData = data;
+    saveState();
+
+    if (data.type === 'instruction' || data.type === 'verification_failure') {
+      addMessage(data.message, 'system');
+      addVerifyButton();
+    } else if (data.type === 'verification_success') {
+      addMessage(data.message, 'system');
+      if (data.step_number) {
+        addVerifyButton();
+      }
+    } else if (data.type === 'completion') {
+      addMessage(data.message, 'system');
+    } else {
+      console.warn("Content: Unknown response type:", data.type);
+      addMessage(data.message || JSON.stringify(data), 'system');
+    }
+  }
+
+  function addVerifyButton() {
+    const messagesDiv = shadowRoot.getElementById('dle-messages');
+    const btn = document.createElement('button');
+    btn.textContent = "Verify & Next Step";
+    btn.className = "dle-verify-btn";
+    btn.style.marginTop = "10px";
+    btn.style.padding = "8px 16px";
+    btn.style.backgroundColor = "#4CAF50";
+    btn.style.color = "white";
+    btn.style.border = "none";
+    btn.style.borderRadius = "4px";
+    btn.style.cursor = "pointer";
+    btn.style.display = "block";
+
+    btn.onclick = () => {
+      btn.disabled = true;
+      btn.textContent = "Checking...";
+      handleVerify();
+    };
+
+    messagesDiv.appendChild(btn);
+    messagesDiv.scrollTop = messagesDiv.scrollHeight;
+
+  }
+
   function addMessage(text, sender) {
+    // Add to state
+    messages.push({ text: text, sender: sender });
+    saveState();
+
     const messagesDiv = shadowRoot.getElementById('dle-messages');
     const msgDiv = document.createElement('div');
     msgDiv.className = `dle-message ${sender}`;

@@ -18,18 +18,26 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     getMetrics().then((data) => sendResponse({ data: data }));
     return true;
   } else if (request.action === "chatWithGemini") {
-    chatWithGemini(request.prompt, request.image)
-      .then(response => sendResponse({ text: response.text }))
-      .catch(error => sendResponse({ error: error.message }));
+    // Capture screenshot first, then send to server
+    chrome.tabs.captureVisibleTab(null, { format: "png" }, (dataUrl) => {
+      if (chrome.runtime.lastError) {
+        console.error("Background: Screenshot capture failed:", chrome.runtime.lastError.message);
+        // Proceed without image if capture fails
+        chatWithGemini(request.prompt, null, request.context)
+          .then(response => sendResponse({ text: JSON.stringify(response) }))
+          .catch(error => sendResponse({ error: error.message }));
+      } else {
+        console.log("Background: Screenshot captured for chat.");
+        chatWithGemini(request.prompt, dataUrl, request.context)
+          .then(response => sendResponse({ text: JSON.stringify(response) }))
+          .catch(error => sendResponse({ error: error.message }));
+      }
+    });
     return true;
   }
 });
 
-async function chatWithGemini(prompt, image) {
-  console.log("Background: Sending request to Gemini Server...");
-  console.log("Prompt:", prompt);
-  if (image) console.log("Image present, length:", image.length);
-
+async function chatWithGemini(prompt, image, context) {
   try {
     const response = await fetch('http://localhost:8000/chat', {
       method: 'POST',
@@ -38,7 +46,8 @@ async function chatWithGemini(prompt, image) {
       },
       body: JSON.stringify({
         prompt: prompt,
-        image: image
+        image: image,
+        context: context
       })
     });
 

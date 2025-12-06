@@ -5,7 +5,8 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 2147483647; /* Max z-index */
+  z-index: 2147483647;
+  /* Max z-index */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -14,10 +15,11 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: #003b5c; /* Navy Blue */
+  background-color: #003b5c;
+  /* Navy Blue */
   color: white;
   border: none;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   font-size: 24px;
   display: flex;
@@ -28,7 +30,8 @@
 
 #dle-fab:hover {
   transform: scale(1.1);
-  background-color: #6CACE4; /* Sky Blue */
+  background-color: #6CACE4;
+  /* Sky Blue */
 }
 
 /* Chat Window */
@@ -40,7 +43,7 @@
   height: 500px;
   background: white;
   border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -136,6 +139,7 @@
 
 .dle-message.system {
   background-color: white;
+  color: black;
   border: 1px solid #e0e0e0;
   align-self: flex-start;
   margin-right: auto;
