@@ -1,0 +1,52 @@
+{
+  "manifest_version": 3,
+  "name": "Digital Literacy Assistant",
+  "version": "1.0",
+  "description": "Assists Manchester City Council residents with digital tasks.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "driver.js",
+        "content.js"
+      ],
+      "css": [
+        "driver.css",
+        "styles.css"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "driver.js",
+        "driver.css",
+        "styles.css"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "action": {
+    "default_title": "Digital Literacy Assistant"
+  },
+  "icons": {
+    "16": "help_16.png",
+    "48": "help_48.png",
+    "128": "help_128.png"
+  }
+}
