@@ -5,16 +5,18 @@ import StatCard from "@/components/dashboard/StatCard";
 import EventsTable from "@/components/dashboard/EventsTable";
 import EventsChart from "@/components/dashboard/EventsChart";
 import ApiDocs from "@/components/dashboard/ApiDocs";
+import AiStatusList from "@/components/dashboard/AiStatusList";
+import UserActionsList from "@/components/dashboard/UserActionsList";
 import { useBehaviorEvents } from "@/hooks/useBehaviorEvents";
 
 const Index = () => {
   const [showApiDocs, setShowApiDocs] = useState(false);
-  const { events, isLoading, isRefreshing, refresh, stats } = useBehaviorEvents();
+  const { events, isLoading, isRefreshing, refresh, stats, aiEvents, userActions } = useBehaviorEvents();
 
   return (
     <div className="min-h-screen bg-background p-6 md:p-8">
       <div className="max-w-7xl mx-auto">
-        <Header 
+        <Header
           onRefresh={refresh}
           isRefreshing={isRefreshing}
           showApiDocs={showApiDocs}
@@ -61,8 +63,20 @@ const Index = () => {
         </div>
 
         {/* Chart and Events */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
           <EventsChart events={events} />
+          <div className="flex flex-col gap-6">
+            <AiStatusList events={aiEvents} />
+          </div>
+        </div>
+
+        {/* Detailed User Actions */}
+        <div className="mb-6">
+          <UserActionsList events={userActions} />
+        </div>
+
+        {/* Legacy Table (Optional - kept for detailed debugging if needed) */}
+        <div className="hidden">
           <EventsTable events={events} isLoading={isLoading} />
         </div>
       </div>

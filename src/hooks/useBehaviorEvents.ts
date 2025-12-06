@@ -23,7 +23,7 @@ export const useBehaviorEvents = () => {
 
   const fetchEvents = async (showRefreshing = false) => {
     if (showRefreshing) setIsRefreshing(true);
-    
+
     try {
       const { data, error } = await supabase
         .from('behavior_events')
@@ -89,5 +89,8 @@ export const useBehaviorEvents = () => {
     isRefreshing,
     refresh,
     stats,
+    aiEvents: events.filter(e => e.event_type === 'ai_state_change'),
+    userActions: events.filter(e => e.event_type !== 'ai_state_change'),
+
   };
 };
