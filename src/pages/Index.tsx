@@ -39,18 +39,11 @@ const Index = () => {
             delay={0}
           />
           <StatCard
-            title="Unique Sessions"
-            value={stats.uniqueSessions.toLocaleString()}
-            subtitle="Active users"
-            icon={Users}
-            delay={50}
-          />
-          <StatCard
             title="Click Events"
             value={stats.eventTypes['click'] || 0}
             subtitle={`${Math.round(((stats.eventTypes['click'] || 0) / Math.max(stats.totalEvents, 1)) * 100)}% of total`}
             icon={MousePointerClick}
-            delay={100}
+            delay={50}
           />
           <StatCard
             title="Last Hour"
@@ -58,32 +51,14 @@ const Index = () => {
             subtitle="Recent activity"
             icon={Clock}
             trend={stats.lastHourEvents > 0 ? { value: 12, isPositive: true } : undefined}
-            delay={150}
+            delay={100}
           />
-          <StatCard
-            title="Prompted Clicks"
-            value={clickStats.prompted}
-            subtitle="Guided by AI"
-            icon={MousePointerClick}
-            className="bg-green-500/10"
-            delay={200}
-          />
-          <StatCard
-            title="Unprompted Clicks"
-            value={clickStats.unprompted}
-            subtitle="Organic User Actions"
-            icon={MousePointerClick}
-            className="bg-orange-500/10"
-            delay={250}
-          />
+
         </div>
 
         {/* Chart and Events */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+        <div className="mb-6">
           <EventsChart events={events} />
-          <div className="flex flex-col gap-6">
-            <AiStatusList events={aiEvents} />
-          </div>
         </div>
 
         {/* Detailed User Actions */}
