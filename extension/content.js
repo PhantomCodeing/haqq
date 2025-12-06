@@ -84,6 +84,17 @@
         // Restore Verify Button if needed
         if (currentStepData && (currentStepData.type === 'instruction' || currentStepData.type === 'verification_failure')) {
           addVerifyButton();
+
+          // Auto-verify on load if we have an active instruction
+          // We check if the chat is visible to avoid annoying the user if they closed it
+          if (isChatVisible) {
+            console.log("Content: Auto-verifying on page load...");
+            // Add a small delay to ensure page is settled
+            setTimeout(() => {
+              handleVerify();
+            }, 300);
+          }
+
         } else if (currentStepData && currentStepData.type === 'verification_success' && currentStepData.step_number) {
           addVerifyButton();
         }
@@ -294,8 +305,11 @@
       data: { category: "chat", query: text }
     });
 
+    // Capture HTML content (truncated to avoid huge payloads)
+    const htmlContent = document.body.outerHTML.substring(0, 50000);
+
     // Send to background (which will capture screenshot)
-    sendToGemini(text, null, null);
+    sendToGemini(text, null, null, htmlContent);
   }
 
   function handleVerify() {
@@ -303,19 +317,30 @@
 
     addMessage("Verifying...", 'system');
 
+    // Disable verify button if it exists
+    const verifyBtn = shadowRoot.querySelector('.dle-verify-btn');
+    if (verifyBtn) {
+      verifyBtn.disabled = true;
+      verifyBtn.textContent = "Checking...";
+    }
+
     // Context is the current step we are verifying
     const context = JSON.stringify(currentStepData);
 
+    // Capture HTML content
+    const htmlContent = document.body.outerHTML.substring(0, 50000);
+
     // Send to background (which will capture screenshot)
-    sendToGemini("Verify this step", null, context);
+    sendToGemini("Verify this step", null, context, htmlContent);
   }
 
-  function sendToGemini(prompt, image, context) {
+  function sendToGemini(prompt, image, context, html) {
     chrome.runtime.sendMessage({
       action: "chatWithGemini",
       prompt: prompt,
       image: image,
-      context: context
+      context: context,
+      html: html
     }, (apiResponse) => {
       console.log("api response", apiResponse);
       if (apiResponse && apiResponse.text) {
@@ -342,6 +367,10 @@
     saveState();
 
     if (data.type === 'instruction' || data.type === 'verification_failure') {
+      // Remove existing verify button if present to avoid duplicates/confusion
+      const existingBtn = shadowRoot.querySelector('.dle-verify-btn');
+      if (existingBtn) existingBtn.remove();
+
       addMessage(data.message, 'system');
 
       // Highlight element if provided
@@ -375,7 +404,17 @@
       }
 
       addVerifyButton();
+
+      // Trigger Driver.js if selector is present
+      if (data.element_selector) {
+        startDriverTour(data.element_selector, data.message);
+      }
+
     } else if (data.type === 'verification_success') {
+      // Remove existing verify button
+      const existingBtn = shadowRoot.querySelector('.dle-verify-btn');
+      if (existingBtn) existingBtn.remove();
+
       addMessage(data.message, 'system');
       if (data.step_number) {
         addVerifyButton();
@@ -447,50 +486,61 @@
     });
   }
 
-  function startDriverTour() {
+  function waitForElement(selector, timeout = 5000) {
+    return new Promise((resolve) => {
+      if (document.querySelector(selector)) {
+        return resolve(document.querySelector(selector));
+      }
+
+      const observer = new MutationObserver((mutations) => {
+        if (document.querySelector(selector)) {
+          resolve(document.querySelector(selector));
+          observer.disconnect();
+        }
+      });
+
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true
+      });
+
+      setTimeout(() => {
+        observer.disconnect();
+        resolve(null);
+      }, timeout);
+    });
+  }
+
+  function startDriverTour(selector, message) {
     // Ensure driver is available
     if (!window.driver || !window.driver.js || !window.driver.js.driver) {
       console.error("Driver.js not loaded");
-      addMessage("Error: Driver.js not loaded", 'system');
       return;
     }
 
-    const driver = window.driver.js.driver;
-    const driverObj = driver({
-      showProgress: true,
-      steps: [
-        {
-          element: 'h1',
-          popover: {
-            title: 'Page Title',
-            description: 'This is the main title of the page. It tells you what this section is about.'
-          }
-        },
-        {
-          element: 'a',
-          popover: {
-            title: 'Navigation Links',
-            description: 'These links help you move to other pages. Click them to explore more.'
-          }
-        },
-        {
-          element: 'input',
-          popover: {
-            title: 'Input Fields',
-            description: 'You can type information here, like search terms or your details.'
-          }
-        },
-        {
-          element: 'button',
-          popover: {
-            title: 'Action Buttons',
-            description: 'Click these buttons to submit forms or perform actions.'
-          }
-        }
-      ]
-    });
+    // Wait for element to exist before driving
+    waitForElement(selector).then((element) => {
+      if (!element) {
+        console.warn("Driver.js: Element not found:", selector);
+        return;
+      }
 
-    driverObj.drive();
+      const driver = window.driver.js.driver;
+      const driverObj = driver({
+        showProgress: false,
+        steps: [
+          {
+            element: selector,
+            popover: {
+              title: 'Step Guide',
+              description: message
+            }
+          }
+        ]
+      });
+
+      driverObj.drive();
+    });
   }
 
   // 4. Click Tracking
