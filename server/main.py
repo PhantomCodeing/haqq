@@ -1,4 +1,7 @@
 import os
+from dotenv import load_dotenv
+
+load_dotenv() # Load environment variables from .env file
 import uvicorn
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
@@ -37,11 +40,13 @@ Rules:
 3. If verified, move to the next step.
 4. If not verified, explain what is wrong and repeat the current step.
 5. If it's a new request, start at Step 1.
+6. **CRITICAL**: For every 'instruction', you MUST provide the `element_selector` for the element the user needs to click or interact with. If you cannot be precise, guess the best likely selector (e.g. 'button.compose', 'a[href="/login"]').
 
 Output Schema:
 {
   "type": "instruction" | "verification_success" | "verification_failure" | "completion",
   "message": "The text to display to the user",
+  "element_selector": "CSS selector to interact with (REQUIRED for instructions)",
   "step_number": integer,
   "is_last_step": boolean
 }
@@ -97,9 +102,76 @@ async def chat(request: ChatRequest):
     except Exception as e:
         print(f"Error processing request: {e}")
         raise HTTPException(status_code=500, detail=str(e))
+
+# SQLite Configuration
+import sqlite3
+import json
+
+DB_NAME = "stats.db"
+
+def init_db():
+    conn = sqlite3.connect(DB_NAME)
+    c = conn.cursor()
+    # Create click_stats table
+    c.execute('''
+        CREATE TABLE IF NOT EXISTS click_stats (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            event_type TEXT NOT NULL,
+            element_selector TEXT,
+            url TEXT,
+            session_id TEXT,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        )
+    ''')
+    conn.commit()
+    conn.close()
+
+init_db()
+
+class StatsRequest(BaseModel):
+    event_type: str
+    element_selector: str | None = None
+    url: str | None = None
+    session_id: str | None = None
+
+@app.post("/stats")
+async def record_stats(request: StatsRequest):
+    try:
+        data = request.dict()
+        print(f"Server: Saving stats: {data}")
         
+        conn = sqlite3.connect(DB_NAME)
+        c = conn.cursor()
+        c.execute('''
+            INSERT INTO click_stats (event_type, element_selector, url, session_id)
+            VALUES (?, ?, ?, ?)
+        ''', (data['event_type'], data['element_selector'], data['url'], data.get('session_id')))
+        conn.commit()
+        conn.close()
+        
+        print(f"Stats saved to SQLite.")
+        return {"status": "success"}
     except Exception as e:
-        print(f"Error processing request: {e}")
+        print(f"Error saving stats: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/stats")
+async def get_stats():
+    try:
+        conn = sqlite3.connect(DB_NAME)
+        conn.row_factory = sqlite3.Row
+        c = conn.cursor()
+        
+        # Get all stats for now (simple)
+        c.execute('SELECT * FROM click_stats ORDER BY created_at DESC')
+        rows = c.fetchall()
+        
+        stats_list = [dict(row) for row in rows]
+        conn.close()
+        
+        return {"data": stats_list}
+    except Exception as e:
+        print(f"Error getting stats: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 if __name__ == "__main__":

@@ -142,8 +142,24 @@
     const closeBtn = document.createElement('button');
     closeBtn.id = 'dle-close';
     closeBtn.textContent = '×';
+    closeBtn.title = 'Close';
     closeBtn.onclick = toggleChat;
-    header.appendChild(closeBtn);
+
+    const clearBtn = document.createElement('button');
+    clearBtn.id = 'dle-clear';
+    clearBtn.textContent = '🗑️';
+    clearBtn.title = 'Clear Chat History';
+    clearBtn.style.marginRight = '8px';
+    clearBtn.style.background = 'none';
+    clearBtn.style.border = 'none';
+    clearBtn.style.cursor = 'pointer';
+    clearBtn.onclick = clearChat;
+
+    const controlsDiv = document.createElement('div');
+    controlsDiv.appendChild(clearBtn);
+    controlsDiv.appendChild(closeBtn);
+
+    header.appendChild(controlsDiv);
     chatWindow.appendChild(header);
 
     // Tabs
@@ -223,6 +239,28 @@
       chatWindow.classList.add('hidden');
     }
     saveState();
+  }
+
+  function clearChat() {
+    console.log("Clear chat requested");
+    // Removed confirm for smoother UX/Debugging
+    messages = [];
+    currentStepData = null;
+    saveState();
+
+    // Clear UI
+    const messagesDiv = shadowRoot.getElementById('dle-messages');
+    if (messagesDiv) {
+      messagesDiv.innerHTML = `
+        <div class="dle-message system">
+          Chat cleared. How can I help you?
+        </div>
+      `;
+    }
+
+    // Remove verify button if present
+    const verifyBtns = shadowRoot.querySelectorAll('.dle-verify-btn');
+    verifyBtns.forEach(btn => btn.remove());
   }
 
   function switchTab(e, root) {
@@ -305,6 +343,37 @@
 
     if (data.type === 'instruction' || data.type === 'verification_failure') {
       addMessage(data.message, 'system');
+
+      // Highlight element if provided
+      if (data.element_selector) {
+        console.log("Highlighting selector:", data.element_selector);
+        try {
+          // Ensure driver is loaded
+          if (window.driver && window.driver.js && window.driver.js.driver) {
+            const driver = window.driver.js.driver;
+            const driverObj = driver({
+              showProgress: false,
+              steps: [
+                {
+                  element: data.element_selector,
+                  popover: {
+                    title: 'Click Here',
+                    description: data.message,
+                    side: "bottom",
+                    align: 'start'
+                  }
+                }
+              ]
+            });
+            driverObj.drive();
+          } else {
+            console.warn("Driver.js not found on window");
+          }
+        } catch (e) {
+          console.error("Error highlighting element:", e);
+        }
+      }
+
       addVerifyButton();
     } else if (data.type === 'verification_success') {
       addMessage(data.message, 'system');
@@ -423,6 +492,61 @@
 
     driverObj.drive();
   }
+
+  // 4. Click Tracking
+  document.addEventListener('click', (e) => {
+    // Ignore clicks inside our own extension UI
+    const container = document.getElementById(CONTAINER_ID);
+    if (container && container.contains(e.target)) return;
+    if (e.target.id === CONTAINER_ID) return;
+
+    // Check if the click is on the "Active" driver element
+    // Driver.js adds 'driver-active-element' to the highlighted element
+    const activeElement = document.querySelector('.driver-active-element');
+    const driverPopover = document.querySelector('.driver-popover');
+
+    let isPrompted = false;
+
+    // Debug logging
+    // console.log("Click Event Target:", e.target);
+    // console.log("Active Driver Element:", activeElement);
+
+    if (activeElement) {
+      if (activeElement === e.target || activeElement.contains(e.target)) {
+        isPrompted = true;
+      }
+    }
+
+    // Fallback: Check if we clicked the driver popover or its buttons (Next/Prev)
+    // Actually, clicks on the popover itself shouldn't count as "interacting with the page element"
+    // but maybe the user considers following the "Next" button as a prompted action?
+    // For now, let's stick to the highlighted element.
+
+    // IMPROVEMENT: Sometimes driver.js puts an overlay. 
+    // If we can't detect the element, maybe we check if the driver is active at all?
+    // But we want to distinguish "clicking the highlighted button" vs "clicking elsewhere".
+
+    // Helper to get a selector
+    const getSelector = (el) => {
+      if (el.id) return '#' + el.id;
+      if (el.className && typeof el.className === 'string') return '.' + el.className.split(' ').join('.');
+      return el.tagName.toLowerCase();
+    };
+
+    const stats = {
+      event_type: isPrompted ? 'prompted' : 'unprompted',
+      element_selector: getSelector(e.target),
+      url: window.location.href
+    };
+
+    console.log("Recording click:", stats);
+
+    chrome.runtime.sendMessage({
+      action: "saveStats",
+      data: stats
+    });
+
+  }, true); // Capture phase to ensure we get it
 
   // Initialize
   init();

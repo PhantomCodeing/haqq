@@ -11,7 +11,7 @@ import { useBehaviorEvents } from "@/hooks/useBehaviorEvents";
 
 const Index = () => {
   const [showApiDocs, setShowApiDocs] = useState(false);
-  const { events, isLoading, isRefreshing, refresh, stats, aiEvents, userActions } = useBehaviorEvents();
+  const { events, isLoading, isRefreshing, refresh, stats, aiEvents, userActions, clickStats } = useBehaviorEvents();
 
   return (
     <div className="min-h-screen bg-background p-6 md:p-8">
@@ -59,6 +59,22 @@ const Index = () => {
             icon={Clock}
             trend={stats.lastHourEvents > 0 ? { value: 12, isPositive: true } : undefined}
             delay={150}
+          />
+          <StatCard
+            title="Prompted Clicks"
+            value={clickStats.prompted}
+            subtitle="Guided by AI"
+            icon={MousePointerClick}
+            className="bg-green-500/10"
+            delay={200}
+          />
+          <StatCard
+            title="Unprompted Clicks"
+            value={clickStats.unprompted}
+            subtitle="Organic User Actions"
+            icon={MousePointerClick}
+            className="bg-orange-500/10"
+            delay={250}
           />
         </div>
 

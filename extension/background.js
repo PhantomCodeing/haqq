@@ -34,6 +34,9 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
       }
     });
     return true;
+  } else if (request.action === "saveStats") {
+    saveStats(request.data).then(res => sendResponse(res));
+    return true;
   }
 });
 
@@ -77,4 +80,21 @@ async function saveMetric(metric) {
 async function getMetrics() {
   const data = await chrome.storage.local.get("metrics");
   return data.metrics || [];
+}
+
+async function saveStats(stats) {
+  try {
+    const response = await fetch('http://localhost:8000/stats', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(stats)
+    });
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error("Background: Error saving stats:", error);
+    return { error: error.message };
+  }
 }
