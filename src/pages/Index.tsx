@@ -53,7 +53,26 @@ const Index = () => {
             trend={stats.lastHourEvents > 0 ? { value: 12, isPositive: true } : undefined}
             delay={100}
           />
+        </div>
 
+        {/* Click Breakdown Row */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+          <StatCard
+            title="Prompted Clicks"
+            value={clickStats.prompted}
+            subtitle="Guided by AI"
+            icon={MousePointerClick}
+            className="bg-green-500/10"
+            delay={200}
+          />
+          <StatCard
+            title="Unprompted Clicks"
+            value={clickStats.unprompted}
+            subtitle="Organic User Actions"
+            icon={MousePointerClick}
+            className="bg-orange-500/10"
+            delay={250}
+          />
         </div>
 
         {/* Chart and Events */}
