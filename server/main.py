@@ -26,17 +26,49 @@ if not api_key:
     print("WARNING: GEMINI_API_KEY environment variable not set.")
 
 genai.configure(api_key=api_key)
-model = genai.GenerativeModel('gemini-1.5-flash')
+
+SYSTEM_PROMPT = """
+You are a helpful digital literacy assistant. Your goal is to guide the user through web tasks step-by-step.
+You must output JSON.
+
+Rules:
+1. Break complex tasks into small, single-action steps.
+2. If the user sends an image, VERIFY if the *previous* step was completed correctly.
+3. If verified, move to the next step.
+4. If not verified, explain what is wrong and repeat the current step.
+5. If it's a new request, start at Step 1.
+
+Output Schema:
+{
+  "type": "instruction" | "verification_success" | "verification_failure" | "completion",
+  "message": "The text to display to the user",
+  "step_number": integer,
+  "is_last_step": boolean
+}
+"""
+
+model = genai.GenerativeModel(
+    'gemini-2.5-flash',
+    system_instruction=SYSTEM_PROMPT,
+    generation_config={"response_mime_type": "application/json"}
+)
 
 class ChatRequest(BaseModel):
     prompt: str
     image: str | None = None # Base64 encoded image
+    context: str | None = None # Previous step info or history
 
 @app.post("/chat")
 async def chat(request: ChatRequest):
     print(f"Server: Received chat request. Prompt: {request.prompt}")
     try:
-        content = [request.prompt]
+        # Construct the prompt for the model
+        # We include context if available to help with verification
+        full_prompt = f"User Request: {request.prompt}\n"
+        if request.context:
+            full_prompt += f"Context/Previous Step: {request.context}\n"
+            
+        content = [full_prompt]
         
         if request.image:
             print("Server: Image data received.")
@@ -54,8 +86,17 @@ async def chat(request: ChatRequest):
             
         print("Server: Sending to Gemini...")
         response = model.generate_content(content)
-        print(f"Server: Gemini response received: {response.text[:100]}...")
-        return {"text": response.text}
+        print(f"Server: Gemini response received: {response.text}")
+        
+        # Return the raw JSON string from Gemini (it's already JSON)
+        # We parse it to ensure it's valid JSON before sending, or just send as is?
+        # Let's return it as a JSON object.
+        import json
+        return json.loads(response.text)
+        
+    except Exception as e:
+        print(f"Error processing request: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
         
     except Exception as e:
         print(f"Error processing request: {e}")
