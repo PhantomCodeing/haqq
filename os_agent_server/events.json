@@ -2330,5 +2330,731 @@
     "metadata": {
       "category": "coding"
     }
+  },
+  {
+    "id": "os-213",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Behavior Analytics Dashboard - Google Chrome",
+    "url": null,
+    "created_at": "2025-12-07T13:51:06.213627",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-214",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Windows PowerShell",
+    "url": null,
+    "created_at": "2025-12-07T13:51:06.334668",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-215",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Task Switching",
+    "url": null,
+    "created_at": "2025-12-07T13:51:08.588206",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-216",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Behavior Analytics Dashboard - Google Chrome",
+    "url": null,
+    "created_at": "2025-12-07T13:51:09.936092",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-217",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Task Switching",
+    "url": null,
+    "created_at": "2025-12-07T13:51:18.009572",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-218",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Windows PowerShell",
+    "url": null,
+    "created_at": "2025-12-07T13:51:18.255510",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-219",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Task Switching",
+    "url": null,
+    "created_at": "2025-12-07T13:51:23.210986",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-220",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using access_project - Antigravity - Header.tsx",
+    "url": null,
+    "created_at": "2025-12-07T13:51:24.566791",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-221",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Task Switching",
+    "url": null,
+    "created_at": "2025-12-07T13:51:27.713890",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-222",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Behavior Analytics Dashboard - Google Chrome",
+    "url": null,
+    "created_at": "2025-12-07T13:55:05.684744",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-223",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using access_project - Antigravity - Header.tsx",
+    "url": null,
+    "created_at": "2025-12-07T13:55:05.826322",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-224",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Behavior Analytics Dashboard - Google Chrome",
+    "url": null,
+    "created_at": "2025-12-07T13:55:14.050881",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-225",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Search",
+    "url": null,
+    "created_at": "2025-12-07T13:55:21.640339",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-226",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Behavior Analytics Dashboard - Google Chrome",
+    "url": null,
+    "created_at": "2025-12-07T13:55:23.038502",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-227",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Search",
+    "url": null,
+    "created_at": "2025-12-07T13:55:24.315924",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-228",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Opening - Word",
+    "url": null,
+    "created_at": "2025-12-07T13:55:30.759185",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-229",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Word",
+    "url": null,
+    "created_at": "2025-12-07T13:55:33.148524",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-230",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Behavior Analytics Dashboard - Google Chrome",
+    "url": null,
+    "created_at": "2025-12-07T13:55:34.543901",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-231",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Word",
+    "url": null,
+    "created_at": "2025-12-07T13:55:41.578947",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-232",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Behavior Analytics Dashboard - Google Chrome",
+    "url": null,
+    "created_at": "2025-12-07T13:55:42.932185",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-233",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using New tab - Google Chrome",
+    "url": null,
+    "created_at": "2025-12-07T13:55:50.562272",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-234",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using ssda - Google Search - Google Chrome",
+    "url": null,
+    "created_at": "2025-12-07T13:56:07.563722",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "chat-235",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T13:56:13.619389",
+    "metadata": {
+      "query": "how to go on youtube"
+    }
+  },
+  {
+    "id": "os-236",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Task Switching",
+    "url": null,
+    "created_at": "2025-12-07T13:56:36.634786",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-237",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Windows PowerShell",
+    "url": null,
+    "created_at": "2025-12-07T13:56:38.688031",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-238",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing open applications and switching between them",
+    "url": null,
+    "created_at": "2025-12-07T14:01:49.289621",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-239",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing system tasks with the command line",
+    "url": null,
+    "created_at": "2025-12-07T14:01:54.079715",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-240",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing open applications and windows",
+    "url": null,
+    "created_at": "2025-12-07T14:01:55.212389",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-241",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Viewing Google search results for 'ssda'.",
+    "url": null,
+    "created_at": "2025-12-07T14:02:02.730185",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-242",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "analyzing data in a browser",
+    "url": null,
+    "created_at": "2025-12-07T14:02:03.671533",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-243",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching on Google",
+    "url": null,
+    "created_at": "2025-12-07T14:02:11.112221",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-244",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching on Google",
+    "url": null,
+    "created_at": "2025-12-07T14:02:16.859602",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "chat-245",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T14:02:34.464060",
+    "metadata": {
+      "query": "how to check my taxes based on income?"
+    }
+  },
+  {
+    "id": "os-246",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "The user is coding CSS in a project.",
+    "url": null,
+    "created_at": "2025-12-07T14:04:48.339726",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-247",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing open applications and windows on computer",
+    "url": null,
+    "created_at": "2025-12-07T14:04:49.536259",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-248",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Google Chrome to access the Google search engine",
+    "url": null,
+    "created_at": "2025-12-07T14:04:51.335963",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "chat-249",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T14:04:52.872649",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-250",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "The user is editing a stylesheet.",
+    "url": null,
+    "created_at": "2025-12-07T14:04:58.945837",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-251",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Coding a website's style sheet",
+    "url": null,
+    "created_at": "2025-12-07T14:05:03.979450",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-252",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Editing CSS for a web project",
+    "url": null,
+    "created_at": "2025-12-07T14:05:07.811141",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-253",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Editing a CSS file for a project",
+    "url": null,
+    "created_at": "2025-12-07T14:05:11.500768",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-254",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Editing CSS for a web project",
+    "url": null,
+    "created_at": "2025-12-07T14:05:16.904607",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-255",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing open applications and switching between them",
+    "url": null,
+    "created_at": "2025-12-07T14:05:19.929713",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-256",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Browsing the Google search page",
+    "url": null,
+    "created_at": "2025-12-07T14:05:20.850113",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "chat-257",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T14:05:23.606002",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-258",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Coding CSS styles for a project",
+    "url": null,
+    "created_at": "2025-12-07T14:05:48.827187",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "chat-259",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T14:06:08.900178",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-260",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching on Google Chrome",
+    "url": null,
+    "created_at": "2025-12-07T14:06:48.748191",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "chat-261",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T14:07:50.050043",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "chat-262",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T14:08:34.223565",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "chat-263",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T14:09:44.880088",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "chat-264",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T14:12:09.801550",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-265",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "coding on a JavaScript file",
+    "url": null,
+    "created_at": "2025-12-07T14:12:48.274003",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-266",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "The user is coding a JavaScript file for a project.",
+    "url": null,
+    "created_at": "2025-12-07T14:12:54.989189",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-267",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "The user is coding or developing software.",
+    "url": null,
+    "created_at": "2025-12-07T14:12:56.173847",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-268",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching on Google Chrome",
+    "url": null,
+    "created_at": "2025-12-07T14:13:01.653917",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "chat-269",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T14:13:01.880698",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-270",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "They are coding JavaScript.",
+    "url": null,
+    "created_at": "2025-12-07T14:13:07.413530",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-271",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Coding JavaScript in 'access_project'",
+    "url": null,
+    "created_at": "2025-12-07T14:13:08.211502",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-272",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing open applications or windows",
+    "url": null,
+    "created_at": "2025-12-07T14:13:14.062714",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-273",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Browsing the Google search page",
+    "url": null,
+    "created_at": "2025-12-07T14:13:18.249100",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "chat-274",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T14:13:19.113262",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-275",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Switching between different open applications or windows.",
+    "url": null,
+    "created_at": "2025-12-07T14:13:25.466094",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-276",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Browsing the internet on Google",
+    "url": null,
+    "created_at": "2025-12-07T14:13:27.052075",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-277",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing open applications and switching between them.",
+    "url": null,
+    "created_at": "2025-12-07T14:13:34.666685",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-278",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "The user is coding in an IDE.",
+    "url": null,
+    "created_at": "2025-12-07T14:13:35.551030",
+    "metadata": {
+      "category": "coding"
+    }
   }
 ]

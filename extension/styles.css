@@ -104,6 +104,7 @@
   flex: 1;
   overflow: hidden;
   position: relative;
+  width: 100%;
 }
 
 .dle-view {
@@ -181,8 +182,9 @@
 
 /* Progress View */
 #dle-progress-view {
-  padding: 20px;
+  /* padding: 20px; */
   overflow-y: auto;
+  width: 350px;
 }
 
 .dle-stats {
@@ -218,6 +220,11 @@
   color: #003b5c;
 }
 
+#dle-history-list {
+  overflow-y: auto;
+  width: 100%;
+}
+
 #dle-history-list h4 {
   margin-top: 0;
   color: #111;
@@ -229,6 +236,7 @@
 }
 
 .dle-history-item {
+  color: black;
   padding: 10px;
   border-bottom: 1px solid #eee;
   display: flex;
