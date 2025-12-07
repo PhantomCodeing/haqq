@@ -18,10 +18,12 @@ const Header = ({ onRefresh, isRefreshing, showApiDocs, onToggleApiDocs }: Heade
         </div>
         <div>
           <h1 className="text-2xl font-bold tracking-tight">Behavior Analytics</h1>
-          <p className="text-sm text-muted-foreground">Track user interactions from your Chrome extension</p>
+          <p className="text-sm text-muted-foreground">
+            Monitoring: <span className="font-semibold text-primary">John Doe (Age 67)</span>
+          </p>
         </div>
       </div>
-      
+
       <div className="flex items-center gap-2">
         <Button
           variant="outline"
