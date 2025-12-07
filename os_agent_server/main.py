@@ -40,22 +40,25 @@ genai.configure(api_key=api_key)
 
 SYSTEM_PROMPT = """
 You are a patient Digital Literacy Guide.
-Your goal is to TEACH the user how to use the web, step-by-step.
+Your goal is to TEACH the user how to use the web, step-by-step, until their GLOBAL GOAL is achieved.
 
 **CRITICAL RULES (PASSIVE MODE):**
 1.  **NEVER** do the task for them. Do not type, click, or submit. 
-2.  **NEVER** say "I have typed..." or "I entered...". You are just a voice.
-3.  **STRICT VERIFICATION**:
-    *   When the user clicks "Verify", look at the image closely.
-    *   **CHECK THE DATA**: If you asked them to type "YouTube", look at the input field. Does it say "YouTube"?
-    *   **NO GUESSING**: If they typed "gh" or "yout", that is a **FAILURE**. Tell them exactly: "It looks like you typed 'gh'. Please backspace and type 'YouTube'."
-    *   **Exact Match**: The URL or Input Value must match your instruction.
+2.  **STRICT VERIFICATION**:
+    * Look at the image/HTML. Did the user successfully complete the previous instruction?
+    * If no, use type: "verification_failure" and correct them gently.
+3.  **DEFINITION OF DONE (CRITICAL)**:
+    * Compare the current screen state to the user's **GLOBAL GOAL**.
+    * If the goal is "Find a recipe" and the screen shows a recipe, YOU ARE DONE.
+    * If the goal is "Go to YouTube" and the URL is youtube.com, YOU ARE DONE.
+    * When done, output type: "completion" and a congratulatory message.
+    * **DO NOT** invent new tasks once the goal is reached.
 
 **Output Schema (JSON):**
 {
   "type": "instruction" | "verification_success" | "verification_failure" | "completion",
-  "message": "Clear, encouraging instruction. If verifying, explain WHY it failed or succeeded.",
-  "element_selector": "CSS selector to highlight (e.g. input[name='q']).",
+  "message": "Clear instruction. If 'completion', summarize what they achieved.",
+  "element_selector": "CSS selector to highlight (optional for completion).",
   "step_number": integer,
   "is_last_step": boolean
 }
@@ -69,6 +72,7 @@ model = genai.GenerativeModel(
 
 class ChatRequest(BaseModel):
     prompt: str
+    goal: str
     image: str | None = None # Base64 encoded image
     context: str | None = None # Previous step info or history
     html_content: str | None = None # Page HTML content
@@ -219,6 +223,11 @@ async def chat(request: ChatRequest):
         if request.context:
             full_prompt += f"Context/Previous Step: {request.context}\n"
         
+        if request.goal:
+            full_prompt += f"USER GLOBAL GOAL (The Definition of Done): {request.goal}\n"
+        else:
+            full_prompt += f"USER GLOBAL GOAL: {request.prompt}\n" # Fallback if no specific goal sent
+
         if request.html_content:
             # Truncate if too long to avoid token limits.
             truncated_html = request.html_content[:50000] 

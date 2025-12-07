@@ -15,6 +15,7 @@
 
   let currentStepData = null; // Store current step info
   let messages = []; // Store chat history
+  let currentGoal = null; // Store the user's goal (first prompt)
 
 
 
@@ -76,7 +77,8 @@
     const state = {
       isChatVisible: isChatVisible,
       currentStepData: currentStepData,
-      messages: messages
+      messages: messages,
+      currentGoal: currentGoal
     };
     chrome.storage.local.set({ 'dle_state': state });
   }
@@ -88,6 +90,12 @@
         isChatVisible = state.isChatVisible || false;
         currentStepData = state.currentStepData || null;
         messages = state.messages || [];
+        currentGoal = state.currentGoal || null;
+
+        // Restore Goal UI if exists
+        if (currentGoal) {
+          updateGoalDisplay(currentGoal);
+        }
 
         // Restore visibility
         const chatWindow = shadowRoot.getElementById('dle-chat-window');
@@ -228,6 +236,18 @@
     contentArea.className = 'dle-content';
     chatWindow.appendChild(contentArea);
 
+    // Goal Display Area
+    const goalDisplay = document.createElement('div');
+    goalDisplay.id = 'dle-goal-display';
+    goalDisplay.style.display = 'none';
+    goalDisplay.style.padding = '8px 15px';
+    goalDisplay.style.fontSize = '12px';
+    goalDisplay.style.color = '#555';
+    goalDisplay.style.backgroundColor = '#f0f4f8';
+    goalDisplay.style.borderBottom = '1px solid #eee';
+    goalDisplay.innerHTML = '<strong>Goal:</strong> <span id="dle-goal-text"></span>';
+    contentArea.appendChild(goalDisplay);
+
     // Chat View
     const chatView = document.createElement('div');
     chatView.id = 'dle-chat-view';
@@ -332,7 +352,12 @@
     // Removed confirm for smoother UX/Debugging
     messages = [];
     currentStepData = null;
+    currentGoal = null;
     saveState();
+
+    // Clear Goal UI
+    const goalDisplay = shadowRoot.getElementById('dle-goal-display');
+    if (goalDisplay) goalDisplay.style.display = 'none';
 
     // Clear UI
     const messagesDiv = shadowRoot.getElementById('dle-messages');
@@ -371,6 +396,12 @@
     const text = input.value.trim();
     if (!text) return;
 
+    // Set Goal if not set
+    if (!currentGoal) {
+      currentGoal = text;
+      updateGoalDisplay(currentGoal);
+    }
+
     // Analytics: track time of last prompt
     lastChatInteraction = Date.now();
 
@@ -387,7 +418,7 @@
     const htmlContent = document.body.outerHTML.substring(0, 50000);
 
     // Send to background (which will capture screenshot)
-    sendToGemini(text, null, null, htmlContent);
+    sendToGemini(text, null, null, htmlContent, currentGoal);
   }
 
   function handleVerify() {
@@ -409,16 +440,17 @@
     const htmlContent = document.body.outerHTML.substring(0, 50000);
 
     // Send to background (which will capture screenshot)
-    sendToGemini("Verify this step", null, context, htmlContent);
+    sendToGemini("Verify this step", null, context, htmlContent, currentGoal);
   }
 
-  function sendToGemini(prompt, image, context, html) {
+  function sendToGemini(prompt, image, context, html, goal) {
     chrome.runtime.sendMessage({
       action: "chatWithGemini",
       prompt: prompt,
       image: image,
       context: context,
-      html: html
+      html: html,
+      goal: goal
     }, (apiResponse) => {
       console.log("api response", apiResponse);
       if (apiResponse && apiResponse.text) {
@@ -623,6 +655,17 @@
 
       driverObj.drive();
     });
+  }
+
+  function updateGoalDisplay(goalText) {
+    const goalDisplay = shadowRoot.getElementById('dle-goal-display');
+    const goalTextSpan = shadowRoot.getElementById('dle-goal-text');
+
+    if (goalDisplay && goalTextSpan) {
+      goalTextSpan.textContent = goalText;
+      goalDisplay.style.display = 'block';
+    }
+    saveState();
   }
 
   // 4. Click Tracking
