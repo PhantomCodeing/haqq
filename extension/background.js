@@ -42,7 +42,8 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 
 async function chatWithGemini(prompt, image, context, html) {
   try {
-    const response = await fetch('http://localhost:8000/chat', {
+    console.log("Background: Attempting to chat fetch:", 'http://127.0.0.1:8000/chat');
+    const response = await fetch('http://127.0.0.1:8000/chat', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -85,7 +86,8 @@ async function getMetrics() {
 
 async function saveStats(stats) {
   try {
-    const response = await fetch('http://localhost:8000/stats', {
+    console.log("Background: Attempting to save stats fetch:", 'http://127.0.0.1:8000/extension-events');
+    const response = await fetch('http://127.0.0.1:8000/extension-events', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

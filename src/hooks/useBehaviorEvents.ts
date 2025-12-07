@@ -36,6 +36,7 @@ export const useBehaviorEvents = () => {
 
       const response = await fetch('http://localhost:8000/stats');
       const data = await response.json();
+<<<<<<< HEAD
       const clickEvents = data.data || [];
 
       // Map format if needed, or just use as is for stats
@@ -50,6 +51,31 @@ export const useBehaviorEvents = () => {
       // Calculate split
       const prompted = clickEvents.filter((d: any) => d.event_type === 'prompted').length;
       const unprompted = clickEvents.filter((d: any) => d.event_type === 'unprompted').length;
+=======
+      const rawEvents = data.data || [];
+
+      // Map backend events to frontend schema
+      const mappedEvents: BehaviorEvent[] = rawEvents.map((e: any) => ({
+        id: e.id,
+        session_id: 'session-1', // Default for now
+        event_type: e.event_type,
+        event_name: e.event_name,
+        url: e.url,
+        page_title: e.page_title,
+        element_selector: null,
+        element_text: null,
+        metadata: e.metadata,
+        user_agent: null,
+        ip_address: null,
+        created_at: e.created_at
+      }));
+
+      setEvents(mappedEvents);
+
+      // Calculate split
+      const prompted = mappedEvents.filter((d) => d.event_type === 'prompted').length;
+      const unprompted = mappedEvents.filter((d) => d.event_type === 'unprompted').length;
+>>>>>>> de1dddd1fb4a004db8ab76196c6b164560ae5586
       setClickStats({ prompted, unprompted });
 
     } catch (error) {
@@ -92,6 +118,20 @@ export const useBehaviorEvents = () => {
     stats,
     aiEvents: events.filter(e => e.event_type === 'ai_state_change'),
     userActions: events.filter(e => e.event_type !== 'ai_state_change'),
+<<<<<<< HEAD
     clickStats
+=======
+    clickStats,
+    skillLevel: (() => {
+      const total = clickStats.prompted + clickStats.unprompted;
+      if (total === 0) return "No Data";
+      const ratio = clickStats.prompted / total;
+
+      if (ratio > 0.7) return "AI Reliant";
+      if (ratio > 0.4) return "AI Assisted";
+      if (ratio > 0.1) return "Mostly Independent";
+      return "Independent";
+    })()
+>>>>>>> de1dddd1fb4a004db8ab76196c6b164560ae5586
   };
 };

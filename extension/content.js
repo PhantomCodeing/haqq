@@ -11,6 +11,7 @@
   // 2. State Management
   let shadowRoot = null;
   let isChatVisible = false;
+  let lastChatInteraction = 0; // Analytics State
 
   let currentStepData = null; // Store current step info
   let messages = []; // Store chat history
@@ -21,8 +22,12 @@
    * 3. DOM Manipulation: Helper to create the UI safely.
    */
   function init() {
-    // Check if it already exists to avoid duplicates
-    if (document.getElementById(HOST_ID)) return;
+    // Check if it already exists and remove it (cleanup orphaned instances)
+    const existing = document.getElementById(HOST_ID);
+    if (existing) {
+      console.log("Digital Literacy Extension: Removing orphaned instance...");
+      existing.remove();
+    }
 
     console.log("Digital Literacy Extension: Initializing...");
 
@@ -31,6 +36,31 @@
     host.id = HOST_ID;
     document.body.appendChild(host);
     shadowRoot = host.attachShadow({ mode: 'open' });
+
+    // AGGRESSIVE BLOCKING: unique host-level listener to stop ALL propagation from inside
+    const stopPropagation = (e) => {
+      e.stopPropagation();
+      e.stopImmediatePropagation();
+    };
+    host.addEventListener('keydown', stopPropagation);
+    host.addEventListener('keyup', stopPropagation);
+    host.addEventListener('keypress', stopPropagation);
+    host.addEventListener('input', stopPropagation);
+
+    // NUCLEAR OPTION: Window Capture Phase Blocker
+    // This catches the event at the Window, BEFORE it goes down to Document/Body.
+    // If the target is our Host (meaning the user is typing inside Shadow DOM), destroy the event.
+    ['keydown', 'keyup', 'keypress', 'input'].forEach(evt => {
+      window.addEventListener(evt, (e) => {
+        // ANTIGRAVITY FIX: Use composedPath() to detect if event started inside our Shadow Host
+        const path = e.composedPath();
+        if (path.includes(host)) {
+          // If the event came from us, KILL IT immediately.
+          e.stopPropagation();
+          e.stopImmediatePropagation();
+        }
+      }, true); // true = Capture Phase
+    });
 
     // Inject Styles
     injectStyles();
@@ -84,6 +114,17 @@
         // Restore Verify Button if needed
         if (currentStepData && (currentStepData.type === 'instruction' || currentStepData.type === 'verification_failure')) {
           addVerifyButton();
+
+          // Auto-verify on load if we have an active instruction
+          // We check if the chat is visible to avoid annoying the user if they closed it
+          if (isChatVisible) {
+            console.log("Content: Auto-verifying on page load...");
+            // Add a small delay to ensure page is settled
+            setTimeout(() => {
+              handleVerify();
+            }, 300);
+          }
+
 
           // Auto-verify on load if we have an active instruction
           // We check if the chat is visible to avoid annoying the user if they closed it
@@ -234,8 +275,37 @@
     const input = chatView.querySelector('#dle-input');
 
     sendBtn.addEventListener('click', handleSendMessage);
-    input.addEventListener('keypress', (e) => {
-      if (e.key === 'Enter') handleSendMessage();
+
+    // FIX: More aggressive event trapping
+    const stopEvent = (e) => {
+      // 1. Stop it from bubbling up to the host and document
+      e.stopPropagation();
+      // 2. Stop other listeners on this same element (if any)
+      e.stopImmediatePropagation();
+    };
+
+    // Apply to ALL key event types to be safe
+    ['keydown', 'keyup', 'keypress', 'input'].forEach(eventType => {
+      input.addEventListener(eventType, (e) => {
+        // Allow Enter key to work for sending
+        if (e.key === 'Enter' && eventType === 'keypress') {
+          handleSendMessage();
+        }
+
+        // CRITICAL: Prevent the '/' key from triggering Quick Search on sites like DDG
+        if (e.key === '/') {
+          e.stopPropagation();
+        }
+
+        stopEvent(e);
+      });
+    });
+
+    // FOCUS TRAP: If user clicks anywhere in the chat view, focus the input
+    chatView.addEventListener('click', (e) => {
+      // Don't steal focus if they are selecting text or clicking a button
+      if (e.target.tagName === 'BUTTON' || window.getSelection().toString().length > 0) return;
+      input.focus();
     });
 
     return chatWindow;
@@ -246,6 +316,11 @@
     isChatVisible = !isChatVisible;
     if (isChatVisible) {
       chatWindow.classList.remove('hidden');
+      // Auto-focus input when opening
+      setTimeout(() => {
+        const input = shadowRoot.getElementById('dle-input');
+        if (input) input.focus();
+      }, 100);
     } else {
       chatWindow.classList.add('hidden');
     }
@@ -295,6 +370,9 @@
     const input = shadowRoot.getElementById('dle-input');
     const text = input.value.trim();
     if (!text) return;
+
+    // Analytics: track time of last prompt
+    lastChatInteraction = Date.now();
 
     addMessage(text, 'user');
     input.value = '';
@@ -471,6 +549,10 @@
         const metrics = response.data;
         shadowRoot.getElementById('dle-total-requests').textContent = metrics.length;
 
+        // Calculate Streak (Unique Days)
+        const uniqueDays = new Set(metrics.map(m => new Date(m.timestamp).toLocaleDateString()));
+        shadowRoot.getElementById('dle-streak').textContent = `${uniqueDays.size} days`;
+
         const list = shadowRoot.getElementById('dle-history-list');
         list.innerHTML = '<h4>Recent Activity</h4>';
         metrics.slice(-5).reverse().forEach(m => {
@@ -530,7 +612,7 @@
         showProgress: false,
         steps: [
           {
-            element: selector,
+            element: element,
             popover: {
               title: 'Step Guide',
               description: message
@@ -565,6 +647,12 @@
       if (activeElement === e.target || activeElement.contains(e.target)) {
         isPrompted = true;
       }
+    }
+
+    // NEW RULE: If user chatted recently (last 60s), assume they are following instructions
+    if (!isPrompted && (Date.now() - lastChatInteraction < 60000)) {
+      console.log("Analytics: Marking as prompted due to recent chat interaction.");
+      isPrompted = true;
     }
 
     // Fallback: Check if we clicked the driver popover or its buttons (Next/Prev)
