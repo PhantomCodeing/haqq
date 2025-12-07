@@ -9,7 +9,7 @@ from PIL import Image
 import io
 import base64
 from tracker import OSTracker
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 from datetime import datetime
 import psutil
 import signal
@@ -17,7 +17,7 @@ import sys
 import time
 
 # Load .env from root directory (parent of server/)
-load_dotenv(os.path.join(os.path.dirname(__file__), '..', '.env'))
+# load_dotenv(os.path.join(os.path.dirname(__file__), '..', '.env'))
 
 app = FastAPI()
 tracker = OSTracker()

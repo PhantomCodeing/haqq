@@ -36,22 +36,6 @@ export const useBehaviorEvents = () => {
 
       const response = await fetch('http://localhost:8000/stats');
       const data = await response.json();
-<<<<<<< HEAD
-      const clickEvents = data.data || [];
-
-      // Map format if needed, or just use as is for stats
-      // The dashboard uses 'events' for charts.
-      // 'click_stats' has {id, event_type, created_at, ...}
-      // 'behavior_events' had {id, event_type, created_at, ...}
-      // They are compatible enough for basic stats.
-
-      // Cast to any to avoid type strictness for now as we transition
-      setEvents(clickEvents as any[]);
-
-      // Calculate split
-      const prompted = clickEvents.filter((d: any) => d.event_type === 'prompted').length;
-      const unprompted = clickEvents.filter((d: any) => d.event_type === 'unprompted').length;
-=======
       const rawEvents = data.data || [];
 
       // Map backend events to frontend schema
@@ -75,7 +59,6 @@ export const useBehaviorEvents = () => {
       // Calculate split
       const prompted = mappedEvents.filter((d) => d.event_type === 'prompted').length;
       const unprompted = mappedEvents.filter((d) => d.event_type === 'unprompted').length;
->>>>>>> de1dddd1fb4a004db8ab76196c6b164560ae5586
       setClickStats({ prompted, unprompted });
 
     } catch (error) {
@@ -118,9 +101,6 @@ export const useBehaviorEvents = () => {
     stats,
     aiEvents: events.filter(e => e.event_type === 'ai_state_change'),
     userActions: events.filter(e => e.event_type !== 'ai_state_change'),
-<<<<<<< HEAD
-    clickStats
-=======
     clickStats,
     skillLevel: (() => {
       const total = clickStats.prompted + clickStats.unprompted;
@@ -132,6 +112,5 @@ export const useBehaviorEvents = () => {
       if (ratio > 0.1) return "Mostly Independent";
       return "Independent";
     })()
->>>>>>> de1dddd1fb4a004db8ab76196c6b164560ae5586
   };
 };

@@ -8,12 +8,6 @@ import ApiDocs from "@/components/dashboard/ApiDocs";
 import AiStatusList from "@/components/dashboard/AiStatusList";
 import UserActionsList from "@/components/dashboard/UserActionsList";
 import { useBehaviorEvents } from "@/hooks/useBehaviorEvents";
-<<<<<<< HEAD
-
-const Index = () => {
-  const [showApiDocs, setShowApiDocs] = useState(false);
-  const { events, isLoading, isRefreshing, refresh, stats, aiEvents, userActions, clickStats } = useBehaviorEvents();
-=======
 import { useOsTracking } from "@/hooks/useOsTracking";
 
 const Index = () => {
@@ -25,7 +19,6 @@ const Index = () => {
   const allEvents = [
     ...userActions
   ].sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime());
->>>>>>> de1dddd1fb4a004db8ab76196c6b164560ae5586
 
   return (
     <div className="min-h-screen bg-background p-6 md:p-8">
@@ -53,17 +46,10 @@ const Index = () => {
             delay={0}
           />
           <StatCard
-<<<<<<< HEAD
-            title="Click Events"
-            value={stats.eventTypes['click'] || 0}
-            subtitle={`${Math.round(((stats.eventTypes['click'] || 0) / Math.max(stats.totalEvents, 1)) * 100)}% of total`}
-            icon={MousePointerClick}
-=======
             title="Digital Independence Level"
             value={skillLevel}
             subtitle={skillLevel === "No Data" ? "Start using the assistant" : "Based on recent activity"}
             icon={Users}
->>>>>>> de1dddd1fb4a004db8ab76196c6b164560ae5586
             delay={50}
           />
           <StatCard
@@ -76,17 +62,10 @@ const Index = () => {
           />
         </div>
 
-<<<<<<< HEAD
-        {/* Click Breakdown Row */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
-          <StatCard
-            title="Prompted Clicks"
-=======
         {/* Behavior Breakdown Row */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
           <StatCard
             title="Prompted Behaviour"
->>>>>>> de1dddd1fb4a004db8ab76196c6b164560ae5586
             value={clickStats.prompted}
             subtitle="Guided by AI"
             icon={MousePointerClick}
@@ -94,11 +73,7 @@ const Index = () => {
             delay={200}
           />
           <StatCard
-<<<<<<< HEAD
-            title="Unprompted Clicks"
-=======
             title="Unprompted Behaviour"
->>>>>>> de1dddd1fb4a004db8ab76196c6b164560ae5586
             value={clickStats.unprompted}
             subtitle="Organic User Actions"
             icon={MousePointerClick}
@@ -113,14 +88,8 @@ const Index = () => {
         </div>
 
         {/* Detailed User Actions */}
-<<<<<<< HEAD
-        <div className="mb-6">
-          <UserActionsList events={userActions} />
-=======
-        {/* Detailed User Actions */}
         <div className="mb-6">
           <UserActionsList events={allEvents} currentActivity={osActivity} />
->>>>>>> de1dddd1fb4a004db8ab76196c6b164560ae5586
         </div>
 
         {/* Legacy Table (Optional - kept for detailed debugging if needed) */}
@@ -128,7 +97,7 @@ const Index = () => {
           <EventsTable events={events} isLoading={isLoading} />
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 

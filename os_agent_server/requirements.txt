@@ -3,9 +3,6 @@ uvicorn
 google-generativeai
 python-multipart
 pillow
-<<<<<<< HEAD:server/requirements.txt
-=======
 pygetwindow
 psutil
->>>>>>> de1dddd1fb4a004db8ab76196c6b164560ae5586:os_agent_server/requirements.txt
 python-dotenv
