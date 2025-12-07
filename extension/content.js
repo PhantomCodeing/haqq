@@ -11,6 +11,7 @@
   // 2. State Management
   let shadowRoot = null;
   let isChatVisible = false;
+  let lastChatInteraction = 0; // Analytics State
 
   let currentStepData = null; // Store current step info
   let messages = []; // Store chat history
@@ -21,8 +22,12 @@
    * 3. DOM Manipulation: Helper to create the UI safely.
    */
   function init() {
-    // Check if it already exists to avoid duplicates
-    if (document.getElementById(HOST_ID)) return;
+    // Check if it already exists and remove it (cleanup orphaned instances)
+    const existing = document.getElementById(HOST_ID);
+    if (existing) {
+      console.log("Digital Literacy Extension: Removing orphaned instance...");
+      existing.remove();
+    }
 
     console.log("Digital Literacy Extension: Initializing...");
 
@@ -31,6 +36,31 @@
     host.id = HOST_ID;
     document.body.appendChild(host);
     shadowRoot = host.attachShadow({ mode: 'open' });
+
+    // AGGRESSIVE BLOCKING: unique host-level listener to stop ALL propagation from inside
+    const stopPropagation = (e) => {
+      e.stopPropagation();
+      e.stopImmediatePropagation();
+    };
+    host.addEventListener('keydown', stopPropagation);
+    host.addEventListener('keyup', stopPropagation);
+    host.addEventListener('keypress', stopPropagation);
+    host.addEventListener('input', stopPropagation);
+
+    // NUCLEAR OPTION: Window Capture Phase Blocker
+    // This catches the event at the Window, BEFORE it goes down to Document/Body.
+    // If the target is our Host (meaning the user is typing inside Shadow DOM), destroy the event.
+    ['keydown', 'keyup', 'keypress', 'input'].forEach(evt => {
+      window.addEventListener(evt, (e) => {
+        // ANTIGRAVITY FIX: Use composedPath() to detect if event started inside our Shadow Host
+        const path = e.composedPath();
+        if (path.includes(host)) {
+          // If the event came from us, KILL IT immediately.
+          e.stopPropagation();
+          e.stopImmediatePropagation();
+        }
+      }, true); // true = Capture Phase
+    });
 
     // Inject Styles
     injectStyles();
@@ -84,6 +114,17 @@
         // Restore Verify Button if needed
         if (currentStepData && (currentStepData.type === 'instruction' || currentStepData.type === 'verification_failure')) {
           addVerifyButton();
+
+          // Auto-verify on load if we have an active instruction
+          // We check if the chat is visible to avoid annoying the user if they closed it
+          if (isChatVisible) {
+            console.log("Content: Auto-verifying on page load...");
+            // Add a small delay to ensure page is settled
+            setTimeout(() => {
+              handleVerify();
+            }, 300);
+          }
+
         } else if (currentStepData && currentStepData.type === 'verification_success' && currentStepData.step_number) {
           addVerifyButton();
         }
@@ -142,8 +183,24 @@
     const closeBtn = document.createElement('button');
     closeBtn.id = 'dle-close';
     closeBtn.textContent = '×';
+    closeBtn.title = 'Close';
     closeBtn.onclick = toggleChat;
-    header.appendChild(closeBtn);
+
+    const clearBtn = document.createElement('button');
+    clearBtn.id = 'dle-clear';
+    clearBtn.textContent = '🗑️';
+    clearBtn.title = 'Clear Chat History';
+    clearBtn.style.marginRight = '8px';
+    clearBtn.style.background = 'none';
+    clearBtn.style.border = 'none';
+    clearBtn.style.cursor = 'pointer';
+    clearBtn.onclick = clearChat;
+
+    const controlsDiv = document.createElement('div');
+    controlsDiv.appendChild(clearBtn);
+    controlsDiv.appendChild(closeBtn);
+
+    header.appendChild(controlsDiv);
     chatWindow.appendChild(header);
 
     // Tabs
@@ -207,8 +264,37 @@
     const input = chatView.querySelector('#dle-input');
 
     sendBtn.addEventListener('click', handleSendMessage);
-    input.addEventListener('keypress', (e) => {
-      if (e.key === 'Enter') handleSendMessage();
+
+    // FIX: More aggressive event trapping
+    const stopEvent = (e) => {
+      // 1. Stop it from bubbling up to the host and document
+      e.stopPropagation();
+      // 2. Stop other listeners on this same element (if any)
+      e.stopImmediatePropagation();
+    };
+
+    // Apply to ALL key event types to be safe
+    ['keydown', 'keyup', 'keypress', 'input'].forEach(eventType => {
+      input.addEventListener(eventType, (e) => {
+        // Allow Enter key to work for sending
+        if (e.key === 'Enter' && eventType === 'keypress') {
+          handleSendMessage();
+        }
+
+        // CRITICAL: Prevent the '/' key from triggering Quick Search on sites like DDG
+        if (e.key === '/') {
+          e.stopPropagation();
+        }
+
+        stopEvent(e);
+      });
+    });
+
+    // FOCUS TRAP: If user clicks anywhere in the chat view, focus the input
+    chatView.addEventListener('click', (e) => {
+      // Don't steal focus if they are selecting text or clicking a button
+      if (e.target.tagName === 'BUTTON' || window.getSelection().toString().length > 0) return;
+      input.focus();
     });
 
     return chatWindow;
@@ -219,10 +305,37 @@
     isChatVisible = !isChatVisible;
     if (isChatVisible) {
       chatWindow.classList.remove('hidden');
+      // Auto-focus input when opening
+      setTimeout(() => {
+        const input = shadowRoot.getElementById('dle-input');
+        if (input) input.focus();
+      }, 100);
     } else {
       chatWindow.classList.add('hidden');
     }
     saveState();
+  }
+
+  function clearChat() {
+    console.log("Clear chat requested");
+    // Removed confirm for smoother UX/Debugging
+    messages = [];
+    currentStepData = null;
+    saveState();
+
+    // Clear UI
+    const messagesDiv = shadowRoot.getElementById('dle-messages');
+    if (messagesDiv) {
+      messagesDiv.innerHTML = `
+        <div class="dle-message system">
+          Chat cleared. How can I help you?
+        </div>
+      `;
+    }
+
+    // Remove verify button if present
+    const verifyBtns = shadowRoot.querySelectorAll('.dle-verify-btn');
+    verifyBtns.forEach(btn => btn.remove());
   }
 
   function switchTab(e, root) {
@@ -247,6 +360,9 @@
     const text = input.value.trim();
     if (!text) return;
 
+    // Analytics: track time of last prompt
+    lastChatInteraction = Date.now();
+
     addMessage(text, 'user');
     input.value = '';
 
@@ -256,8 +372,11 @@
       data: { category: "chat", query: text }
     });
 
+    // Capture HTML content (truncated to avoid huge payloads)
+    const htmlContent = document.body.outerHTML.substring(0, 50000);
+
     // Send to background (which will capture screenshot)
-    sendToGemini(text, null, null);
+    sendToGemini(text, null, null, htmlContent);
   }
 
   function handleVerify() {
@@ -265,19 +384,30 @@
 
     addMessage("Verifying...", 'system');
 
+    // Disable verify button if it exists
+    const verifyBtn = shadowRoot.querySelector('.dle-verify-btn');
+    if (verifyBtn) {
+      verifyBtn.disabled = true;
+      verifyBtn.textContent = "Checking...";
+    }
+
     // Context is the current step we are verifying
     const context = JSON.stringify(currentStepData);
 
+    // Capture HTML content
+    const htmlContent = document.body.outerHTML.substring(0, 50000);
+
     // Send to background (which will capture screenshot)
-    sendToGemini("Verify this step", null, context);
+    sendToGemini("Verify this step", null, context, htmlContent);
   }
 
-  function sendToGemini(prompt, image, context) {
+  function sendToGemini(prompt, image, context, html) {
     chrome.runtime.sendMessage({
       action: "chatWithGemini",
       prompt: prompt,
       image: image,
-      context: context
+      context: context,
+      html: html
     }, (apiResponse) => {
       console.log("api response", apiResponse);
       if (apiResponse && apiResponse.text) {
@@ -304,9 +434,54 @@
     saveState();
 
     if (data.type === 'instruction' || data.type === 'verification_failure') {
+      // Remove existing verify button if present to avoid duplicates/confusion
+      const existingBtn = shadowRoot.querySelector('.dle-verify-btn');
+      if (existingBtn) existingBtn.remove();
+
       addMessage(data.message, 'system');
+
+      // Highlight element if provided
+      if (data.element_selector) {
+        console.log("Highlighting selector:", data.element_selector);
+        try {
+          // Ensure driver is loaded
+          if (window.driver && window.driver.js && window.driver.js.driver) {
+            const driver = window.driver.js.driver;
+            const driverObj = driver({
+              showProgress: false,
+              steps: [
+                {
+                  element: data.element_selector,
+                  popover: {
+                    title: 'Click Here',
+                    description: data.message,
+                    side: "bottom",
+                    align: 'start'
+                  }
+                }
+              ]
+            });
+            driverObj.drive();
+          } else {
+            console.warn("Driver.js not found on window");
+          }
+        } catch (e) {
+          console.error("Error highlighting element:", e);
+        }
+      }
+
       addVerifyButton();
+
+      // Trigger Driver.js if selector is present
+      if (data.element_selector) {
+        startDriverTour(data.element_selector, data.message);
+      }
+
     } else if (data.type === 'verification_success') {
+      // Remove existing verify button
+      const existingBtn = shadowRoot.querySelector('.dle-verify-btn');
+      if (existingBtn) existingBtn.remove();
+
       addMessage(data.message, 'system');
       if (data.step_number) {
         addVerifyButton();
@@ -363,6 +538,10 @@
         const metrics = response.data;
         shadowRoot.getElementById('dle-total-requests').textContent = metrics.length;
 
+        // Calculate Streak (Unique Days)
+        const uniqueDays = new Set(metrics.map(m => new Date(m.timestamp).toLocaleDateString()));
+        shadowRoot.getElementById('dle-streak').textContent = `${uniqueDays.size} days`;
+
         const list = shadowRoot.getElementById('dle-history-list');
         list.innerHTML = '<h4>Recent Activity</h4>';
         metrics.slice(-5).reverse().forEach(m => {
@@ -378,51 +557,123 @@
     });
   }
 
-  function startDriverTour() {
+  function waitForElement(selector, timeout = 5000) {
+    return new Promise((resolve) => {
+      if (document.querySelector(selector)) {
+        return resolve(document.querySelector(selector));
+      }
+
+      const observer = new MutationObserver((mutations) => {
+        if (document.querySelector(selector)) {
+          resolve(document.querySelector(selector));
+          observer.disconnect();
+        }
+      });
+
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true
+      });
+
+      setTimeout(() => {
+        observer.disconnect();
+        resolve(null);
+      }, timeout);
+    });
+  }
+
+  function startDriverTour(selector, message) {
     // Ensure driver is available
     if (!window.driver || !window.driver.js || !window.driver.js.driver) {
       console.error("Driver.js not loaded");
-      addMessage("Error: Driver.js not loaded", 'system');
       return;
     }
 
-    const driver = window.driver.js.driver;
-    const driverObj = driver({
-      showProgress: true,
-      steps: [
-        {
-          element: 'h1',
-          popover: {
-            title: 'Page Title',
-            description: 'This is the main title of the page. It tells you what this section is about.'
+    // Wait for element to exist before driving
+    waitForElement(selector).then((element) => {
+      if (!element) {
+        console.warn("Driver.js: Element not found:", selector);
+        return;
+      }
+
+      const driver = window.driver.js.driver;
+      const driverObj = driver({
+        showProgress: false,
+        steps: [
+          {
+            element: element,
+            popover: {
+              title: 'Step Guide',
+              description: message
+            }
           }
-        },
-        {
-          element: 'a',
-          popover: {
-            title: 'Navigation Links',
-            description: 'These links help you move to other pages. Click them to explore more.'
-          }
-        },
-        {
-          element: 'input',
-          popover: {
-            title: 'Input Fields',
-            description: 'You can type information here, like search terms or your details.'
-          }
-        },
-        {
-          element: 'button',
-          popover: {
-            title: 'Action Buttons',
-            description: 'Click these buttons to submit forms or perform actions.'
-          }
-        }
-      ]
+        ]
+      });
+
+      driverObj.drive();
+    });
+  }
+
+  // 4. Click Tracking
+  document.addEventListener('click', (e) => {
+    // Ignore clicks inside our own extension UI
+    const container = document.getElementById(CONTAINER_ID);
+    if (container && container.contains(e.target)) return;
+    if (e.target.id === CONTAINER_ID) return;
+
+    // Check if the click is on the "Active" driver element
+    // Driver.js adds 'driver-active-element' to the highlighted element
+    const activeElement = document.querySelector('.driver-active-element');
+    const driverPopover = document.querySelector('.driver-popover');
+
+    let isPrompted = false;
+
+    // Debug logging
+    // console.log("Click Event Target:", e.target);
+    // console.log("Active Driver Element:", activeElement);
+
+    if (activeElement) {
+      if (activeElement === e.target || activeElement.contains(e.target)) {
+        isPrompted = true;
+      }
+    }
+
+    // NEW RULE: If user chatted recently (last 60s), assume they are following instructions
+    if (!isPrompted && (Date.now() - lastChatInteraction < 60000)) {
+      console.log("Analytics: Marking as prompted due to recent chat interaction.");
+      isPrompted = true;
+    }
+
+    // Fallback: Check if we clicked the driver popover or its buttons (Next/Prev)
+    // Actually, clicks on the popover itself shouldn't count as "interacting with the page element"
+    // but maybe the user considers following the "Next" button as a prompted action?
+    // For now, let's stick to the highlighted element.
+
+    // IMPROVEMENT: Sometimes driver.js puts an overlay. 
+    // If we can't detect the element, maybe we check if the driver is active at all?
+    // But we want to distinguish "clicking the highlighted button" vs "clicking elsewhere".
+
+    // Helper to get a selector
+    const getSelector = (el) => {
+      if (el.id) return '#' + el.id;
+      if (el.className && typeof el.className === 'string') return '.' + el.className.split(' ').join('.');
+      return el.tagName.toLowerCase();
+    };
+
+    const stats = {
+      event_type: isPrompted ? 'prompted' : 'unprompted',
+      element_selector: getSelector(e.target),
+      url: window.location.href
+    };
+
+    console.log("Recording click:", stats);
+
+    chrome.runtime.sendMessage({
+      action: "saveStats",
+      data: stats
     });
 
-    driverObj.drive();
-  }
+  }, true); // Capture phase to ensure we get it
 
   // Initialize
   init();

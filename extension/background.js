@@ -23,23 +23,27 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
       if (chrome.runtime.lastError) {
         console.error("Background: Screenshot capture failed:", chrome.runtime.lastError.message);
         // Proceed without image if capture fails
-        chatWithGemini(request.prompt, null, request.context)
+        chatWithGemini(request.prompt, null, request.context, request.html)
           .then(response => sendResponse({ text: JSON.stringify(response) }))
           .catch(error => sendResponse({ error: error.message }));
       } else {
         console.log("Background: Screenshot captured for chat.");
-        chatWithGemini(request.prompt, dataUrl, request.context)
+        chatWithGemini(request.prompt, dataUrl, request.context, request.html)
           .then(response => sendResponse({ text: JSON.stringify(response) }))
           .catch(error => sendResponse({ error: error.message }));
       }
     });
     return true;
+  } else if (request.action === "saveStats") {
+    saveStats(request.data).then(res => sendResponse(res));
+    return true;
   }
 });
 
-async function chatWithGemini(prompt, image, context) {
+async function chatWithGemini(prompt, image, context, html) {
   try {
-    const response = await fetch('http://localhost:8000/chat', {
+    console.log("Background: Attempting to chat fetch:", 'http://127.0.0.1:8000/chat');
+    const response = await fetch('http://127.0.0.1:8000/chat', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -47,7 +51,8 @@ async function chatWithGemini(prompt, image, context) {
       body: JSON.stringify({
         prompt: prompt,
         image: image,
-        context: context
+        context: context,
+        html_content: html
       })
     });
 
@@ -77,4 +82,22 @@ async function saveMetric(metric) {
 async function getMetrics() {
   const data = await chrome.storage.local.get("metrics");
   return data.metrics || [];
+}
+
+async function saveStats(stats) {
+  try {
+    console.log("Background: Attempting to save stats fetch:", 'http://127.0.0.1:8000/extension-events');
+    const response = await fetch('http://127.0.0.1:8000/extension-events', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(stats)
+    });
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error("Background: Error saving stats:", error);
+    return { error: error.message };
+  }
 }
