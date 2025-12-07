@@ -3056,5 +3056,60 @@
     "metadata": {
       "category": "coding"
     }
+  },
+  {
+    "id": "os-279",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Reviewing behavior analytics dashboard",
+    "url": null,
+    "created_at": "2025-12-07T14:33:23.474554",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-280",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Adjusting browser settings",
+    "url": null,
+    "created_at": "2025-12-07T14:33:25.820246",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "chat-281",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T14:36:47.457556",
+    "metadata": {
+      "query": "i want to watch my youtube baking videos"
+    }
+  },
+  {
+    "id": "chat-282",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T14:37:07.253861",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "chat-283",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T14:37:23.763544",
+    "metadata": {
+      "query": "Verify this step"
+    }
   }
 ]

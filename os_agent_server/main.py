@@ -72,7 +72,7 @@ model = genai.GenerativeModel(
 
 class ChatRequest(BaseModel):
     prompt: str
-    goal: str
+    goal: str | None = None
     image: str | None = None # Base64 encoded image
     context: str | None = None # Previous step info or history
     html_content: str | None = None # Page HTML content
