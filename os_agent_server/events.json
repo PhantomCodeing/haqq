@@ -1901,5 +1901,434 @@
     "metadata": {
       "query": "Verify this step"
     }
+  },
+  {
+    "id": "os-174",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Viewing an online analytics dashboard.",
+    "url": null,
+    "created_at": "2025-12-07T12:21:56.872513",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-175",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "User is on a new tab in Chrome.",
+    "url": null,
+    "created_at": "2025-12-07T12:22:14.223052",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-176",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Viewing search results in a web browser",
+    "url": null,
+    "created_at": "2025-12-07T12:22:18.268521",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-177",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing browser extensions",
+    "url": null,
+    "created_at": "2025-12-07T12:22:43.567604",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-178",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching the web for 'dsds'",
+    "url": null,
+    "created_at": "2025-12-07T12:22:44.281900",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "chat-179",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T12:22:48.211249",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-180",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Reviewing data on an analytics dashboard",
+    "url": null,
+    "created_at": "2025-12-07T12:23:23.848136",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-181",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Opening a new tab in Chrome.",
+    "url": null,
+    "created_at": "2025-12-07T12:23:24.763800",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-182",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching on Google",
+    "url": null,
+    "created_at": "2025-12-07T12:23:41.937190",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "chat-183",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T12:24:00.214757",
+    "metadata": {
+      "query": "i want to go to youtube"
+    }
+  },
+  {
+    "id": "os-184",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching for and accessing YouTube",
+    "url": null,
+    "created_at": "2025-12-07T12:24:15.717893",
+    "metadata": {
+      "category": "entertainment"
+    }
+  },
+  {
+    "id": "os-185",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Analyzing data in a dashboard",
+    "url": null,
+    "created_at": "2025-12-07T12:24:24.324749",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "chat-186",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T12:24:29.361853",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-187",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Viewing YouTube search results.",
+    "url": null,
+    "created_at": "2025-12-07T12:24:34.376724",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-188",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Browsing videos on YouTube",
+    "url": null,
+    "created_at": "2025-12-07T12:24:58.539739",
+    "metadata": {
+      "category": "entertainment"
+    }
+  },
+  {
+    "id": "os-189",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "watching videos on YouTube",
+    "url": null,
+    "created_at": "2025-12-07T12:25:05.493251",
+    "metadata": {
+      "category": "entertainment"
+    }
+  },
+  {
+    "id": "chat-190",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T12:25:26.243099",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-191",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Watching news on YouTube",
+    "url": null,
+    "created_at": "2025-12-07T12:25:53.788226",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "chat-192",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T12:26:50.914851",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-193",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "analyzing a dashboard",
+    "url": null,
+    "created_at": "2025-12-07T12:27:04.118774",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-194",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Opening a new tab in Chrome",
+    "url": null,
+    "created_at": "2025-12-07T12:28:10.725504",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-195",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Arranging windows on the screen using a utility",
+    "url": null,
+    "created_at": "2025-12-07T12:28:13.116270",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-196",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Opening a new tab in Chrome",
+    "url": null,
+    "created_at": "2025-12-07T12:28:15.148741",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-197",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Browsing news search results",
+    "url": null,
+    "created_at": "2025-12-07T12:28:17.134142",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-198",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Analyzing data on a dashboard.",
+    "url": null,
+    "created_at": "2025-12-07T12:28:18.052876",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-199",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Viewing search results for 'bbc news'.",
+    "url": null,
+    "created_at": "2025-12-07T12:28:24.628691",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-200",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Reading news on a website",
+    "url": null,
+    "created_at": "2025-12-07T12:28:25.579026",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "chat-201",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T12:28:33.330707",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-202",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Analyzing data in a dashboard",
+    "url": null,
+    "created_at": "2025-12-07T12:28:45.358738",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-203",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Coding a Python file for a hackathon project",
+    "url": null,
+    "created_at": "2025-12-07T12:28:46.222616",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "chat-204",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T12:29:06.558060",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-205",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Analyzing data on a dashboard",
+    "url": null,
+    "created_at": "2025-12-07T12:29:20.716445",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-206",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Getting ready to browse the web",
+    "url": null,
+    "created_at": "2025-12-07T12:29:21.865127",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-207",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching the internet",
+    "url": null,
+    "created_at": "2025-12-07T12:29:26.794507",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "chat-208",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T12:29:41.613701",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-209",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using the command prompt",
+    "url": null,
+    "created_at": "2025-12-07T12:29:56.364830",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-210",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Viewing search results in a browser",
+    "url": null,
+    "created_at": "2025-12-07T12:29:59.170623",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-211",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Running a Python program",
+    "url": null,
+    "created_at": "2025-12-07T12:30:00.025285",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-212",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing code repositories with GitHub Desktop",
+    "url": null,
+    "created_at": "2025-12-07T12:32:18.453383",
+    "metadata": {
+      "category": "coding"
+    }
   }
 ]
