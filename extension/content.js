@@ -133,17 +133,6 @@
             }, 300);
           }
 
-
-          // Auto-verify on load if we have an active instruction
-          // We check if the chat is visible to avoid annoying the user if they closed it
-          if (isChatVisible) {
-            console.log("Content: Auto-verifying on page load...");
-            // Add a small delay to ensure page is settled
-            setTimeout(() => {
-              handleVerify();
-            }, 300);
-          }
-
         } else if (currentStepData && currentStepData.type === 'verification_success' && currentStepData.step_number) {
           addVerifyButton();
         }
