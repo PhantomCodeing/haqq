@@ -11,9 +11,11 @@
   // 2. State Management
   let shadowRoot = null;
   let isChatVisible = false;
+  let lastChatInteraction = 0; // Analytics State
 
   let currentStepData = null; // Store current step info
   let messages = []; // Store chat history
+  let currentGoal = null; // Store the user's goal (first prompt)
 
 
 
@@ -21,8 +23,12 @@
    * 3. DOM Manipulation: Helper to create the UI safely.
    */
   function init() {
-    // Check if it already exists to avoid duplicates
-    if (document.getElementById(HOST_ID)) return;
+    // Check if it already exists and remove it (cleanup orphaned instances)
+    const existing = document.getElementById(HOST_ID);
+    if (existing) {
+      console.log("Digital Literacy Extension: Removing orphaned instance...");
+      existing.remove();
+    }
 
     console.log("Digital Literacy Extension: Initializing...");
 
@@ -31,6 +37,31 @@
     host.id = HOST_ID;
     document.body.appendChild(host);
     shadowRoot = host.attachShadow({ mode: 'open' });
+
+    // AGGRESSIVE BLOCKING: unique host-level listener to stop ALL propagation from inside
+    const stopPropagation = (e) => {
+      e.stopPropagation();
+      e.stopImmediatePropagation();
+    };
+    host.addEventListener('keydown', stopPropagation);
+    host.addEventListener('keyup', stopPropagation);
+    host.addEventListener('keypress', stopPropagation);
+    host.addEventListener('input', stopPropagation);
+
+    // NUCLEAR OPTION: Window Capture Phase Blocker
+    // This catches the event at the Window, BEFORE it goes down to Document/Body.
+    // If the target is our Host (meaning the user is typing inside Shadow DOM), destroy the event.
+    ['keydown', 'keyup', 'keypress', 'input'].forEach(evt => {
+      window.addEventListener(evt, (e) => {
+        // ANTIGRAVITY FIX: Use composedPath() to detect if event started inside our Shadow Host
+        const path = e.composedPath();
+        if (path.includes(host)) {
+          // If the event came from us, KILL IT immediately.
+          e.stopPropagation();
+          e.stopImmediatePropagation();
+        }
+      }, true); // true = Capture Phase
+    });
 
     // Inject Styles
     injectStyles();
@@ -46,7 +77,8 @@
     const state = {
       isChatVisible: isChatVisible,
       currentStepData: currentStepData,
-      messages: messages
+      messages: messages,
+      currentGoal: currentGoal
     };
     chrome.storage.local.set({ 'dle_state': state });
   }
@@ -58,6 +90,12 @@
         isChatVisible = state.isChatVisible || false;
         currentStepData = state.currentStepData || null;
         messages = state.messages || [];
+        currentGoal = state.currentGoal || null;
+
+        // Restore Goal UI if exists
+        if (currentGoal) {
+          updateGoalDisplay(currentGoal);
+        }
 
         // Restore visibility
         const chatWindow = shadowRoot.getElementById('dle-chat-window');
@@ -187,6 +225,18 @@
     contentArea.className = 'dle-content';
     chatWindow.appendChild(contentArea);
 
+    // Goal Display Area
+    const goalDisplay = document.createElement('div');
+    goalDisplay.id = 'dle-goal-display';
+    goalDisplay.style.display = 'none';
+    goalDisplay.style.padding = '8px 15px';
+    goalDisplay.style.fontSize = '12px';
+    goalDisplay.style.color = '#555';
+    goalDisplay.style.backgroundColor = '#f0f4f8';
+    goalDisplay.style.borderBottom = '1px solid #eee';
+    goalDisplay.innerHTML = '<strong>Goal:</strong> <span id="dle-goal-text"></span>';
+    contentArea.appendChild(goalDisplay);
+
     // Chat View
     const chatView = document.createElement('div');
     chatView.id = 'dle-chat-view';
@@ -234,8 +284,37 @@
     const input = chatView.querySelector('#dle-input');
 
     sendBtn.addEventListener('click', handleSendMessage);
-    input.addEventListener('keypress', (e) => {
-      if (e.key === 'Enter') handleSendMessage();
+
+    // FIX: More aggressive event trapping
+    const stopEvent = (e) => {
+      // 1. Stop it from bubbling up to the host and document
+      e.stopPropagation();
+      // 2. Stop other listeners on this same element (if any)
+      e.stopImmediatePropagation();
+    };
+
+    // Apply to ALL key event types to be safe
+    ['keydown', 'keyup', 'keypress', 'input'].forEach(eventType => {
+      input.addEventListener(eventType, (e) => {
+        // Allow Enter key to work for sending
+        if (e.key === 'Enter' && eventType === 'keypress') {
+          handleSendMessage();
+        }
+
+        // CRITICAL: Prevent the '/' key from triggering Quick Search on sites like DDG
+        if (e.key === '/') {
+          e.stopPropagation();
+        }
+
+        stopEvent(e);
+      });
+    });
+
+    // FOCUS TRAP: If user clicks anywhere in the chat view, focus the input
+    chatView.addEventListener('click', (e) => {
+      // Don't steal focus if they are selecting text or clicking a button
+      if (e.target.tagName === 'BUTTON' || window.getSelection().toString().length > 0) return;
+      input.focus();
     });
 
     return chatWindow;
@@ -246,6 +325,11 @@
     isChatVisible = !isChatVisible;
     if (isChatVisible) {
       chatWindow.classList.remove('hidden');
+      // Auto-focus input when opening
+      setTimeout(() => {
+        const input = shadowRoot.getElementById('dle-input');
+        if (input) input.focus();
+      }, 100);
     } else {
       chatWindow.classList.add('hidden');
     }
@@ -257,7 +341,12 @@
     // Removed confirm for smoother UX/Debugging
     messages = [];
     currentStepData = null;
+    currentGoal = null;
     saveState();
+
+    // Clear Goal UI
+    const goalDisplay = shadowRoot.getElementById('dle-goal-display');
+    if (goalDisplay) goalDisplay.style.display = 'none';
 
     // Clear UI
     const messagesDiv = shadowRoot.getElementById('dle-messages');
@@ -296,6 +385,15 @@
     const text = input.value.trim();
     if (!text) return;
 
+    // Set Goal if not set
+    if (!currentGoal) {
+      currentGoal = text;
+      updateGoalDisplay(currentGoal);
+    }
+
+    // Analytics: track time of last prompt
+    lastChatInteraction = Date.now();
+
     addMessage(text, 'user');
     input.value = '';
 
@@ -309,7 +407,7 @@
     const htmlContent = document.body.outerHTML.substring(0, 50000);
 
     // Send to background (which will capture screenshot)
-    sendToGemini(text, null, null, htmlContent);
+    sendToGemini(text, null, null, htmlContent, currentGoal);
   }
 
   function handleVerify() {
@@ -331,16 +429,17 @@
     const htmlContent = document.body.outerHTML.substring(0, 50000);
 
     // Send to background (which will capture screenshot)
-    sendToGemini("Verify this step", null, context, htmlContent);
+    sendToGemini("Verify this step", null, context, htmlContent, currentGoal);
   }
 
-  function sendToGemini(prompt, image, context, html) {
+  function sendToGemini(prompt, image, context, html, goal) {
     chrome.runtime.sendMessage({
       action: "chatWithGemini",
       prompt: prompt,
       image: image,
       context: context,
-      html: html
+      html: html,
+      goal: goal
     }, (apiResponse) => {
       console.log("api response", apiResponse);
       if (apiResponse && apiResponse.text) {
@@ -471,6 +570,10 @@
         const metrics = response.data;
         shadowRoot.getElementById('dle-total-requests').textContent = metrics.length;
 
+        // Calculate Streak (Unique Days)
+        const uniqueDays = new Set(metrics.map(m => new Date(m.timestamp).toLocaleDateString()));
+        shadowRoot.getElementById('dle-streak').textContent = `${uniqueDays.size} days`;
+
         const list = shadowRoot.getElementById('dle-history-list');
         list.innerHTML = '<h4>Recent Activity</h4>';
         metrics.slice(-5).reverse().forEach(m => {
@@ -530,7 +633,7 @@
         showProgress: false,
         steps: [
           {
-            element: selector,
+            element: element,
             popover: {
               title: 'Step Guide',
               description: message
@@ -541,6 +644,17 @@
 
       driverObj.drive();
     });
+  }
+
+  function updateGoalDisplay(goalText) {
+    const goalDisplay = shadowRoot.getElementById('dle-goal-display');
+    const goalTextSpan = shadowRoot.getElementById('dle-goal-text');
+
+    if (goalDisplay && goalTextSpan) {
+      goalTextSpan.textContent = goalText;
+      goalDisplay.style.display = 'block';
+    }
+    saveState();
   }
 
   // 4. Click Tracking
@@ -565,6 +679,12 @@
       if (activeElement === e.target || activeElement.contains(e.target)) {
         isPrompted = true;
       }
+    }
+
+    // NEW RULE: If user chatted recently (last 60s), assume they are following instructions
+    if (!isPrompted && (Date.now() - lastChatInteraction < 60000)) {
+      console.log("Analytics: Marking as prompted due to recent chat interaction.");
+      isPrompted = true;
     }
 
     // Fallback: Check if we clicked the driver popover or its buttons (Next/Prev)

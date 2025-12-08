@@ -23,12 +23,12 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
       if (chrome.runtime.lastError) {
         console.error("Background: Screenshot capture failed:", chrome.runtime.lastError.message);
         // Proceed without image if capture fails
-        chatWithGemini(request.prompt, null, request.context, request.html)
+        chatWithGemini(request.prompt, null, request.context, request.html, request.goal)
           .then(response => sendResponse({ text: JSON.stringify(response) }))
           .catch(error => sendResponse({ error: error.message }));
       } else {
         console.log("Background: Screenshot captured for chat.");
-        chatWithGemini(request.prompt, dataUrl, request.context, request.html)
+        chatWithGemini(request.prompt, dataUrl, request.context, request.html, request.goal)
           .then(response => sendResponse({ text: JSON.stringify(response) }))
           .catch(error => sendResponse({ error: error.message }));
       }
@@ -40,9 +40,10 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   }
 });
 
-async function chatWithGemini(prompt, image, context, html) {
+async function chatWithGemini(prompt, image, context, html, goal) {
   try {
-    const response = await fetch('http://localhost:8000/chat', {
+    console.log("Background: Attempting to chat fetch:", 'http://127.0.0.1:8000/chat');
+    const response = await fetch('http://127.0.0.1:8000/chat', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -51,7 +52,8 @@ async function chatWithGemini(prompt, image, context, html) {
         prompt: prompt,
         image: image,
         context: context,
-        html_content: html
+        html_content: html,
+        goal: goal
       })
     });
 
@@ -85,7 +87,8 @@ async function getMetrics() {
 
 async function saveStats(stats) {
   try {
-    const response = await fetch('http://localhost:8000/stats', {
+    console.log("Background: Attempting to save stats fetch:", 'http://127.0.0.1:8000/extension-events');
+    const response = await fetch('http://127.0.0.1:8000/extension-events', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

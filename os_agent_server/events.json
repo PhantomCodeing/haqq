@@ -1,0 +1,5935 @@
+[
+  {
+    "id": "os-1",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Analyzing data on a dashboard",
+    "url": null,
+    "created_at": "2025-12-07T08:12:14.168033",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-2",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Running a Python program",
+    "url": null,
+    "created_at": "2025-12-07T08:12:14.814703",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-3",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing software packages",
+    "url": null,
+    "created_at": "2025-12-07T08:12:15.531809",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-4",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using the command prompt",
+    "url": null,
+    "created_at": "2025-12-07T08:12:16.869239",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-5",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Writing code for a hackathon project",
+    "url": null,
+    "created_at": "2025-12-07T08:12:21.195673",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-6",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Viewing a dashboard in Google Chrome",
+    "url": null,
+    "created_at": "2025-12-07T08:14:09.750067",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "chat-7",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T08:14:11.022895",
+    "metadata": {
+      "query": "hello"
+    }
+  },
+  {
+    "id": "chat-8",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T08:14:16.226507",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-9",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Browsing Google homepage, ready to search",
+    "url": null,
+    "created_at": "2025-12-07T08:14:52.954190",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "chat-10",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T08:15:00.788648",
+    "metadata": {
+      "query": "youtube"
+    }
+  },
+  {
+    "id": "chat-11",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T08:15:02.557067",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "chat-12",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T08:15:08.393899",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "chat-13",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T08:15:14.127889",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-14",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "watching YouTube videos",
+    "url": null,
+    "created_at": "2025-12-07T08:15:25.882059",
+    "metadata": {
+      "category": "entertainment"
+    }
+  },
+  {
+    "id": "chat-15",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T08:15:26.913663",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-16",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Viewing a behavior analytics dashboard",
+    "url": null,
+    "created_at": "2025-12-07T08:15:32.375375",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-17",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Developing a hackathon project",
+    "url": null,
+    "created_at": "2025-12-07T08:15:43.211136",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-18",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Browsing the internet on a new tab",
+    "url": null,
+    "created_at": "2025-12-07T08:17:38.942897",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-19",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Viewing Yahoo search results",
+    "url": null,
+    "created_at": "2025-12-07T08:17:41.091637",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-20",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Opening a new tab in Chrome",
+    "url": null,
+    "created_at": "2025-12-07T08:17:58.247690",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-21",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing browser extensions",
+    "url": null,
+    "created_at": "2025-12-07T08:18:00.161342",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-22",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Opening a new tab in Google Chrome",
+    "url": null,
+    "created_at": "2025-12-07T08:18:01.725327",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-23",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching for news online",
+    "url": null,
+    "created_at": "2025-12-07T08:18:06.249496",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-24",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Coding on a hackathon project named Antigravity",
+    "url": null,
+    "created_at": "2025-12-07T08:18:15.032243",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-25",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Viewing search results for news",
+    "url": null,
+    "created_at": "2025-12-07T08:18:29.620721",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-26",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching on Yahoo",
+    "url": null,
+    "created_at": "2025-12-07T08:18:30.429115",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-27",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing browser settings in Chrome",
+    "url": null,
+    "created_at": "2025-12-07T08:18:32.439048",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-28",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Adjusting Chrome browser settings",
+    "url": null,
+    "created_at": "2025-12-07T08:18:36.391269",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-29",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing Chrome privacy and security settings",
+    "url": null,
+    "created_at": "2025-12-07T08:18:41.282280",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-30",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Adjusting Chrome browser settings",
+    "url": null,
+    "created_at": "2025-12-07T08:18:45.504916",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-31",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Adjusting browser settings",
+    "url": null,
+    "created_at": "2025-12-07T08:18:54.701717",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-32",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "viewing search results for news",
+    "url": null,
+    "created_at": "2025-12-07T08:19:07.893021",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-33",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Opening a new tab in Chrome",
+    "url": null,
+    "created_at": "2025-12-07T08:19:08.613643",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-34",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching on DuckDuckGo",
+    "url": null,
+    "created_at": "2025-12-07T08:19:11.271806",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-35",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "coding for a hackathon",
+    "url": null,
+    "created_at": "2025-12-07T08:19:33.262875",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "chat-36",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T08:42:10.426420",
+    "metadata": {
+      "query": "how ot go on youtube"
+    }
+  },
+  {
+    "id": "chat-37",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T08:42:18.982152",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "chat-38",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T08:42:25.090314",
+    "metadata": {
+      "query": "whats hte next thing i hsould do"
+    }
+  },
+  {
+    "id": "chat-39",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T08:46:03.996423",
+    "metadata": {
+      "query": "i like to go on youtube"
+    }
+  },
+  {
+    "id": "chat-40",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T08:46:16.384346",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "chat-41",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T08:47:23.933568",
+    "metadata": {
+      "query": "i like t ogo to youtube"
+    }
+  },
+  {
+    "id": "chat-42",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T08:47:35.347617",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "chat-43",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T08:47:51.050160",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-44",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "viewing an analytics dashboard",
+    "url": null,
+    "created_at": "2025-12-07T08:47:59.469367",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-45",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Working on a hackathon coding project",
+    "url": null,
+    "created_at": "2025-12-07T08:48:08.655772",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-46",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Opening a new tab in Chrome",
+    "url": null,
+    "created_at": "2025-12-07T08:48:23.528680",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-47",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Watching videos on YouTube",
+    "url": null,
+    "created_at": "2025-12-07T08:48:24.138897",
+    "metadata": {
+      "category": "entertainment"
+    }
+  },
+  {
+    "id": "chat-48",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T08:48:27.393078",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-49",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Reviewing data on a dashboard",
+    "url": null,
+    "created_at": "2025-12-07T08:48:33.341833",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-50",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Opening a new tab in their web browser",
+    "url": null,
+    "created_at": "2025-12-07T08:48:40.633477",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-51",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Watching videos on YouTube",
+    "url": null,
+    "created_at": "2025-12-07T08:48:41.828417",
+    "metadata": {
+      "category": "entertainment"
+    }
+  },
+  {
+    "id": "os-52",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Working on a hackathon coding project",
+    "url": null,
+    "created_at": "2025-12-07T08:48:44.656378",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-53",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Interacting with the command line",
+    "url": null,
+    "created_at": "2025-12-07T08:51:57.531551",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-54",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Opening a new browser tab to start browsing.",
+    "url": null,
+    "created_at": "2025-12-07T08:52:02.950455",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-55",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Analyzing a dashboard",
+    "url": null,
+    "created_at": "2025-12-07T08:52:04.940796",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-56",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Watching videos on YouTube",
+    "url": null,
+    "created_at": "2025-12-07T08:52:10.709394",
+    "metadata": {
+      "category": "entertainment"
+    }
+  },
+  {
+    "id": "chat-57",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T08:52:14.045480",
+    "metadata": {
+      "query": "how to go on youtube"
+    }
+  },
+  {
+    "id": "os-58",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Viewing a behavior analytics dashboard",
+    "url": null,
+    "created_at": "2025-12-07T08:52:17.937376",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-59",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Watching videos on YouTube",
+    "url": null,
+    "created_at": "2025-12-07T08:52:27.259823",
+    "metadata": {
+      "category": "entertainment"
+    }
+  },
+  {
+    "id": "os-60",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Watching a skincare routine video on YouTube",
+    "url": null,
+    "created_at": "2025-12-07T08:52:28.444333",
+    "metadata": {
+      "category": "entertainment"
+    }
+  },
+  {
+    "id": "os-61",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Coding on a hackathon project",
+    "url": null,
+    "created_at": "2025-12-07T08:52:56.570262",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-62",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Analyzing behavior data in a dashboard",
+    "url": null,
+    "created_at": "2025-12-07T11:00:04.156746",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-63",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Starting a new web browsing session",
+    "url": null,
+    "created_at": "2025-12-07T11:00:20.652181",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-64",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Opening a new tab in Google Chrome.",
+    "url": null,
+    "created_at": "2025-12-07T11:00:34.199343",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-65",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Opening a new tab in Chrome",
+    "url": null,
+    "created_at": "2025-12-07T11:00:35.433162",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-66",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Viewing news on DuckDuckGo in Chrome",
+    "url": null,
+    "created_at": "2025-12-07T11:00:36.553610",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-67",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Reading news on the BBC website",
+    "url": null,
+    "created_at": "2025-12-07T11:00:38.964079",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-68",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Analyzing data in a dashboard",
+    "url": null,
+    "created_at": "2025-12-07T11:00:48.467262",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-69",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching on DuckDuckGo in Chrome",
+    "url": null,
+    "created_at": "2025-12-07T11:00:59.146253",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-70",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing browser extensions",
+    "url": null,
+    "created_at": "2025-12-07T11:01:08.766317",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-71",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching on DuckDuckGo",
+    "url": null,
+    "created_at": "2025-12-07T11:01:10.818274",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-72",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing browser features",
+    "url": null,
+    "created_at": "2025-12-07T11:01:27.533022",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-73",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Browsing the internet on Google Chrome",
+    "url": null,
+    "created_at": "2025-12-07T11:01:28.774355",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-74",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing browser extensions",
+    "url": null,
+    "created_at": "2025-12-07T11:01:29.708637",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-75",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "User is searching the web using a search engine.",
+    "url": null,
+    "created_at": "2025-12-07T11:01:32.237741",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-76",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Taking a screenshot using the Snipping Tool",
+    "url": null,
+    "created_at": "2025-12-07T11:01:35.814767",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-77",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Taking a screenshot",
+    "url": null,
+    "created_at": "2025-12-07T11:01:36.438773",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-78",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing Google Chrome extensions",
+    "url": null,
+    "created_at": "2025-12-07T11:01:39.945686",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-79",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Taking a screenshot",
+    "url": null,
+    "created_at": "2025-12-07T11:01:40.749327",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-80",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing browser extensions",
+    "url": null,
+    "created_at": "2025-12-07T11:01:43.326620",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-81",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing window layout with a system utility",
+    "url": null,
+    "created_at": "2025-12-07T11:01:45.256533",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-82",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Working on a hackathon task",
+    "url": null,
+    "created_at": "2025-12-07T11:01:46.364720",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-83",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Opening a new tab in Google Chrome",
+    "url": null,
+    "created_at": "2025-12-07T11:02:02.157580",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-84",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using an AI assistant",
+    "url": null,
+    "created_at": "2025-12-07T11:02:03.863150",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-85",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Participating in a hackathon development task",
+    "url": null,
+    "created_at": "2025-12-07T11:03:56.317948",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-86",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Analyzing behavior data in a dashboard",
+    "url": null,
+    "created_at": "2025-12-07T11:04:01.213512",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-87",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Participating in a hackathon",
+    "url": null,
+    "created_at": "2025-12-07T11:04:24.542238",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-88",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing browser extensions",
+    "url": null,
+    "created_at": "2025-12-07T11:04:44.117188",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-89",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing browser extensions",
+    "url": null,
+    "created_at": "2025-12-07T11:04:46.138650",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-90",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Starting a new browsing session",
+    "url": null,
+    "created_at": "2025-12-07T11:04:56.517510",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-91",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching on DuckDuckGo",
+    "url": null,
+    "created_at": "2025-12-07T11:04:59.466030",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-92",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "User is actively searching for information on the web.",
+    "url": null,
+    "created_at": "2025-12-07T11:05:15.578107",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-93",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Taking a screenshot with Snipping Tool.",
+    "url": null,
+    "created_at": "2025-12-07T11:05:18.128328",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-94",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching for 'gf' on DuckDuckGo",
+    "url": null,
+    "created_at": "2025-12-07T11:05:19.755034",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-95",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Taking a screenshot",
+    "url": null,
+    "created_at": "2025-12-07T11:05:20.372853",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-96",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching on DuckDuckGo for 'gf'.",
+    "url": null,
+    "created_at": "2025-12-07T11:05:22.980794",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-97",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Taking a screenshot",
+    "url": null,
+    "created_at": "2025-12-07T11:05:23.892005",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-98",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing Chrome browser extensions",
+    "url": null,
+    "created_at": "2025-12-07T11:05:28.214614",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-99",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using a conversational AI assistant.",
+    "url": null,
+    "created_at": "2025-12-07T11:05:30.793441",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-100",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Google Gemini in a browser.",
+    "url": null,
+    "created_at": "2025-12-07T11:05:32.411659",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-101",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Coding on a hackathon project",
+    "url": null,
+    "created_at": "2025-12-07T11:05:56.431117",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-102",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using an AI assistant",
+    "url": null,
+    "created_at": "2025-12-07T11:06:04.559296",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-103",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Coding for a hackathon",
+    "url": null,
+    "created_at": "2025-12-07T11:06:08.029638",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-104",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "coding on a JavaScript file for a hackathon",
+    "url": null,
+    "created_at": "2025-12-07T11:06:10.005724",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-105",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Learning about or using Google Gemini AI",
+    "url": null,
+    "created_at": "2025-12-07T11:06:15.569128",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-106",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Coding on a JavaScript file for a hackathon",
+    "url": null,
+    "created_at": "2025-12-07T11:08:56.325062",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "chat-107",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T11:15:36.523317",
+    "metadata": {
+      "query": "i would like a youtube video and how ot watch youtube"
+    }
+  },
+  {
+    "id": "chat-108",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T11:16:03.940870",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "chat-109",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T11:16:21.267641",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "chat-110",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T11:16:38.169794",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "chat-111",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T11:16:52.657778",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-112",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Starting a new browsing session",
+    "url": null,
+    "created_at": "2025-12-07T11:18:55.260379",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-113",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Reviewing data in a dashboard",
+    "url": null,
+    "created_at": "2025-12-07T11:18:56.736989",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "chat-114",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T11:19:01.819051",
+    "metadata": {
+      "query": "i would like to go watch yotuube"
+    }
+  },
+  {
+    "id": "os-115",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Google search engine in Chrome",
+    "url": null,
+    "created_at": "2025-12-07T11:19:14.955644",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-116",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Viewing data on a dashboard",
+    "url": null,
+    "created_at": "2025-12-07T11:19:15.960922",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-117",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Google to search the web.",
+    "url": null,
+    "created_at": "2025-12-07T11:19:17.058341",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "chat-118",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T11:19:25.160936",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-119",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching for YouTube on Google",
+    "url": null,
+    "created_at": "2025-12-07T11:19:40.777494",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "chat-120",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T11:19:40.794126",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-121",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Browsing YouTube for videos",
+    "url": null,
+    "created_at": "2025-12-07T11:19:54.897532",
+    "metadata": {
+      "category": "entertainment"
+    }
+  },
+  {
+    "id": "os-122",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Watching videos on YouTube",
+    "url": null,
+    "created_at": "2025-12-07T11:20:03.205138",
+    "metadata": {
+      "category": "entertainment"
+    }
+  },
+  {
+    "id": "os-123",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Arranging windows on your screen",
+    "url": null,
+    "created_at": "2025-12-07T11:20:16.405129",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-124",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Watching a video on YouTube",
+    "url": null,
+    "created_at": "2025-12-07T11:20:17.529993",
+    "metadata": {
+      "category": "entertainment"
+    }
+  },
+  {
+    "id": "os-125",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Analyzing data on a dashboard",
+    "url": null,
+    "created_at": "2025-12-07T11:20:24.300190",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-126",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Coding in a text editor for a hackathon project.",
+    "url": null,
+    "created_at": "2025-12-07T11:20:26.527817",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-127",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Opening a new tab in Chrome",
+    "url": null,
+    "created_at": "2025-12-07T11:20:50.890637",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-128",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching for news using a web browser",
+    "url": null,
+    "created_at": "2025-12-07T11:20:55.351391",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-129",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Browsing news on BBC",
+    "url": null,
+    "created_at": "2025-12-07T11:21:01.764020",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-130",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Analyzing data on a behavior analytics dashboard",
+    "url": null,
+    "created_at": "2025-12-07T11:21:18.579138",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-131",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Unlocking computer",
+    "url": null,
+    "created_at": "2025-12-07T11:32:44.696275",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-132",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Analyzing data on a dashboard.",
+    "url": null,
+    "created_at": "2025-12-07T11:32:45.398347",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-133",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Coding a JavaScript file for a hackathon project",
+    "url": null,
+    "created_at": "2025-12-07T11:32:55.935885",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-134",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Viewing an analytics dashboard.",
+    "url": null,
+    "created_at": "2025-12-07T11:33:26.025161",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-135",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "The user is coding a background script.",
+    "url": null,
+    "created_at": "2025-12-07T11:33:28.029318",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-136",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Analyzing data on a dashboard",
+    "url": null,
+    "created_at": "2025-12-07T11:39:19.951150",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-137",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing system applications or utilities",
+    "url": null,
+    "created_at": "2025-12-07T11:39:25.942410",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "chat-138",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T11:41:56.198568",
+    "metadata": {
+      "query": "Hello, this is a test from the integration script."
+    }
+  },
+  {
+    "id": "chat-139",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T11:45:20.528315",
+    "metadata": {
+      "query": "Hello, this is a test from the integration script."
+    }
+  },
+  {
+    "id": "os-140",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Analyzing data on a dashboard",
+    "url": null,
+    "created_at": "2025-12-07T11:46:32.070881",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "chat-141",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T11:46:48.759670",
+    "metadata": {
+      "query": "Hello, this is a test from the integration script."
+    }
+  },
+  {
+    "id": "os-142",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Browsing new tabs in Microsoft Edge",
+    "url": null,
+    "created_at": "2025-12-07T11:47:21.027181",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-143",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Opening a new tab in Microsoft Edge",
+    "url": null,
+    "created_at": "2025-12-07T11:47:24.125248",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-144",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Browsing search results for BBC News",
+    "url": null,
+    "created_at": "2025-12-07T11:47:25.766223",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-145",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Browsing multiple web pages",
+    "url": null,
+    "created_at": "2025-12-07T11:47:32.483548",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-146",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Browsing news on BBC News website.",
+    "url": null,
+    "created_at": "2025-12-07T11:47:33.201918",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-147",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Browsing news on Microsoft Edge",
+    "url": null,
+    "created_at": "2025-12-07T11:47:34.738532",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-148",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Reading news on the BBC website",
+    "url": null,
+    "created_at": "2025-12-07T11:47:35.493791",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-149",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Reviewing data in an analytics dashboard.",
+    "url": null,
+    "created_at": "2025-12-07T11:47:38.886353",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-150",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching for news on Google",
+    "url": null,
+    "created_at": "2025-12-07T11:48:07.061540",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-151",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Viewing data on a dashboard",
+    "url": null,
+    "created_at": "2025-12-07T11:48:35.197216",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-152",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Arranging windows on their screen",
+    "url": null,
+    "created_at": "2025-12-07T11:48:36.920558",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-153",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Analyzing data in a web browser",
+    "url": null,
+    "created_at": "2025-12-07T11:48:37.904697",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-154",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "The user is coding a browser extension.",
+    "url": null,
+    "created_at": "2025-12-07T11:48:41.157410",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-155",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing browser extensions",
+    "url": null,
+    "created_at": "2025-12-07T11:48:45.052542",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-156",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Reviewing an analytics dashboard",
+    "url": null,
+    "created_at": "2025-12-07T11:48:46.527110",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-157",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Viewing a new tab in Chrome",
+    "url": null,
+    "created_at": "2025-12-07T11:48:48.828835",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-158",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Viewing news search results in browser",
+    "url": null,
+    "created_at": "2025-12-07T11:48:51.190650",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-159",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Coding on a hackathon project file",
+    "url": null,
+    "created_at": "2025-12-07T11:49:06.494335",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-160",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Reviewing personal behavior analytics in a web browser.",
+    "url": null,
+    "created_at": "2025-12-07T11:49:16.787533",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-161",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Coding a background script for a hackathon project",
+    "url": null,
+    "created_at": "2025-12-07T11:49:18.972393",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-162",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Reviewing data in a dashboard",
+    "url": null,
+    "created_at": "2025-12-07T11:59:35.497802",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-163",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Starting a new web browsing session",
+    "url": null,
+    "created_at": "2025-12-07T11:59:46.900287",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-164",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Arranging and organizing open windows on the screen",
+    "url": null,
+    "created_at": "2025-12-07T11:59:48.356080",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-165",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Opening a new tab in Chrome.",
+    "url": null,
+    "created_at": "2025-12-07T11:59:49.044288",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-166",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching for news on Google Chrome.",
+    "url": null,
+    "created_at": "2025-12-07T11:59:53.260970",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-167",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Reading news on the BBC News website",
+    "url": null,
+    "created_at": "2025-12-07T11:59:56.386163",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "chat-168",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T12:00:08.612086",
+    "metadata": {
+      "query": "how do i look for youtube"
+    }
+  },
+  {
+    "id": "os-169",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Watching videos on YouTube",
+    "url": null,
+    "created_at": "2025-12-07T12:00:24.933383",
+    "metadata": {
+      "category": "entertainment"
+    }
+  },
+  {
+    "id": "os-170",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Viewing videos on YouTube.",
+    "url": null,
+    "created_at": "2025-12-07T12:00:30.827637",
+    "metadata": {
+      "category": "entertainment"
+    }
+  },
+  {
+    "id": "os-171",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Analyzing data on a dashboard",
+    "url": null,
+    "created_at": "2025-12-07T12:00:43.495181",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-172",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Coding for a hackathon project",
+    "url": null,
+    "created_at": "2025-12-07T12:00:44.964821",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "chat-173",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T12:00:44.985938",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-174",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Viewing an online analytics dashboard.",
+    "url": null,
+    "created_at": "2025-12-07T12:21:56.872513",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-175",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "User is on a new tab in Chrome.",
+    "url": null,
+    "created_at": "2025-12-07T12:22:14.223052",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-176",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Viewing search results in a web browser",
+    "url": null,
+    "created_at": "2025-12-07T12:22:18.268521",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-177",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing browser extensions",
+    "url": null,
+    "created_at": "2025-12-07T12:22:43.567604",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-178",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching the web for 'dsds'",
+    "url": null,
+    "created_at": "2025-12-07T12:22:44.281900",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "chat-179",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T12:22:48.211249",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-180",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Reviewing data on an analytics dashboard",
+    "url": null,
+    "created_at": "2025-12-07T12:23:23.848136",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-181",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Opening a new tab in Chrome.",
+    "url": null,
+    "created_at": "2025-12-07T12:23:24.763800",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-182",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching on Google",
+    "url": null,
+    "created_at": "2025-12-07T12:23:41.937190",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "chat-183",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T12:24:00.214757",
+    "metadata": {
+      "query": "i want to go to youtube"
+    }
+  },
+  {
+    "id": "os-184",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching for and accessing YouTube",
+    "url": null,
+    "created_at": "2025-12-07T12:24:15.717893",
+    "metadata": {
+      "category": "entertainment"
+    }
+  },
+  {
+    "id": "os-185",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Analyzing data in a dashboard",
+    "url": null,
+    "created_at": "2025-12-07T12:24:24.324749",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "chat-186",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T12:24:29.361853",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-187",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Viewing YouTube search results.",
+    "url": null,
+    "created_at": "2025-12-07T12:24:34.376724",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-188",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Browsing videos on YouTube",
+    "url": null,
+    "created_at": "2025-12-07T12:24:58.539739",
+    "metadata": {
+      "category": "entertainment"
+    }
+  },
+  {
+    "id": "os-189",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "watching videos on YouTube",
+    "url": null,
+    "created_at": "2025-12-07T12:25:05.493251",
+    "metadata": {
+      "category": "entertainment"
+    }
+  },
+  {
+    "id": "chat-190",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T12:25:26.243099",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-191",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Watching news on YouTube",
+    "url": null,
+    "created_at": "2025-12-07T12:25:53.788226",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "chat-192",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T12:26:50.914851",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-193",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "analyzing a dashboard",
+    "url": null,
+    "created_at": "2025-12-07T12:27:04.118774",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-194",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Opening a new tab in Chrome",
+    "url": null,
+    "created_at": "2025-12-07T12:28:10.725504",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-195",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Arranging windows on the screen using a utility",
+    "url": null,
+    "created_at": "2025-12-07T12:28:13.116270",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-196",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Opening a new tab in Chrome",
+    "url": null,
+    "created_at": "2025-12-07T12:28:15.148741",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-197",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Browsing news search results",
+    "url": null,
+    "created_at": "2025-12-07T12:28:17.134142",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-198",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Analyzing data on a dashboard.",
+    "url": null,
+    "created_at": "2025-12-07T12:28:18.052876",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-199",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Viewing search results for 'bbc news'.",
+    "url": null,
+    "created_at": "2025-12-07T12:28:24.628691",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-200",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Reading news on a website",
+    "url": null,
+    "created_at": "2025-12-07T12:28:25.579026",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "chat-201",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T12:28:33.330707",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-202",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Analyzing data in a dashboard",
+    "url": null,
+    "created_at": "2025-12-07T12:28:45.358738",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-203",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Coding a Python file for a hackathon project",
+    "url": null,
+    "created_at": "2025-12-07T12:28:46.222616",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "chat-204",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T12:29:06.558060",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-205",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Analyzing data on a dashboard",
+    "url": null,
+    "created_at": "2025-12-07T12:29:20.716445",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-206",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Getting ready to browse the web",
+    "url": null,
+    "created_at": "2025-12-07T12:29:21.865127",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-207",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching the internet",
+    "url": null,
+    "created_at": "2025-12-07T12:29:26.794507",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "chat-208",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T12:29:41.613701",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-209",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using the command prompt",
+    "url": null,
+    "created_at": "2025-12-07T12:29:56.364830",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-210",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Viewing search results in a browser",
+    "url": null,
+    "created_at": "2025-12-07T12:29:59.170623",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-211",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Running a Python program",
+    "url": null,
+    "created_at": "2025-12-07T12:30:00.025285",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-212",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing code repositories with GitHub Desktop",
+    "url": null,
+    "created_at": "2025-12-07T12:32:18.453383",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-213",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Behavior Analytics Dashboard - Google Chrome",
+    "url": null,
+    "created_at": "2025-12-07T13:51:06.213627",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-214",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Windows PowerShell",
+    "url": null,
+    "created_at": "2025-12-07T13:51:06.334668",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-215",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Task Switching",
+    "url": null,
+    "created_at": "2025-12-07T13:51:08.588206",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-216",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Behavior Analytics Dashboard - Google Chrome",
+    "url": null,
+    "created_at": "2025-12-07T13:51:09.936092",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-217",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Task Switching",
+    "url": null,
+    "created_at": "2025-12-07T13:51:18.009572",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-218",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Windows PowerShell",
+    "url": null,
+    "created_at": "2025-12-07T13:51:18.255510",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-219",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Task Switching",
+    "url": null,
+    "created_at": "2025-12-07T13:51:23.210986",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-220",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using access_project - Antigravity - Header.tsx",
+    "url": null,
+    "created_at": "2025-12-07T13:51:24.566791",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-221",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Task Switching",
+    "url": null,
+    "created_at": "2025-12-07T13:51:27.713890",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-222",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Behavior Analytics Dashboard - Google Chrome",
+    "url": null,
+    "created_at": "2025-12-07T13:55:05.684744",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-223",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using access_project - Antigravity - Header.tsx",
+    "url": null,
+    "created_at": "2025-12-07T13:55:05.826322",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-224",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Behavior Analytics Dashboard - Google Chrome",
+    "url": null,
+    "created_at": "2025-12-07T13:55:14.050881",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-225",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Search",
+    "url": null,
+    "created_at": "2025-12-07T13:55:21.640339",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-226",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Behavior Analytics Dashboard - Google Chrome",
+    "url": null,
+    "created_at": "2025-12-07T13:55:23.038502",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-227",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Search",
+    "url": null,
+    "created_at": "2025-12-07T13:55:24.315924",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-228",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Opening - Word",
+    "url": null,
+    "created_at": "2025-12-07T13:55:30.759185",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-229",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Word",
+    "url": null,
+    "created_at": "2025-12-07T13:55:33.148524",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-230",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Behavior Analytics Dashboard - Google Chrome",
+    "url": null,
+    "created_at": "2025-12-07T13:55:34.543901",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-231",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Word",
+    "url": null,
+    "created_at": "2025-12-07T13:55:41.578947",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-232",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Behavior Analytics Dashboard - Google Chrome",
+    "url": null,
+    "created_at": "2025-12-07T13:55:42.932185",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-233",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using New tab - Google Chrome",
+    "url": null,
+    "created_at": "2025-12-07T13:55:50.562272",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-234",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using ssda - Google Search - Google Chrome",
+    "url": null,
+    "created_at": "2025-12-07T13:56:07.563722",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "chat-235",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T13:56:13.619389",
+    "metadata": {
+      "query": "how to go on youtube"
+    }
+  },
+  {
+    "id": "os-236",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Task Switching",
+    "url": null,
+    "created_at": "2025-12-07T13:56:36.634786",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-237",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Windows PowerShell",
+    "url": null,
+    "created_at": "2025-12-07T13:56:38.688031",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-238",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing open applications and switching between them",
+    "url": null,
+    "created_at": "2025-12-07T14:01:49.289621",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-239",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing system tasks with the command line",
+    "url": null,
+    "created_at": "2025-12-07T14:01:54.079715",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-240",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing open applications and windows",
+    "url": null,
+    "created_at": "2025-12-07T14:01:55.212389",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-241",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Viewing Google search results for 'ssda'.",
+    "url": null,
+    "created_at": "2025-12-07T14:02:02.730185",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-242",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "analyzing data in a browser",
+    "url": null,
+    "created_at": "2025-12-07T14:02:03.671533",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-243",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching on Google",
+    "url": null,
+    "created_at": "2025-12-07T14:02:11.112221",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-244",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching on Google",
+    "url": null,
+    "created_at": "2025-12-07T14:02:16.859602",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "chat-245",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T14:02:34.464060",
+    "metadata": {
+      "query": "how to check my taxes based on income?"
+    }
+  },
+  {
+    "id": "os-246",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "The user is coding CSS in a project.",
+    "url": null,
+    "created_at": "2025-12-07T14:04:48.339726",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-247",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing open applications and windows on computer",
+    "url": null,
+    "created_at": "2025-12-07T14:04:49.536259",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-248",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Google Chrome to access the Google search engine",
+    "url": null,
+    "created_at": "2025-12-07T14:04:51.335963",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "chat-249",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T14:04:52.872649",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-250",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "The user is editing a stylesheet.",
+    "url": null,
+    "created_at": "2025-12-07T14:04:58.945837",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-251",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Coding a website's style sheet",
+    "url": null,
+    "created_at": "2025-12-07T14:05:03.979450",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-252",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Editing CSS for a web project",
+    "url": null,
+    "created_at": "2025-12-07T14:05:07.811141",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-253",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Editing a CSS file for a project",
+    "url": null,
+    "created_at": "2025-12-07T14:05:11.500768",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-254",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Editing CSS for a web project",
+    "url": null,
+    "created_at": "2025-12-07T14:05:16.904607",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-255",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing open applications and switching between them",
+    "url": null,
+    "created_at": "2025-12-07T14:05:19.929713",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-256",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Browsing the Google search page",
+    "url": null,
+    "created_at": "2025-12-07T14:05:20.850113",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "chat-257",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T14:05:23.606002",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-258",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Coding CSS styles for a project",
+    "url": null,
+    "created_at": "2025-12-07T14:05:48.827187",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "chat-259",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T14:06:08.900178",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-260",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching on Google Chrome",
+    "url": null,
+    "created_at": "2025-12-07T14:06:48.748191",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "chat-261",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T14:07:50.050043",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "chat-262",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T14:08:34.223565",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "chat-263",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T14:09:44.880088",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "chat-264",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T14:12:09.801550",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-265",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "coding on a JavaScript file",
+    "url": null,
+    "created_at": "2025-12-07T14:12:48.274003",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-266",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "The user is coding a JavaScript file for a project.",
+    "url": null,
+    "created_at": "2025-12-07T14:12:54.989189",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-267",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "The user is coding or developing software.",
+    "url": null,
+    "created_at": "2025-12-07T14:12:56.173847",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-268",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching on Google Chrome",
+    "url": null,
+    "created_at": "2025-12-07T14:13:01.653917",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "chat-269",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T14:13:01.880698",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-270",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "They are coding JavaScript.",
+    "url": null,
+    "created_at": "2025-12-07T14:13:07.413530",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-271",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Coding JavaScript in 'access_project'",
+    "url": null,
+    "created_at": "2025-12-07T14:13:08.211502",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-272",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing open applications or windows",
+    "url": null,
+    "created_at": "2025-12-07T14:13:14.062714",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-273",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Browsing the Google search page",
+    "url": null,
+    "created_at": "2025-12-07T14:13:18.249100",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "chat-274",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T14:13:19.113262",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-275",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Switching between different open applications or windows.",
+    "url": null,
+    "created_at": "2025-12-07T14:13:25.466094",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-276",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Browsing the internet on Google",
+    "url": null,
+    "created_at": "2025-12-07T14:13:27.052075",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-277",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing open applications and switching between them.",
+    "url": null,
+    "created_at": "2025-12-07T14:13:34.666685",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-278",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "The user is coding in an IDE.",
+    "url": null,
+    "created_at": "2025-12-07T14:13:35.551030",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-279",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Reviewing behavior analytics dashboard",
+    "url": null,
+    "created_at": "2025-12-07T14:33:23.474554",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-280",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Adjusting browser settings",
+    "url": null,
+    "created_at": "2025-12-07T14:33:25.820246",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "chat-281",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T14:36:47.457556",
+    "metadata": {
+      "query": "i want to watch my youtube baking videos"
+    }
+  },
+  {
+    "id": "chat-282",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T14:37:07.253861",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "chat-283",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T14:37:23.763544",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-284",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Viewing analytics dashboard",
+    "url": null,
+    "created_at": "2025-12-07T14:43:01.766737",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-285",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing open applications or windows",
+    "url": null,
+    "created_at": "2025-12-07T14:43:12.954397",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-286",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Viewing an analytics dashboard",
+    "url": null,
+    "created_at": "2025-12-07T14:43:13.684302",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-287",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Browsing applications in the Microsoft Store",
+    "url": null,
+    "created_at": "2025-12-07T14:43:16.015694",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-288",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Adjusting system settings",
+    "url": null,
+    "created_at": "2025-12-07T14:43:29.031997",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-289",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching for information on the web",
+    "url": null,
+    "created_at": "2025-12-07T14:43:30.966558",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-290",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Reviewing analytics dashboard",
+    "url": null,
+    "created_at": "2025-12-07T14:43:35.190719",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-291",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using accessibility features for voice control.",
+    "url": null,
+    "created_at": "2025-12-07T14:43:39.176305",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-292",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Reviewing data in a browser.",
+    "url": null,
+    "created_at": "2025-12-07T14:43:44.471293",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-293",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Switching between applications",
+    "url": null,
+    "created_at": "2025-12-07T14:43:59.490302",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-294",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Coding on a JavaScript project",
+    "url": null,
+    "created_at": "2025-12-07T14:44:07.542379",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-295",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "The user is coding a web project.",
+    "url": null,
+    "created_at": "2025-12-07T14:44:14.823502",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-296",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "coding a project",
+    "url": null,
+    "created_at": "2025-12-07T14:44:27.121343",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-297",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Analyzing data on a dashboard",
+    "url": null,
+    "created_at": "2025-12-07T14:45:50.381877",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-298",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Taking a screenshot with the Snipping Tool",
+    "url": null,
+    "created_at": "2025-12-07T14:46:00.335143",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-299",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Analyzing data on a dashboard",
+    "url": null,
+    "created_at": "2025-12-07T14:46:12.800164",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-300",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing or switching between open applications",
+    "url": null,
+    "created_at": "2025-12-07T14:47:06.657162",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-301",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Viewing a presentation in Google Slides",
+    "url": null,
+    "created_at": "2025-12-07T14:47:08.242240",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-302",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Opening or selecting a file",
+    "url": null,
+    "created_at": "2025-12-07T14:47:25.090036",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-303",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Viewing a presentation on digital literacy",
+    "url": null,
+    "created_at": "2025-12-07T14:47:41.549176",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-304",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Viewing a dashboard in Chrome",
+    "url": null,
+    "created_at": "2025-12-07T14:51:38.034673",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-305",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "searching the web",
+    "url": null,
+    "created_at": "2025-12-07T14:51:38.921864",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-306",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Reviewing web browsing history",
+    "url": null,
+    "created_at": "2025-12-07T14:51:49.159035",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-307",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching on Google",
+    "url": null,
+    "created_at": "2025-12-07T14:51:49.791630",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "chat-308",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T14:52:24.483267",
+    "metadata": {
+      "query": "How can i check my uk tax bracket?"
+    }
+  },
+  {
+    "id": "os-309",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching for information on UK tax brackets",
+    "url": null,
+    "created_at": "2025-12-07T14:52:45.008298",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "chat-310",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T14:52:53.004007",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-311",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Viewing UK income tax rates on a government site",
+    "url": null,
+    "created_at": "2025-12-07T14:53:40.911864",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-312",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching for information on UK tax brackets",
+    "url": null,
+    "created_at": "2025-12-07T14:53:44.006779",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-313",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing Chrome browser extensions",
+    "url": null,
+    "created_at": "2025-12-07T14:53:49.006677",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-314",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Selecting an extension directory",
+    "url": null,
+    "created_at": "2025-12-07T14:53:49.709650",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-315",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "managing Chrome extensions",
+    "url": null,
+    "created_at": "2025-12-07T14:53:52.884286",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-316",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Selecting an extension directory",
+    "url": null,
+    "created_at": "2025-12-07T14:54:00.032668",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-317",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing browser extensions in Chrome",
+    "url": null,
+    "created_at": "2025-12-07T14:54:03.718365",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-318",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Reviewing data analytics dashboard",
+    "url": null,
+    "created_at": "2025-12-07T14:54:04.403845",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-319",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching for UK tax information",
+    "url": null,
+    "created_at": "2025-12-07T14:54:06.684355",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-320",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching on Google",
+    "url": null,
+    "created_at": "2025-12-07T14:54:08.949495",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "ext-321",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwiLy8el3auRAxX9Q0EAHcfcAxAQPQgJ",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T14:54:09.078403",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-322",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwiLy8el3auRAxX9Q0EAHcfcAxAQPQgJ",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T14:54:34.077225",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "chat-323",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T14:54:35.693060",
+    "metadata": {
+      "query": "i want to watch great british bakeoff on youtube?"
+    }
+  },
+  {
+    "id": "os-324",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing open applications",
+    "url": null,
+    "created_at": "2025-12-07T14:54:49.886318",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-325",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "The user is coding a web page header.",
+    "url": null,
+    "created_at": "2025-12-07T14:54:50.901112",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-326",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "User is coding in Python",
+    "url": null,
+    "created_at": "2025-12-07T14:55:02.499362",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-327",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Working on a presentation in Google Slides",
+    "url": null,
+    "created_at": "2025-12-07T14:55:11.793610",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-328",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Checking email inbox",
+    "url": null,
+    "created_at": "2025-12-07T14:55:13.222077",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-329",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Checking email in Gmail",
+    "url": null,
+    "created_at": "2025-12-07T14:55:15.763929",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-330",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing emails in Gmail inbox",
+    "url": null,
+    "created_at": "2025-12-07T14:55:18.756087",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-331",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Viewing an email in Gmail",
+    "url": null,
+    "created_at": "2025-12-07T14:55:25.805433",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-332",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using an AI assistant for information or tasks",
+    "url": null,
+    "created_at": "2025-12-07T14:55:31.663711",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-333",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "coding in a Python project",
+    "url": null,
+    "created_at": "2025-12-07T14:55:32.674157",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-334",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing open applications or windows",
+    "url": null,
+    "created_at": "2025-12-07T14:55:47.768090",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-335",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using an AI assistant for browsing",
+    "url": null,
+    "created_at": "2025-12-07T14:55:48.796766",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-336",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Reviewing data in a dashboard",
+    "url": null,
+    "created_at": "2025-12-07T14:56:24.570356",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-337",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing Chrome browser extensions",
+    "url": null,
+    "created_at": "2025-12-07T14:56:28.170889",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-338",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Considering removing an extension",
+    "url": null,
+    "created_at": "2025-12-07T14:56:29.591409",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-339",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing Chrome browser extensions",
+    "url": null,
+    "created_at": "2025-12-07T14:56:31.021214",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-340",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Selecting extension directory",
+    "url": null,
+    "created_at": "2025-12-07T14:56:32.603209",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-341",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "User is on the Google search page.",
+    "url": null,
+    "created_at": "2025-12-07T14:56:34.964077",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "ext-342",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwiLy8el3auRAxX9Q0EAHcfcAxAQPQgJ",
+    "element_selector": "#hplogo",
+    "created_at": "2025-12-07T14:56:36.360144",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-343",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwiLy8el3auRAxX9Q0EAHcfcAxAQPQgJ",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T14:56:37.232347",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-344",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwiLy8el3auRAxX9Q0EAHcfcAxAQPQgJ",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T14:56:49.139234",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "chat-345",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T14:56:49.264984",
+    "metadata": {
+      "query": "i want to watch youtube videos"
+    }
+  },
+  {
+    "id": "ext-346",
+    "event_type": "prompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwiLy8el3auRAxX9Q0EAHcfcAxAQPQgJ",
+    "element_selector": "#APjFqb",
+    "created_at": "2025-12-07T14:57:03.274378",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "os-347",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching Google for YouTube",
+    "url": null,
+    "created_at": "2025-12-07T14:57:07.345159",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "chat-348",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T14:57:08.050458",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "chat-349",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T14:57:12.611801",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-350",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing active applications",
+    "url": null,
+    "created_at": "2025-12-07T14:57:22.271941",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-351",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Writing or editing code in a project",
+    "url": null,
+    "created_at": "2025-12-07T14:57:25.570456",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-352",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing open applications on the computer",
+    "url": null,
+    "created_at": "2025-12-07T14:57:39.049717",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-353",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Browsing Google Gemini, an AI assistant.",
+    "url": null,
+    "created_at": "2025-12-07T14:57:40.139201",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-354",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Coding on a project file",
+    "url": null,
+    "created_at": "2025-12-07T15:00:41.759987",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-355",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Viewing an analytics dashboard.",
+    "url": null,
+    "created_at": "2025-12-07T15:02:27.242581",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-356",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing Chrome browser extensions",
+    "url": null,
+    "created_at": "2025-12-07T15:02:29.863232",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-357",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Removing a browser extension",
+    "url": null,
+    "created_at": "2025-12-07T15:03:10.546396",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-358",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing Chrome browser extensions",
+    "url": null,
+    "created_at": "2025-12-07T15:03:11.360904",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-359",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Selecting directory for extension",
+    "url": null,
+    "created_at": "2025-12-07T15:03:12.142890",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-360",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing Chrome browser extensions",
+    "url": null,
+    "created_at": "2025-12-07T15:03:16.291169",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-361",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching for YouTube on Google",
+    "url": null,
+    "created_at": "2025-12-07T15:03:17.208121",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-362",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing open applications or windows",
+    "url": null,
+    "created_at": "2025-12-07T15:03:18.184012",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-363",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching for YouTube",
+    "url": null,
+    "created_at": "2025-12-07T15:03:20.112658",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-364",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching on Google",
+    "url": null,
+    "created_at": "2025-12-07T15:03:25.733254",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "ext-365",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwiMsr6i3quRAxUzQkEAHU_iOHoQPQgJ",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T15:03:28.364823",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-366",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwiMsr6i3quRAxUzQkEAHU_iOHoQPQgJ",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T15:03:40.153680",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "chat-367",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T15:03:45.271943",
+    "metadata": {
+      "query": "i want to watch youtube videos"
+    }
+  },
+  {
+    "id": "os-368",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching for YouTube on Google",
+    "url": null,
+    "created_at": "2025-12-07T15:03:55.575404",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "ext-369",
+    "event_type": "prompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwiMsr6i3quRAxUzQkEAHU_iOHoQPQgJ",
+    "element_selector": "#APjFqb",
+    "created_at": "2025-12-07T15:04:03.778553",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "os-370",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Switching between tasks",
+    "url": null,
+    "created_at": "2025-12-07T15:04:18.855838",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-371",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Running command prompt",
+    "url": null,
+    "created_at": "2025-12-07T15:04:20.859736",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "chat-372",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T15:04:21.686864",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-373",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing system settings",
+    "url": null,
+    "created_at": "2025-12-07T15:04:26.724789",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-374",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching for YouTube on Google",
+    "url": null,
+    "created_at": "2025-12-07T15:04:35.311172",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-375",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using a command-line interface",
+    "url": null,
+    "created_at": "2025-12-07T15:04:38.246268",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "ext-376",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/search?q=youtube&sca_esv=0f2c6b33d9f16091&hl=en&source=hp&ei=N5c1aZemFdyjhbIP3bPE0Q8&iflsig=AOw8s4IAAAAAaTWlR7k8I8-nPkI-0zVMfD5E_3zC3uHg&ved=0ahUKEwjXnYHV36uRAxXcUUEAHd0ZMfoQ4dUDCBE&uact=5&oq=youtube&gs_lp=Egdnd3Mtd2l6Igd5b3V0dWJlMgsQLhiABBixAxiDATILEAAYgAQYsQMYgwEyDhAAGIAEGLEDGIMBGIoFMg4QABiABBixAxiDARiKBTILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBMggQABiABBixAzIIEAAYgAQYsQMyDhAAGIAEGLEDGIMBGIoFMg4QABiABBixAxiDARiKBUjaGVDqDFjzEnABeACQAQCYAVugAcEDqgEBN7gBA8gBAPgBAZgCCKAC2gOoAgrCAgoQABgDGOoCGI8BwgIREC4YgAQYsQMY0QMYgwEYxwHCAg4QLhiABBixAxjRAxjHAcICCBAuGIAEGLEDwgIFEAAYgASYAwXxBX8WCIk3a33MkgcBOKAHgjmyBwE3uAfUA8IHBTAuNy4xyAcSgAgA&sclient=gws-wiz",
+    "element_selector": "#rcnt",
+    "created_at": "2025-12-07T15:04:53.661135",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "os-377",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Coding on a project",
+    "url": null,
+    "created_at": "2025-12-07T15:04:54.673683",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-378",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "coding in a development environment",
+    "url": null,
+    "created_at": "2025-12-07T15:04:56.196346",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-379",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "User is writing and editing Python code.",
+    "url": null,
+    "created_at": "2025-12-07T15:05:03.842242",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-380",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Coding in a Python IDE",
+    "url": null,
+    "created_at": "2025-12-07T15:05:05.511229",
+    "metadata": {
+      "category": "coding"
+    }
+  },
+  {
+    "id": "os-381",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing browser extensions in Chrome.",
+    "url": null,
+    "created_at": "2025-12-07T15:05:28.596007",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-382",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "User is searching for YouTube",
+    "url": null,
+    "created_at": "2025-12-07T15:05:29.497680",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "ext-383",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/search?q=youtube&sca_esv=0f2c6b33d9f16091&hl=en&source=hp&ei=N5c1aZemFdyjhbIP3bPE0Q8&iflsig=AOw8s4IAAAAAaTWlR7k8I8-nPkI-0zVMfD5E_3zC3uHg&ved=0ahUKEwjXnYHV36uRAxXcUUEAHd0ZMfoQ4dUDCBE&uact=5&oq=youtube&gs_lp=Egdnd3Mtd2l6Igd5b3V0dWJlMgsQLhiABBixAxiDATILEAAYgAQYsQMYgwEyDhAAGIAEGLEDGIMBGIoFMg4QABiABBixAxiDARiKBTILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBMggQABiABBixAzIIEAAYgAQYsQMyDhAAGIAEGLEDGIMBGIoFMg4QABiABBixAxiDARiKBUjaGVDqDFjzEnABeACQAQCYAVugAcEDqgEBN7gBA8gBAPgBAZgCCKAC2gOoAgrCAgoQABgDGOoCGI8BwgIREC4YgAQYsQMY0QMYgwEYxwHCAg4QLhiABBixAxjRAxjHAcICCBAuGIAEGLEDwgIFEAAYgASYAwXxBX8WCIk3a33MkgcBOKAHgjmyBwE3uAfUA8IHBTAuNy4xyAcSgAgA&sclient=gws-wiz",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T15:05:29.566351",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "os-384",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing open applications or tasks",
+    "url": null,
+    "created_at": "2025-12-07T15:05:30.425470",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-385",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Interacting with an AI assistant",
+    "url": null,
+    "created_at": "2025-12-07T15:05:35.676593",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-386",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "checking email",
+    "url": null,
+    "created_at": "2025-12-07T15:05:38.502524",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-387",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Google Keep for note-taking",
+    "url": null,
+    "created_at": "2025-12-07T15:05:39.116315",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-388",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Viewing a presentation in a web browser",
+    "url": null,
+    "created_at": "2025-12-07T15:05:40.810409",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-389",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing browser extensions",
+    "url": null,
+    "created_at": "2025-12-07T15:06:39.855688",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-390",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Browsing the Google search page",
+    "url": null,
+    "created_at": "2025-12-07T15:06:49.491734",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-391",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing browser extensions",
+    "url": null,
+    "created_at": "2025-12-07T15:07:03.229614",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-392",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Selecting a directory for an extension.",
+    "url": null,
+    "created_at": "2025-12-07T15:07:06.848071",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-393",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing browser extensions",
+    "url": null,
+    "created_at": "2025-12-07T15:07:08.718613",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-394",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Searching the web",
+    "url": null,
+    "created_at": "2025-12-07T15:07:16.644374",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "ext-395",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwizybzl36uRAxW1UkEAHd6NNNIQPQgJ",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T15:07:16.691199",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-396",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwizybzl36uRAxW1UkEAHd6NNNIQPQgJ",
+    "element_selector": "#APjFqb",
+    "created_at": "2025-12-07T15:07:16.756336",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-397",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwizybzl36uRAxW1UkEAHd6NNNIQPQgJ",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T15:07:34.052725",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-398",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwizybzl36uRAxW1UkEAHd6NNNIQPQgJ",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T15:07:44.337295",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "chat-399",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T15:07:44.510230",
+    "metadata": {
+      "query": "i want to watch videos on how to fix my honda civic"
+    }
+  },
+  {
+    "id": "ext-400",
+    "event_type": "prompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwizybzl36uRAxW1UkEAHd6NNNIQPQgJ",
+    "element_selector": "#APjFqb",
+    "created_at": "2025-12-07T15:08:02.553759",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "chat-401",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T15:08:10.387855",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "ext-402",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/search?q=how+to+fix+my+honda+civic&sca_esv=0f2c6b33d9f16091&hl=en&source=hp&ei=HJg1ad3BFLuEhbIP_4KByAk&iflsig=AOw8s4IAAAAAaTWmLEoiNuHKwk_vbUvAe_-jHpyXlE5D&ved=0ahUKEwjdv5nC4KuRAxU7QkEAHX9BAJkQ4dUDCBE&uact=5&oq=how+to+fix+my+honda+civic&gs_lp=Egdnd3Mtd2l6Ihlob3cgdG8gZml4IG15IGhvbmRhIGNpdmljMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5ItMwDUIoLWPjAA3ABeACQAQOYAY4loAHvoQGqAQsxMS4xMy4xLjktNLgBA8gBAPgBAZgCGqAC3hSoAgrCAgoQABgDGOoCGI8BwgILEAAYgAQYsQMYgwHCAhEQLhiABBixAxjRAxiDARjHAcICDhAuGIAEGLEDGIMBGIoFwgILEC4YgAQY0QMYxwHCAggQABiABBixA8ICFBAuGIAEGLEDGIMBGMcBGIoFGK8BwgIFEAAYgATCAg4QLhiABBixAxjRAxjHAcICCxAuGIAEGLEDGIMBwgIFEC4YgATCAg4QABiABBixAxiDARiKBcICCBAuGIAEGLEDwgIOEAAYgAQYsQMYigUYjQbCAgsQABiABBiGAxiKBZgDBfEFBj1zWQbY3pCSBwcxMS4xNC4xoAf96gGyBwcxMC4xNC4xuAfZFMIHBjAuMjUuMcgHL4AIAA&sclient=gws-wiz",
+    "element_selector": ".driver-popover-next-btn",
+    "created_at": "2025-12-07T15:08:19.880484",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-403",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/search?q=how+to+fix+my+honda+civic&sca_esv=0f2c6b33d9f16091&hl=en&source=hp&ei=HJg1ad3BFLuEhbIP_4KByAk&iflsig=AOw8s4IAAAAAaTWmLEoiNuHKwk_vbUvAe_-jHpyXlE5D&ved=0ahUKEwjdv5nC4KuRAxU7QkEAHX9BAJkQ4dUDCBE&uact=5&oq=how+to+fix+my+honda+civic&gs_lp=Egdnd3Mtd2l6Ihlob3cgdG8gZml4IG15IGhvbmRhIGNpdmljMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5ItMwDUIoLWPjAA3ABeACQAQOYAY4loAHvoQGqAQsxMS4xMy4xLjktNLgBA8gBAPgBAZgCGqAC3hSoAgrCAgoQABgDGOoCGI8BwgILEAAYgAQYsQMYgwHCAhEQLhiABBixAxjRAxiDARjHAcICDhAuGIAEGLEDGIMBGIoFwgILEC4YgAQY0QMYxwHCAggQABiABBixA8ICFBAuGIAEGLEDGIMBGMcBGIoFGK8BwgIFEAAYgATCAg4QLhiABBixAxjRAxjHAcICCxAuGIAEGLEDGIMBwgIFEC4YgATCAg4QABiABBixAxiDARiKBcICCBAuGIAEGLEDwgIOEAAYgAQYsQMYigUYjQbCAgsQABiABBiGAxiKBZgDBfEFBj1zWQbY3pCSBwcxMS4xNC4xoAf96gGyBwcxMC4xNC4xuAfZFMIHBjAuMjUuMcgHL4AIAA&sclient=gws-wiz",
+    "element_selector": ".R1QWuf",
+    "created_at": "2025-12-07T15:08:20.741596",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "chat-404",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T15:08:37.102091",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "os-405",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Adjusting system settings",
+    "url": null,
+    "created_at": "2025-12-07T15:08:44.720257",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "ext-406",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/search?sca_esv=0f2c6b33d9f16091&hl=en&udm=7&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZ59Aj-dkSgmXWKpa2HWaBZFiTO0ouTWmFCwDJPeX-aDNJjPZ3-MhAKmtn8qKCw7Hjhe-4Fdqv4JokbNoHsw-TxHJEOHq3WOelvK82tFgy62l6fGIEiQTIcgFJwc7h3tf1aN5HQRHurTkGHMeyZFVdW5G67IDjnX2im6eDCrurMqSEniqBDSUgAAM2qCgXjLlDuChaTA&q=how+to+fix+my+honda+civic&sa=X&ved=2ahUKEwiMmozf4KuRAxXPVEEAHS7QC2MQtKgLegQIFBAB&biw=1680&bih=985&dpr=1.5",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T15:08:53.539878",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "os-407",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Viewing a behavior analytics dashboard",
+    "url": null,
+    "created_at": "2025-12-07T15:09:23.007615",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-408",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing browser extensions",
+    "url": null,
+    "created_at": "2025-12-07T15:09:29.886814",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-409",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Opening a new tab in the browser",
+    "url": null,
+    "created_at": "2025-12-07T15:09:43.641838",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-410",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "User is on the Google search page.",
+    "url": null,
+    "created_at": "2025-12-07T15:09:45.681598",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-411",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Using a digital literacy assistant to measure digital inclusion - Google Slides - Google Chrome",
+    "url": null,
+    "created_at": "2025-12-07T15:22:08.842465",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "ext-412",
+    "event_type": "prompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/",
+    "element_selector": ".o3j99.qarstb",
+    "created_at": "2025-12-07T15:38:32.720834",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-413",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T15:40:32.207076",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-414",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T15:40:33.978868",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-415",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T15:40:37.943429",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-416",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T15:40:43.774261",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-417",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T15:40:53.505698",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "chat-418",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T15:40:53.690504",
+    "metadata": {
+      "query": "i want to watch youtube videos"
+    }
+  },
+  {
+    "id": "ext-419",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T16:19:45.352945",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-420",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T16:19:47.489164",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-421",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T16:19:48.218164",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-422",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T16:19:49.401460",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-423",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T16:19:50.094772",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-424",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T16:19:50.893663",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "chat-425",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T16:19:51.105296",
+    "metadata": {
+      "query": "i want to watch youtube videos"
+    }
+  },
+  {
+    "id": "ext-426",
+    "event_type": "prompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/",
+    "element_selector": "path",
+    "created_at": "2025-12-07T16:19:56.182620",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-427",
+    "event_type": "prompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/",
+    "element_selector": "#APjFqb",
+    "created_at": "2025-12-07T16:19:59.608136",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-428",
+    "event_type": "prompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/",
+    "element_selector": "#APjFqb",
+    "created_at": "2025-12-07T16:20:00.827057",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "chat-429",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T16:20:02.998779",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "ext-430",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/search?q=youtube&sca_esv=b960a84cc5c43ab2&source=hp&ei=Hqk1aYn4IseehbIP4LabwQI&iflsig=AOw8s4IAAAAAaTW3Lqc152J8pklnMeGBSAp1FhGunCxd&ved=0ahUKEwiJ_7re8KuRAxVHT0EAHWDbJigQ4dUDCBE&uact=5&oq=youtube&gs_lp=Egdnd3Mtd2l6Igd5b3V0dWJlMgsQLhiABBixAxiDATILEAAYgAQYsQMYgwEyDhAAGIAEGLEDGIMBGIoFMg4QABiABBixAxiDARiKBTILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBMggQABiABBixAzIIEAAYgAQYsQMyDhAAGIAEGLEDGIMBGIoFMg4QABiABBixAxiDARiKBUjHDlDmBFiSDHACeACQAQCYAXmgAdMFqgEDNC4zuAEDyAEA-AEBmAIJoALwBagCCsICChAAGAMY6gIYjwHCAhEQLhiABBixAxjRAxiDARjHAcICDhAuGIAEGLEDGNEDGMcBwgIIEC4YgAQYsQPCAgUQABiABMICFBAuGIAEGLEDGNEDGMcBGIoFGI0GmAMG8QW3IwzA4vlrW5IHAzQuNaAHpTuyBwMyLjW4B-cFwgcFMC44LjHIBxWACAA&sclient=gws-wiz",
+    "element_selector": ".driver-popover-next-btn",
+    "created_at": "2025-12-07T16:20:23.178167",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-431",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/search?q=youtube&sca_esv=b960a84cc5c43ab2&source=hp&ei=Hqk1aYn4IseehbIP4LabwQI&iflsig=AOw8s4IAAAAAaTW3Lqc152J8pklnMeGBSAp1FhGunCxd&ved=0ahUKEwiJ_7re8KuRAxVHT0EAHWDbJigQ4dUDCBE&uact=5&oq=youtube&gs_lp=Egdnd3Mtd2l6Igd5b3V0dWJlMgsQLhiABBixAxiDATILEAAYgAQYsQMYgwEyDhAAGIAEGLEDGIMBGIoFMg4QABiABBixAxiDARiKBTILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBMggQABiABBixAzIIEAAYgAQYsQMyDhAAGIAEGLEDGIMBGIoFMg4QABiABBixAxiDARiKBUjHDlDmBFiSDHACeACQAQCYAXmgAdMFqgEDNC4zuAEDyAEA-AEBmAIJoALwBagCCsICChAAGAMY6gIYjwHCAhEQLhiABBixAxjRAxiDARjHAcICDhAuGIAEGLEDGNEDGMcBwgIIEC4YgAQYsQPCAgUQABiABMICFBAuGIAEGLEDGNEDGMcBGIoFGI0GmAMG8QW3IwzA4vlrW5IHAzQuNaAHpTuyBwMyLjW4B-cFwgcFMC44LjHIBxWACAA&sclient=gws-wiz",
+    "element_selector": "#_Mak1acWOEtS2hbIP6r--mQI_37",
+    "created_at": "2025-12-07T16:20:25.108779",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "chat-432",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T16:20:26.925272",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "ext-433",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.youtube.com/",
+    "element_selector": ".style-scope.ytd-rich-section-renderer",
+    "created_at": "2025-12-07T16:21:07.260613",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-434",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/search?q=youtube&sca_esv=b960a84cc5c43ab2&source=hp&ei=Hqk1aYn4IseehbIP4LabwQI&iflsig=AOw8s4IAAAAAaTW3Lqc152J8pklnMeGBSAp1FhGunCxd&ved=0ahUKEwiJ_7re8KuRAxVHT0EAHWDbJigQ4dUDCBE&uact=5&oq=youtube&gs_lp=Egdnd3Mtd2l6Igd5b3V0dWJlMgsQLhiABBixAxiDATILEAAYgAQYsQMYgwEyDhAAGIAEGLEDGIMBGIoFMg4QABiABBixAxiDARiKBTILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBMggQABiABBixAzIIEAAYgAQYsQMyDhAAGIAEGLEDGIMBGIoFMg4QABiABBixAxiDARiKBUjHDlDmBFiSDHACeACQAQCYAXmgAdMFqgEDNC4zuAEDyAEA-AEBmAIJoALwBagCCsICChAAGAMY6gIYjwHCAhEQLhiABBixAxjRAxiDARjHAcICDhAuGIAEGLEDGNEDGMcBwgIIEC4YgAQYsQPCAgUQABiABMICFBAuGIAEGLEDGNEDGMcBGIoFGI0GmAMG8QW3IwzA4vlrW5IHAzQuNaAHpTuyBwMyLjW4B-cFwgcFMC44LjHIBxWACAA&sclient=gws-wiz",
+    "element_selector": ".V9tjod",
+    "created_at": "2025-12-07T16:21:09.201235",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-435",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/search?q=youtube&sca_esv=b960a84cc5c43ab2&source=hp&ei=Hqk1aYn4IseehbIP4LabwQI&iflsig=AOw8s4IAAAAAaTW3Lqc152J8pklnMeGBSAp1FhGunCxd&ved=0ahUKEwiJ_7re8KuRAxVHT0EAHWDbJigQ4dUDCBE&uact=5&oq=youtube&gs_lp=Egdnd3Mtd2l6Igd5b3V0dWJlMgsQLhiABBixAxiDATILEAAYgAQYsQMYgwEyDhAAGIAEGLEDGIMBGIoFMg4QABiABBixAxiDARiKBTILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBMggQABiABBixAzIIEAAYgAQYsQMyDhAAGIAEGLEDGIMBGIoFMg4QABiABBixAxiDARiKBUjHDlDmBFiSDHACeACQAQCYAXmgAdMFqgEDNC4zuAEDyAEA-AEBmAIJoALwBagCCsICChAAGAMY6gIYjwHCAhEQLhiABBixAxjRAxiDARjHAcICDhAuGIAEGLEDGNEDGMcBwgIIEC4YgAQYsQPCAgUQABiABMICFBAuGIAEGLEDGNEDGMcBGIoFGI0GmAMG8QW3IwzA4vlrW5IHAzQuNaAHpTuyBwMyLjW4B-cFwgcFMC44LjHIBxWACAA&sclient=gws-wiz",
+    "element_selector": ".V9tjod",
+    "created_at": "2025-12-07T16:24:44.463127",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-436",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/search?q=youtube&sca_esv=b960a84cc5c43ab2&source=hp&ei=Hqk1aYn4IseehbIP4LabwQI&iflsig=AOw8s4IAAAAAaTW3Lqc152J8pklnMeGBSAp1FhGunCxd&ved=0ahUKEwiJ_7re8KuRAxVHT0EAHWDbJigQ4dUDCBE&uact=5&oq=youtube&gs_lp=Egdnd3Mtd2l6Igd5b3V0dWJlMgsQLhiABBixAxiDATILEAAYgAQYsQMYgwEyDhAAGIAEGLEDGIMBGIoFMg4QABiABBixAxiDARiKBTILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBMggQABiABBixAzIIEAAYgAQYsQMyDhAAGIAEGLEDGIMBGIoFMg4QABiABBixAxiDARiKBUjHDlDmBFiSDHACeACQAQCYAXmgAdMFqgEDNC4zuAEDyAEA-AEBmAIJoALwBagCCsICChAAGAMY6gIYjwHCAhEQLhiABBixAxjRAxiDARjHAcICDhAuGIAEGLEDGNEDGMcBwgIIEC4YgAQYsQPCAgUQABiABMICFBAuGIAEGLEDGNEDGMcBGIoFGI0GmAMG8QW3IwzA4vlrW5IHAzQuNaAHpTuyBwMyLjW4B-cFwgcFMC44LjHIBxWACAA&sclient=gws-wiz",
+    "element_selector": "#rcnt",
+    "created_at": "2025-12-07T16:55:11.674426",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-437",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwiF67Hn8KuRAxVUW0EAHeqfLyMQPQgJ",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T16:55:25.533233",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-438",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwiF67Hn8KuRAxVUW0EAHeqfLyMQPQgJ",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T16:55:26.096051",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-439",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwiF67Hn8KuRAxVUW0EAHeqfLyMQPQgJ",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T16:55:26.937551",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-440",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwiF67Hn8KuRAxVUW0EAHeqfLyMQPQgJ",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T16:55:44.708618",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "chat-441",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T16:55:45.021855",
+    "metadata": {
+      "query": "how can i watch yotube videos"
+    }
+  },
+  {
+    "id": "ext-442",
+    "event_type": "prompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwiF67Hn8KuRAxVUW0EAHeqfLyMQPQgJ",
+    "element_selector": "#APjFqb",
+    "created_at": "2025-12-07T16:56:01.340116",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "chat-443",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T16:56:07.281604",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "ext-444",
+    "event_type": "prompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/search?q=Youtube&sca_esv=d7139353ec3d0296&hl=en&source=hp&ei=e7E1aYjXEri3hbIP_-nGuA4&iflsig=AOw8s4IAAAAAaTW_i1kscna5lzM7tF4j8thbIpuef3n4&ved=0ahUKEwjIgJ_b-KuRAxW4W0EAHf-0EecQ4dUDCBE&uact=5&oq=Youtube&gs_lp=Egdnd3Mtd2l6IgdZb3V0dWJlMgsQLhiABBixAxiDATILEAAYgAQYsQMYgwEyDhAAGIAEGLEDGIMBGIoFMg4QABiABBixAxiDARiKBTILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBMggQABiABBixAzIIEAAYgAQYsQMyDhAAGIAEGLEDGIMBGIoFMg4QABiABBixAxiDARiKBUjrH1CBCFjlGHABeACQAQCYAc4BoAGOCKoBBTAuNi4xuAEDyAEA-AEBmAIIoALLCKgCCsICChAuGAMY6gIYjwHCAgoQABgDGOoCGI8BwgIREC4YgAQYsQMY0QMYgwEYxwHCAg4QLhiABBixAxjRAxjHAcICBRAuGIAEwgIIEC4YgAQYsQPCAgUQABiABMICFBAuGIAEGLEDGNEDGMcBGIoFGI0GmAMP8QVoTrb39an9kpIHBTEuNi4xoAeeO7IHBTAuNi4xuAe8CMIHBTItNy4xyActgAgA&sclient=gws-wiz",
+    "element_selector": "#_pbE1aZnlApe2hbIPw-SVoQU_37",
+    "created_at": "2025-12-07T16:56:21.438917",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "chat-445",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T16:56:23.723088",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "ext-446",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/search?q=Youtube&sca_esv=d7139353ec3d0296&hl=en&source=hp&ei=e7E1aYjXEri3hbIP_-nGuA4&iflsig=AOw8s4IAAAAAaTW_i1kscna5lzM7tF4j8thbIpuef3n4&ved=0ahUKEwjIgJ_b-KuRAxW4W0EAHf-0EecQ4dUDCBE&uact=5&oq=Youtube&gs_lp=Egdnd3Mtd2l6IgdZb3V0dWJlMgsQLhiABBixAxiDATILEAAYgAQYsQMYgwEyDhAAGIAEGLEDGIMBGIoFMg4QABiABBixAxiDARiKBTILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBMggQABiABBixAzIIEAAYgAQYsQMyDhAAGIAEGLEDGIMBGIoFMg4QABiABBixAxiDARiKBUjrH1CBCFjlGHABeACQAQCYAc4BoAGOCKoBBTAuNi4xuAEDyAEA-AEBmAIIoALLCKgCCsICChAuGAMY6gIYjwHCAgoQABgDGOoCGI8BwgIREC4YgAQYsQMY0QMYgwEYxwHCAg4QLhiABBixAxjRAxjHAcICBRAuGIAEwgIIEC4YgAQYsQPCAgUQABiABMICFBAuGIAEGLEDGNEDGMcBGIoFGI0GmAMP8QVoTrb39an9kpIHBTEuNi4xoAeeO7IHBTAuNi4xuAe8CMIHBTItNy4xyActgAgA&sclient=gws-wiz",
+    "element_selector": "img",
+    "created_at": "2025-12-07T16:56:55.423276",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-447",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwjZy5Lv-KuRAxUXW0EAHUNyJVQQPQgJ",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T16:56:57.744309",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-448",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwjZy5Lv-KuRAxUXW0EAHUNyJVQQPQgJ",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T16:57:00.506130",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-449",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwjZy5Lv-KuRAxUXW0EAHUNyJVQQPQgJ",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T16:57:14.799305",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "chat-450",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T16:57:15.129859",
+    "metadata": {
+      "query": "How do I access Manchester City Council website?"
+    }
+  },
+  {
+    "id": "ext-451",
+    "event_type": "prompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwjZy5Lv-KuRAxUXW0EAHUNyJVQQPQgJ",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T16:57:27.203930",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-452",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwjZy5Lv-KuRAxUXW0EAHUNyJVQQPQgJ",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T16:57:39.852179",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-453",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwjZy5Lv-KuRAxUXW0EAHUNyJVQQPQgJ",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T16:57:40.850575",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-454",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwjZy5Lv-KuRAxUXW0EAHUNyJVQQPQgJ",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T16:57:44.445783",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "chat-455",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T16:57:44.776258",
+    "metadata": {
+      "query": "How do I access Manchester City Council website?"
+    }
+  },
+  {
+    "id": "ext-456",
+    "event_type": "prompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwjZy5Lv-KuRAxUXW0EAHUNyJVQQPQgJ",
+    "element_selector": "#APjFqb",
+    "created_at": "2025-12-07T17:11:59.132850",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "chat-457",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T17:12:07.924401",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "ext-458",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/search?q=Manchester+City+Council&sca_esv=d7139353ec3d0296&hl=en&source=hp&ei=AbI1af6oLJ_OhbIPppSGkQM&iflsig=AOw8s4IAAAAAaTXAEV-8BCbYbyz7Tqpzd4xvcNbnDJZd&ved=0ahUKEwi-raub-auRAxUfZ0EAHSaKITIQ4dUDCBE&uact=5&oq=Manchester+City+Council&gs_lp=Egdnd3Mtd2l6IhdNYW5jaGVzdGVyIENpdHkgQ291bmNpbDIOEC4YgAQYsQMY0QMYxwEyBRAAGIAEMggQABiABBixAzIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIyTJQ7gxY1C5wAXgAkAEBmAG5BaABnhuqAQowLjE1LjEuNS0yuAEDyAEA-AEBmAISoALmFqgCCsICChAAGAMY6gIYjwHCAgoQLhgDGOoCGI8BwgIUEC4YgAQYsQMYgwEYxwEYjgUYrwHCAgsQLhiABBixAxiDAcICCBAuGIAEGLEDwgILEAAYgAQYsQMYgwHCAgsQLhiABBjRAxjHAcICDhAuGIAEGMcBGI4FGK8BwgIREC4YgAQYsQMYxwEYjgUYrwHCAg4QABiABBixAxiDARiKBZgDEfEFJD02zlNWqCySBwoxLjE1LjAuMS4xoAftlQKyBwowLjE1LjAuMS4xuAfVFsIHBjItMTYuMsgHXoAIAA&sclient=gws-wiz",
+    "element_selector": "path",
+    "created_at": "2025-12-07T17:12:17.774476",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-459",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/search?q=Manchester+City+Council&sca_esv=d7139353ec3d0296&hl=en&source=hp&ei=AbI1af6oLJ_OhbIPppSGkQM&iflsig=AOw8s4IAAAAAaTXAEV-8BCbYbyz7Tqpzd4xvcNbnDJZd&ved=0ahUKEwi-raub-auRAxUfZ0EAHSaKITIQ4dUDCBE&uact=5&oq=Manchester+City+Council&gs_lp=Egdnd3Mtd2l6IhdNYW5jaGVzdGVyIENpdHkgQ291bmNpbDIOEC4YgAQYsQMY0QMYxwEyBRAAGIAEMggQABiABBixAzIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIyTJQ7gxY1C5wAXgAkAEBmAG5BaABnhuqAQowLjE1LjEuNS0yuAEDyAEA-AEBmAISoALmFqgCCsICChAAGAMY6gIYjwHCAgoQLhgDGOoCGI8BwgIUEC4YgAQYsQMYgwEYxwEYjgUYrwHCAgsQLhiABBixAxiDAcICCBAuGIAEGLEDwgILEAAYgAQYsQMYgwHCAgsQLhiABBjRAxjHAcICDhAuGIAEGMcBGI4FGK8BwgIREC4YgAQYsQMYxwEYjgUYrwHCAg4QABiABBixAxiDARiKBZgDEfEFJD02zlNWqCySBwoxLjE1LjAuMS4xoAftlQKyBwowLjE1LjAuMS4xuAfVFsIHBjItMTYuMsgHXoAIAA&sclient=gws-wiz",
+    "element_selector": "#_ZLU1aYy6PLeEhbIPsrDqCA_70",
+    "created_at": "2025-12-07T17:12:18.329865",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "chat-460",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T17:12:20.025822",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "ext-461",
+    "event_type": "prompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.manchester.gov.uk/",
+    "element_selector": "#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll",
+    "created_at": "2025-12-07T17:12:30.677470",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-462",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.manchester.gov.uk/",
+    "element_selector": ".driver-popover-next-btn",
+    "created_at": "2025-12-07T17:12:36.445504",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-463",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.manchester.gov.uk/",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T17:12:39.558950",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "chat-464",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T17:12:40.000927",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "ext-465",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/",
+    "element_selector": ".o3j99.qarstb",
+    "created_at": "2025-12-07T17:21:10.166140",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-466",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T17:21:28.328226",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-467",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T17:21:30.634979",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-468",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T17:21:43.502003",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "chat-469",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T17:21:43.918956",
+    "metadata": {
+      "query": "How do i get to youtube to watch videos"
+    }
+  },
+  {
+    "id": "ext-470",
+    "event_type": "prompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/",
+    "element_selector": "#APjFqb",
+    "created_at": "2025-12-07T17:21:58.101891",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-471",
+    "event_type": "prompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/",
+    "element_selector": "path",
+    "created_at": "2025-12-07T17:22:05.667772",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-472",
+    "event_type": "prompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/",
+    "element_selector": ".gNO89b",
+    "created_at": "2025-12-07T17:22:06.811394",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "chat-473",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T17:22:08.733874",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "ext-474",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/search?q=youtube&sca_esv=d7139353ec3d0296&source=hp&ei=4rY1aZ2nMY7RhbIP_67f2A8&iflsig=AOw8s4IAAAAAaTXE8lGnvsIgNfAYlzboFhh2cy04SR5p&ved=0ahUKEwidoPnu_auRAxWOaEEAHX_XF_sQ4dUDCBQ&oq=youtube&gs_lp=Egdnd3Mtd2l6Igd5b3V0dWJlMgsQLhiABBixAxiDATILEAAYgAQYsQMYgwEyDhAAGIAEGLEDGIMBGIoFMg4QABiABBixAxiDARiKBTILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBMggQABiABBixAzIIEAAYgAQYsQMyDhAAGIAEGLEDGIMBGIoFMg4QABiABBixAxiDARiKBUiBRFCTE1j-GHAAeACQAQCYAeQBoAHeCKoBBTAuNy4xuAEMyAEA-AEBmAIIoAKgCagCCsICChAuGAMY6gIYjwHCAgoQABgDGOoCGI8BwgIREC4YgAQYsQMY0QMYgwEYxwHCAg4QLhiABBixAxjRAxjHAcICBRAuGIAEwgIIEC4YgAQYsQPCAgUQABiABMICFBAuGIAEGLEDGNEDGMcBGIoFGI0GmAP2AfEF70YXtDxuaJSSBwUwLjcuMaAHirABsgcFMC43LjG4B6AJwgcFMi03LjHIBzKACAA&sclient=gws-wiz",
+    "element_selector": ".driver-popover-description",
+    "created_at": "2025-12-07T17:22:23.629706",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-475",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/search?q=youtube&sca_esv=d7139353ec3d0296&source=hp&ei=4rY1aZ2nMY7RhbIP_67f2A8&iflsig=AOw8s4IAAAAAaTXE8lGnvsIgNfAYlzboFhh2cy04SR5p&ved=0ahUKEwidoPnu_auRAxWOaEEAHX_XF_sQ4dUDCBQ&oq=youtube&gs_lp=Egdnd3Mtd2l6Igd5b3V0dWJlMgsQLhiABBixAxiDATILEAAYgAQYsQMYgwEyDhAAGIAEGLEDGIMBGIoFMg4QABiABBixAxiDARiKBTILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBMggQABiABBixAzIIEAAYgAQYsQMyDhAAGIAEGLEDGIMBGIoFMg4QABiABBixAxiDARiKBUiBRFCTE1j-GHAAeACQAQCYAeQBoAHeCKoBBTAuNy4xuAEMyAEA-AEBmAIIoAKgCagCCsICChAuGAMY6gIYjwHCAgoQABgDGOoCGI8BwgIREC4YgAQYsQMY0QMYgwEYxwHCAg4QLhiABBixAxjRAxjHAcICBRAuGIAEwgIIEC4YgAQYsQPCAgUQABiABMICFBAuGIAEGLEDGNEDGMcBGIoFGI0GmAP2AfEF70YXtDxuaJSSBwUwLjcuMaAHirABsgcFMC43LjG4B6AJwgcFMi03LjHIBzKACAA&sclient=gws-wiz",
+    "element_selector": ".driver-popover-description",
+    "created_at": "2025-12-07T17:22:24.146199",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-476",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/search?q=youtube&sca_esv=d7139353ec3d0296&source=hp&ei=4rY1aZ2nMY7RhbIP_67f2A8&iflsig=AOw8s4IAAAAAaTXE8lGnvsIgNfAYlzboFhh2cy04SR5p&ved=0ahUKEwidoPnu_auRAxWOaEEAHX_XF_sQ4dUDCBQ&oq=youtube&gs_lp=Egdnd3Mtd2l6Igd5b3V0dWJlMgsQLhiABBixAxiDATILEAAYgAQYsQMYgwEyDhAAGIAEGLEDGIMBGIoFMg4QABiABBixAxiDARiKBTILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBMggQABiABBixAzIIEAAYgAQYsQMyDhAAGIAEGLEDGIMBGIoFMg4QABiABBixAxiDARiKBUiBRFCTE1j-GHAAeACQAQCYAeQBoAHeCKoBBTAuNy4xuAEMyAEA-AEBmAIIoAKgCagCCsICChAuGAMY6gIYjwHCAgoQABgDGOoCGI8BwgIREC4YgAQYsQMY0QMYgwEYxwHCAg4QLhiABBixAxjRAxjHAcICBRAuGIAEwgIIEC4YgAQYsQPCAgUQABiABMICFBAuGIAEGLEDGNEDGMcBGIoFGI0GmAP2AfEF70YXtDxuaJSSBwUwLjcuMaAHirABsgcFMC43LjG4B6AJwgcFMi03LjHIBzKACAA&sclient=gws-wiz",
+    "element_selector": ".driver-popover-description",
+    "created_at": "2025-12-07T17:22:26.102481",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-477",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/search?q=youtube&sca_esv=d7139353ec3d0296&source=hp&ei=4rY1aZ2nMY7RhbIP_67f2A8&iflsig=AOw8s4IAAAAAaTXE8lGnvsIgNfAYlzboFhh2cy04SR5p&ved=0ahUKEwidoPnu_auRAxWOaEEAHX_XF_sQ4dUDCBQ&oq=youtube&gs_lp=Egdnd3Mtd2l6Igd5b3V0dWJlMgsQLhiABBixAxiDATILEAAYgAQYsQMYgwEyDhAAGIAEGLEDGIMBGIoFMg4QABiABBixAxiDARiKBTILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBMggQABiABBixAzIIEAAYgAQYsQMyDhAAGIAEGLEDGIMBGIoFMg4QABiABBixAxiDARiKBUiBRFCTE1j-GHAAeACQAQCYAeQBoAHeCKoBBTAuNy4xuAEMyAEA-AEBmAIIoAKgCagCCsICChAuGAMY6gIYjwHCAgoQABgDGOoCGI8BwgIREC4YgAQYsQMY0QMYgwEYxwHCAg4QLhiABBixAxjRAxjHAcICBRAuGIAEwgIIEC4YgAQYsQPCAgUQABiABMICFBAuGIAEGLEDGNEDGMcBGIoFGI0GmAP2AfEF70YXtDxuaJSSBwUwLjcuMaAHirABsgcFMC43LjG4B6AJwgcFMi03LjHIBzKACAA&sclient=gws-wiz",
+    "element_selector": ".driver-popover-description",
+    "created_at": "2025-12-07T17:22:29.373215",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-478",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/search?q=youtube&sca_esv=d7139353ec3d0296&source=hp&ei=4rY1aZ2nMY7RhbIP_67f2A8&iflsig=AOw8s4IAAAAAaTXE8lGnvsIgNfAYlzboFhh2cy04SR5p&ved=0ahUKEwidoPnu_auRAxWOaEEAHX_XF_sQ4dUDCBQ&oq=youtube&gs_lp=Egdnd3Mtd2l6Igd5b3V0dWJlMgsQLhiABBixAxiDATILEAAYgAQYsQMYgwEyDhAAGIAEGLEDGIMBGIoFMg4QABiABBixAxiDARiKBTILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBMggQABiABBixAzIIEAAYgAQYsQMyDhAAGIAEGLEDGIMBGIoFMg4QABiABBixAxiDARiKBUiBRFCTE1j-GHAAeACQAQCYAeQBoAHeCKoBBTAuNy4xuAEMyAEA-AEBmAIIoAKgCagCCsICChAuGAMY6gIYjwHCAgoQABgDGOoCGI8BwgIREC4YgAQYsQMY0QMYgwEYxwHCAg4QLhiABBixAxjRAxjHAcICBRAuGIAEwgIIEC4YgAQYsQPCAgUQABiABMICFBAuGIAEGLEDGNEDGMcBGIoFGI0GmAP2AfEF70YXtDxuaJSSBwUwLjcuMaAHirABsgcFMC43LjG4B6AJwgcFMi03LjHIBzKACAA&sclient=gws-wiz",
+    "element_selector": ".driver-popover-next-btn",
+    "created_at": "2025-12-07T17:22:32.038274",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-479",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/search?q=youtube&sca_esv=d7139353ec3d0296&source=hp&ei=4rY1aZ2nMY7RhbIP_67f2A8&iflsig=AOw8s4IAAAAAaTXE8lGnvsIgNfAYlzboFhh2cy04SR5p&ved=0ahUKEwidoPnu_auRAxWOaEEAHX_XF_sQ4dUDCBQ&oq=youtube&gs_lp=Egdnd3Mtd2l6Igd5b3V0dWJlMgsQLhiABBixAxiDATILEAAYgAQYsQMYgwEyDhAAGIAEGLEDGIMBGIoFMg4QABiABBixAxiDARiKBTILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBMggQABiABBixAzIIEAAYgAQYsQMyDhAAGIAEGLEDGIMBGIoFMg4QABiABBixAxiDARiKBUiBRFCTE1j-GHAAeACQAQCYAeQBoAHeCKoBBTAuNy4xuAEMyAEA-AEBmAIIoAKgCagCCsICChAuGAMY6gIYjwHCAgoQABgDGOoCGI8BwgIREC4YgAQYsQMY0QMYgwEYxwHCAg4QLhiABBixAxjRAxjHAcICBRAuGIAEwgIIEC4YgAQYsQPCAgUQABiABMICFBAuGIAEGLEDGNEDGMcBGIoFGI0GmAP2AfEF70YXtDxuaJSSBwUwLjcuMaAHirABsgcFMC43LjG4B6AJwgcFMi03LjHIBzKACAA&sclient=gws-wiz",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T17:22:35.254401",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-480",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/search?q=youtube&sca_esv=d7139353ec3d0296&source=hp&ei=4rY1aZ2nMY7RhbIP_67f2A8&iflsig=AOw8s4IAAAAAaTXE8lGnvsIgNfAYlzboFhh2cy04SR5p&ved=0ahUKEwidoPnu_auRAxWOaEEAHX_XF_sQ4dUDCBQ&oq=youtube&gs_lp=Egdnd3Mtd2l6Igd5b3V0dWJlMgsQLhiABBixAxiDATILEAAYgAQYsQMYgwEyDhAAGIAEGLEDGIMBGIoFMg4QABiABBixAxiDARiKBTILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBMggQABiABBixAzIIEAAYgAQYsQMyDhAAGIAEGLEDGIMBGIoFMg4QABiABBixAxiDARiKBUiBRFCTE1j-GHAAeACQAQCYAeQBoAHeCKoBBTAuNy4xuAEMyAEA-AEBmAIIoAKgCagCCsICChAuGAMY6gIYjwHCAgoQABgDGOoCGI8BwgIREC4YgAQYsQMY0QMYgwEYxwHCAg4QLhiABBixAxjRAxjHAcICBRAuGIAEwgIIEC4YgAQYsQPCAgUQABiABMICFBAuGIAEGLEDGNEDGMcBGIoFGI0GmAP2AfEF70YXtDxuaJSSBwUwLjcuMaAHirABsgcFMC43LjG4B6AJwgcFMi03LjHIBzKACAA&sclient=gws-wiz",
+    "element_selector": "#_vrc1affCEbTrhbIPmJi2yQk_37",
+    "created_at": "2025-12-07T17:22:39.990345",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "chat-481",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-07T17:22:42.267838",
+    "metadata": {
+      "query": "Verify this step"
+    }
+  },
+  {
+    "id": "ext-482",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.youtube.com/",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T17:22:49.246835",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-483",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.youtube.com/",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T17:22:49.843624",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "os-484",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Viewing behavior analytics dashboard",
+    "url": null,
+    "created_at": "2025-12-07T17:23:10.343469",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-485",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Browsing Manchester City Council homepage",
+    "url": null,
+    "created_at": "2025-12-07T17:23:15.405708",
+    "metadata": {
+      "category": "browsing"
+    }
+  },
+  {
+    "id": "os-486",
+    "event_type": "prompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Behavior Analytics Dashboard - Google Chrome",
+    "url": null,
+    "created_at": "2025-12-07T17:23:33.196595",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "ext-487",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "http://localhost:8080/",
+    "element_selector": ".stat-card.animate-slide-up",
+    "created_at": "2025-12-07T17:23:36.181961",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-488",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "http://localhost:8080/",
+    "element_selector": ".space-y-1",
+    "created_at": "2025-12-07T17:23:36.455616",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-489",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "http://localhost:8080/",
+    "element_selector": ".flex-1.min-w-0",
+    "created_at": "2025-12-07T17:23:42.939077",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-490",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "http://localhost:8080/",
+    "element_selector": ".text-xs.text-muted-foreground.truncate",
+    "created_at": "2025-12-07T17:23:43.619850",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-491",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "http://localhost:8080/",
+    "element_selector": ".font-medium.text-lg.leading-tight",
+    "created_at": "2025-12-07T17:24:08.663680",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-492",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "http://localhost:8080/",
+    "element_selector": ".font-medium.text-lg.leading-tight",
+    "created_at": "2025-12-07T17:24:09.509119",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-493",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "http://localhost:8080/",
+    "element_selector": ".font-medium.text-lg.leading-tight",
+    "created_at": "2025-12-07T17:24:10.285767",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-494",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "http://localhost:8080/",
+    "element_selector": ".font-medium.text-lg.leading-tight",
+    "created_at": "2025-12-07T17:24:11.090485",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-495",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "http://localhost:8080/",
+    "element_selector": ".grid.grid-cols-1.sm:grid-cols-2.lg:grid-cols-4.gap-4.mb-6",
+    "created_at": "2025-12-07T17:24:23.341275",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-496",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "http://localhost:8080/",
+    "element_selector": ".text-3xl.font-bold.tracking-tight",
+    "created_at": "2025-12-07T17:24:23.884289",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-497",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "http://localhost:8080/",
+    "element_selector": ".stat-card.animate-slide-up.bg-orange-500/10",
+    "created_at": "2025-12-07T17:24:24.848276",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-498",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "http://localhost:8080/",
+    "element_selector": ".text-3xl.font-bold.tracking-tight",
+    "created_at": "2025-12-07T17:24:25.636595",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-499",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "http://localhost:8080/",
+    "element_selector": ".text-3xl.font-bold.tracking-tight",
+    "created_at": "2025-12-07T17:24:28.052528",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-500",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "http://localhost:8080/",
+    "element_selector": ".text-3xl.font-bold.tracking-tight",
+    "created_at": "2025-12-07T17:24:40.549963",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-501",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "http://localhost:8080/",
+    "element_selector": ".stat-card.animate-slide-up.bg-green-500/10",
+    "created_at": "2025-12-07T17:24:41.870751",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-502",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "http://localhost:8080/",
+    "element_selector": ".text-3xl.font-bold.tracking-tight",
+    "created_at": "2025-12-07T17:24:42.599604",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-503",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "http://localhost:8080/",
+    "element_selector": ".space-y-1",
+    "created_at": "2025-12-07T17:24:45.207118",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-504",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "http://localhost:8080/",
+    "element_selector": ".text-3xl.font-bold.tracking-tight",
+    "created_at": "2025-12-07T17:24:46.618789",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-505",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "http://localhost:8080/",
+    "element_selector": ".stat-card.animate-slide-up.bg-orange-500/10",
+    "created_at": "2025-12-07T17:24:48.479249",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-506",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "http://localhost:8080/",
+    "element_selector": ".flex.items-start.justify-between",
+    "created_at": "2025-12-07T17:24:50.314660",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-507",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "http://localhost:8080/",
+    "element_selector": ".stat-card.animate-slide-up",
+    "created_at": "2025-12-07T17:24:51.183710",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-508",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "http://localhost:8080/",
+    "element_selector": ".text-3xl.font-bold.tracking-tight",
+    "created_at": "2025-12-07T17:24:55.233883",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-509",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "http://localhost:8080/",
+    "element_selector": ".text-3xl.font-bold.tracking-tight",
+    "created_at": "2025-12-07T17:24:57.752808",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-510",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "http://localhost:8080/",
+    "element_selector": ".flex.items-start.justify-between",
+    "created_at": "2025-12-07T17:25:00.205562",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-511",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "http://localhost:8080/",
+    "element_selector": ".text-3xl.font-bold.tracking-tight",
+    "created_at": "2025-12-07T17:25:01.135510",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-512",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "http://localhost:8080/",
+    "element_selector": ".stat-card.animate-slide-up",
+    "created_at": "2025-12-07T17:25:02.312076",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-513",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "http://localhost:8080/",
+    "element_selector": ".font-semibold.text-primary",
+    "created_at": "2025-12-07T17:25:04.566084",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-514",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "http://localhost:8080/",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-07T17:25:12.117067",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-515",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "http://localhost:8080/",
+    "element_selector": ".font-semibold.text-primary",
+    "created_at": "2025-12-07T17:25:14.390483",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-516",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "http://localhost:8080/",
+    "element_selector": ".grid.grid-cols-1.sm:grid-cols-2.lg:grid-cols-4.gap-4.mb-6",
+    "created_at": "2025-12-07T17:25:18.752343",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "os-517",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using OBS 32.0.2 - Profile: 1920 x 1080p - Scenes: vids",
+    "url": null,
+    "created_at": "2025-12-07T17:25:37.837260",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-518",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Windows Default Lock Screen",
+    "url": null,
+    "created_at": "2025-12-08T01:30:32.574383",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "os-519",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Managing email inbox in Gmail",
+    "url": null,
+    "created_at": "2025-12-08T01:31:29.380814",
+    "metadata": {
+      "category": "productivity"
+    }
+  },
+  {
+    "id": "os-520",
+    "event_type": "unprompted",
+    "event_name": "OS Interaction",
+    "page_title": "Using Software Engineering Intern (2026) - Databricks - Google Chrome",
+    "url": null,
+    "created_at": "2025-12-08T01:31:29.745264",
+    "metadata": {
+      "category": "utility"
+    }
+  },
+  {
+    "id": "ext-521",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.youtube.com/",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-08T01:31:30.987566",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-522",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/",
+    "element_selector": ".o3j99.qarstb",
+    "created_at": "2025-12-08T14:44:53.117282",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-523",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-08T14:44:53.522169",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-524",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-08T14:45:33.266807",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-525",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-08T14:45:34.355268",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-526",
+    "event_type": "unprompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-08T14:45:40.619343",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "chat-527",
+    "event_type": "prompted",
+    "event_name": "AI Assistance Request",
+    "page_title": "Digital Helper Chat",
+    "url": null,
+    "created_at": "2025-12-08T14:45:40.995758",
+    "metadata": {
+      "query": "how can i get to youtube?"
+    }
+  },
+  {
+    "id": "ext-528",
+    "event_type": "prompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/",
+    "element_selector": "path",
+    "created_at": "2025-12-08T14:46:06.369123",
+    "metadata": {
+      "timestamp": null
+    }
+  },
+  {
+    "id": "ext-529",
+    "event_type": "prompted",
+    "event_name": "Browser Interaction",
+    "page_title": "Unknown Page",
+    "url": "https://www.google.com/",
+    "element_selector": "#digital-literacy-extension-host",
+    "created_at": "2025-12-08T14:46:11.026003",
+    "metadata": {
+      "timestamp": null
+    }
+  }
+]

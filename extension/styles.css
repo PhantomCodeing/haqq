@@ -104,6 +104,7 @@
   flex: 1;
   overflow: hidden;
   position: relative;
+  width: 100%;
 }
 
 .dle-view {
@@ -146,10 +147,12 @@
 }
 
 .dle-message.user {
-  background-color: #6CACE4;
+  background-color: #005a8d;
+  /* Darker Blue for Contrast */
   color: white;
   align-self: flex-end;
   margin-left: auto;
+  font-weight: 500;
 }
 
 .dle-input-area {
@@ -179,8 +182,9 @@
 
 /* Progress View */
 #dle-progress-view {
-  padding: 20px;
+  /* padding: 20px; */
   overflow-y: auto;
+  width: 350px;
 }
 
 .dle-stats {
@@ -191,31 +195,48 @@
 
 .dle-stat-card {
   flex: 1;
-  background: #f0f4f8;
+  background: white;
   padding: 15px;
   border-radius: 8px;
   text-align: center;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .dle-stat-card h4 {
   margin: 0 0 5px 0;
-  color: #666;
-  font-size: 12px;
+  color: #222;
+  /* High Contrast */
+  font-size: 14px;
+  /* Larger */
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .dle-stat-card span {
-  font-size: 24px;
+  font-size: 28px;
+  /* Larger */
   font-weight: bold;
   color: #003b5c;
 }
 
+#dle-history-list {
+  overflow-y: auto;
+  width: 100%;
+}
+
 #dle-history-list h4 {
   margin-top: 0;
-  color: #333;
+  color: #111;
+  /* Black */
+  font-size: 16px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .dle-history-item {
+  color: black;
   padding: 10px;
   border-bottom: 1px solid #eee;
   display: flex;

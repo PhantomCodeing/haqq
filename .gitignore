@@ -24,5 +24,6 @@ dist-ssr
 *.sw?
 .venv
 
-server/__pycache__/main.cpython-311.pyc
-server/stats.db
+*.pyc
+__pycache__/
+node_modules/

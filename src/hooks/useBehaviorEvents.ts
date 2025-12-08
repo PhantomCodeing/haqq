@@ -36,20 +36,29 @@ export const useBehaviorEvents = () => {
 
       const response = await fetch('http://localhost:8000/stats');
       const data = await response.json();
-      const clickEvents = data.data || [];
+      const rawEvents = data.data || [];
 
-      // Map format if needed, or just use as is for stats
-      // The dashboard uses 'events' for charts.
-      // 'click_stats' has {id, event_type, created_at, ...}
-      // 'behavior_events' had {id, event_type, created_at, ...}
-      // They are compatible enough for basic stats.
+      // Map backend events to frontend schema
+      const mappedEvents: BehaviorEvent[] = rawEvents.map((e: any) => ({
+        id: e.id,
+        session_id: 'session-1', // Default for now
+        event_type: e.event_type,
+        event_name: e.event_name,
+        url: e.url,
+        page_title: e.page_title,
+        element_selector: null,
+        element_text: null,
+        metadata: e.metadata,
+        user_agent: null,
+        ip_address: null,
+        created_at: e.created_at
+      }));
 
-      // Cast to any to avoid type strictness for now as we transition
-      setEvents(clickEvents as any[]);
+      setEvents(mappedEvents);
 
       // Calculate split
-      const prompted = clickEvents.filter((d: any) => d.event_type === 'prompted').length;
-      const unprompted = clickEvents.filter((d: any) => d.event_type === 'unprompted').length;
+      const prompted = mappedEvents.filter((d) => d.event_type === 'prompted').length;
+      const unprompted = mappedEvents.filter((d) => d.event_type === 'unprompted').length;
       setClickStats({ prompted, unprompted });
 
     } catch (error) {
@@ -92,6 +101,16 @@ export const useBehaviorEvents = () => {
     stats,
     aiEvents: events.filter(e => e.event_type === 'ai_state_change'),
     userActions: events.filter(e => e.event_type !== 'ai_state_change'),
-    clickStats
+    clickStats,
+    skillLevel: (() => {
+      const total = clickStats.prompted + clickStats.unprompted;
+      if (total === 0) return "No Data";
+      const ratio = clickStats.prompted / total;
+
+      if (ratio > 0.7) return "AI Reliant";
+      if (ratio > 0.4) return "AI Assisted";
+      if (ratio > 0.1) return "Mostly Independent";
+      return "Independent";
+    })()
   };
 };

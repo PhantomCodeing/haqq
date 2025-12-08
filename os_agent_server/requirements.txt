@@ -3,4 +3,6 @@ uvicorn
 google-generativeai
 python-multipart
 pillow
+pygetwindow
+psutil
 python-dotenv
