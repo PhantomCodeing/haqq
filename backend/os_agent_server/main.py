@@ -69,7 +69,7 @@ Your goal is to TEACH the user how to use the web, step-by-step, until their GLO
 """
 
 model = genai.GenerativeModel(
-    'gemini-2.5-flash',
+    'gemini-3-flash-preview',
     system_instruction=SYSTEM_PROMPT,
     generation_config={"response_mime_type": "application/json"}
 )
